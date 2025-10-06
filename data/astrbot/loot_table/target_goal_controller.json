@@ -18,7 +18,7 @@
                   },
                   {
                     "italic": false,
-                    "color": "green",
+                    "color": "red",
                     "translate": "item.astrobot.target_goal_controller.lore"
                   }
                 ]

@@ -18,7 +18,7 @@
                   },
                   {
                     "italic": false,
-                    "color": "green",
+                    "color": "red",
                     "translate": "item.astrobot.sonic_boom_transmitter.lore"
                   }
                 ]
