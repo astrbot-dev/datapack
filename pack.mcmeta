@@ -1,0 +1,10 @@
+{
+  "pack": {
+    "description": {
+      "color": "blue",
+      "fallback": "§cResource pack not loaded!",
+      "translate": "datapack.description"
+    },
+    "min_format": 82
+  }
+}
