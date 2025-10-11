@@ -1,5 +1,5 @@
 ★模块★  
-- 模块种类
+- 模块种类  
 =================战斗类模块=================  
 negative_effect_generator 负面效果产生模块  
 payload_ejector 炸弹投掷模块  
@@ -11,7 +11,7 @@ external_backpack 外置背包模块
 fall_prevention 摔落保护模块
 guidance 引路模块  
 mineral_detector 矿物检测模块  
-- 模块自定义数据
+- 模块自定义数据  
 ````
 （复合标签）minecraft:custom_data
   └（复合标签）astrbot
