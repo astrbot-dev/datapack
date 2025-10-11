@@ -8,18 +8,18 @@
               "components": {
                 "minecraft:item_model": "minecraft:acacia_boat",
                 "minecraft:item_name": {
-                  "translate": "item.astrobot.mineral_detector"
+                  "translate": "item.astrbot.mineral_detector"
                 },
                 "minecraft:lore": [
                   {
                     "italic": false,
                     "color": "blue",
-                    "translate": "item.astrobot.module"
+                    "translate": "item.astrbot.module"
                   },
                   {
                     "italic": false,
                     "color": "green",
-                    "translate": "item.astrobot.mineral_detector.lore"
+                    "translate": "item.astrbot.mineral_detector.lore"
                   }
                 ]
               },
@@ -28,8 +28,10 @@
             {
               "function": "minecraft:set_custom_data",
               "tag": {
-                "name": "astrobot:mineral_detector",
-                "type": "module"
+                "astrbot": {
+                  "name": "astrbot:mineral_detector",
+                  "type": "module"
+                }
               }
             }
           ],

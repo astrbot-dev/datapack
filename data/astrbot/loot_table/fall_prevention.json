@@ -8,18 +8,18 @@
               "components": {
                 "minecraft:item_model": "minecraft:acacia_boat",
                 "minecraft:item_name": {
-                  "translate": "item.astrobot.fall_prevention"
+                  "translate": "item.astrbot.fall_prevention"
                 },
                 "minecraft:lore": [
                   {
                     "italic": false,
                     "color": "blue",
-                    "translate": "item.astrobot.module"
+                    "translate": "item.astrbot.module"
                   },
                   {
                     "italic": false,
                     "color": "green",
-                    "translate": "item.astrobot.fall_prevention.lore"
+                    "translate": "item.astrbot.fall_prevention.lore"
                   }
                 ]
               },
@@ -28,8 +28,10 @@
             {
               "function": "minecraft:set_custom_data",
               "tag": {
-                "name": "astrobot:fall_prevention",
-                "type": "module"
+                "astrbot": {
+                  "name": "astrbot:fall_prevention",
+                  "type": "module"
+                }
               }
             }
           ],

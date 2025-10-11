@@ -8,18 +8,18 @@
               "components": {
                 "minecraft:item_model": "minecraft:acacia_boat",
                 "minecraft:item_name": {
-                  "translate": "item.astrobot.sonic_boom_transmitter"
+                  "translate": "item.astrbot.sonic_boom_transmitter"
                 },
                 "minecraft:lore": [
                   {
                     "italic": false,
                     "color": "blue",
-                    "translate": "item.astrobot.module"
+                    "translate": "item.astrbot.module"
                   },
                   {
                     "italic": false,
                     "color": "red",
-                    "translate": "item.astrobot.sonic_boom_transmitter.lore"
+                    "translate": "item.astrbot.sonic_boom_transmitter.lore"
                   }
                 ]
               },
@@ -28,8 +28,10 @@
             {
               "function": "minecraft:set_custom_data",
               "tag": {
-                "name": "astrobot:sonic_boom_transmitter",
-                "type": "module"
+                "astrbot": {
+                  "name": "astrbot:sonic_boom_transmitter",
+                  "type": "module"
+                }
               }
             }
           ],

@@ -8,18 +8,18 @@
               "components": {
                 "minecraft:item_model": "minecraft:acacia_boat",
                 "minecraft:item_name": {
-                  "translate": "item.astrobot.payload_ejector"
+                  "translate": "item.astrbot.payload_ejector"
                 },
                 "minecraft:lore": [
                   {
                     "italic": false,
                     "color": "blue",
-                    "translate": "item.astrobot.module"
+                    "translate": "item.astrbot.module"
                   },
                   {
                     "italic": false,
                     "color": "red",
-                    "translate": "item.astrobot.payload_ejector.lore"
+                    "translate": "item.astrbot.payload_ejector.lore"
                   }
                 ]
               },
@@ -28,8 +28,10 @@
             {
               "function": "minecraft:set_custom_data",
               "tag": {
-                "name": "astrobot:payload_ejector",
-                "type": "module"
+                "astrbot": {
+                  "name": "astrbot:payload_ejector",
+                  "type": "module"
+                }
               }
             }
           ],

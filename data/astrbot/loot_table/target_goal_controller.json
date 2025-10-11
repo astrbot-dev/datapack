@@ -8,18 +8,18 @@
               "components": {
                 "minecraft:item_model": "minecraft:acacia_boat",
                 "minecraft:item_name": {
-                  "translate": "item.astrobot.target_goal_controller"
+                  "translate": "item.astrbot.target_goal_controller"
                 },
                 "minecraft:lore": [
                   {
                     "italic": false,
                     "color": "blue",
-                    "translate": "item.astrobot.module"
+                    "translate": "item.astrbot.module"
                   },
                   {
                     "italic": false,
                     "color": "red",
-                    "translate": "item.astrobot.target_goal_controller.lore"
+                    "translate": "item.astrbot.target_goal_controller.lore"
                   }
                 ]
               },
@@ -28,8 +28,10 @@
             {
               "function": "minecraft:set_custom_data",
               "tag": {
-                "name": "astrobot:target_goal_controller",
-                "type": "module"
+                "astrbot": {
+                  "name": "astrbot:target_goal_controller",
+                  "type": "module"
+                }
               }
             }
           ],

@@ -8,18 +8,18 @@
               "components": {
                 "minecraft:item_model": "minecraft:acacia_boat",
                 "minecraft:item_name": {
-                  "translate": "item.astrobot.guidance"
+                  "translate": "item.astrbot.guidance"
                 },
                 "minecraft:lore": [
                   {
                     "italic": false,
                     "color": "blue",
-                    "translate": "item.astrobot.module"
+                    "translate": "item.astrbot.module"
                   },
                   {
                     "italic": false,
                     "color": "green",
-                    "translate": "item.astrobot.guidance.lore"
+                    "translate": "item.astrbot.guidance.lore"
                   }
                 ]
               },
@@ -28,8 +28,10 @@
             {
               "function": "minecraft:set_custom_data",
               "tag": {
-                "name": "astrobot:guidance",
-                "type": "module"
+                "astrbot": {
+                  "name": "astrbot:guidance",
+                  "type": "module"
+                }
               }
             }
           ],
