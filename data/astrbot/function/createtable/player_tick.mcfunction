@@ -1,0 +1,2 @@
+execute if score @s astrbot.place_createtable matches 1.. run return run function astrbot:createtable/block/put
+execute at @s as @e[distance=..10, tag=astrbot.createtable, type=marker] at @s run function astrbot:createtable/block_tick
