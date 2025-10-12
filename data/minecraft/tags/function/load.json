@@ -1,5 +1,6 @@
 {
   "values": [
-    "minecraft:load"
+    "astrbot:load",
+    "astrbot:module/active_defence_system/load"
   ]
 }

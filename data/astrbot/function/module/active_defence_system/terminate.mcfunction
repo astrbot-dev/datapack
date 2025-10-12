@@ -1,0 +1,1 @@
+schedule clear astrbot:module/active_defence_system/tick
