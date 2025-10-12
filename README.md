@@ -18,3 +18,17 @@ mineral_detector 矿物检测模块
     └（字符串）name: 此模块的命名空间ID。
     └（字符串）type: 必为module，表示此物品为一个模块。
 ````
+
+★记分板标签★  
+`aps`：不知道是什么意思。  
+`apshit`：不知道是什么意思。  
+`laserlock`：不知道是什么意思。  
+
+★翻译标识符（zh_cn）★  
+```
+{
+  "item.astrbot.active_defence_system": "主动防御系统",
+  "item.astrbot.active_defence_system.lore": "拦截可能正在朝你飞过来的弹射物！",
+  "item.astrbot.module": "无人机模块"
+}
+```
