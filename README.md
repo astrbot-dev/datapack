@@ -9,7 +9,7 @@ target_goal_controller 索敌控制模块
 =================探索类模块=================  
 automatic_repairment 自我修复模块  
 external_backpack 外置背包模块  
-fall_prevention 摔落保护模块
+fall_prevention 摔落保护模块  
 guidance 引路模块  
 mineral_detector 矿物检测模块  
 - 模块自定义数据  
@@ -23,6 +23,7 @@ mineral_detector 矿物检测模块
 ★记分板标签★  
 `active_defence_system`：无人机装载主动防御模块时，即被赋予该标签。  
 `apshit`：在主动防御功能中用于防止重复击中。  
+`fall_prevention_cool_down`：玩家若拥有该标签，即处于摔落保护模块的冷却时间。  
 `laserlock`：临时标签，用于标记本次击打的目标实体。  
 `negative_effect_generator`：无人机装载负面效果产生模块时，即被赋予该标签。  
 `sonic_boom_transmitter`：无人机装载音波发射模块时，即被赋予该标签。  

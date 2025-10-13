@@ -1,0 +1,117 @@
+{
+  "anvil_cost": 1,
+  "description": "缓降触发器",
+  "effects": {
+    "minecraft:location_changed": [
+      {
+        "effect": {
+          "effects": [
+            {
+              "max_amplifier": 0,
+              "max_duration": 0.5,
+              "min_amplifier": 0,
+              "min_duration": 0.5,
+              "to_apply": "minecraft:slow_falling",
+              "type": "minecraft:apply_mob_effect"
+            },
+            {
+              "function": "astrbot:module/fall_prevention/cool_down/main",
+              "type": "minecraft:run_function"
+            }
+          ],
+          "type": "minecraft:all_of"
+        },
+        "requirements": [
+          
+          {
+            "condition": "minecraft:any_of",
+            "terms": [
+              {
+                "condition": "minecraft:inverted",
+                "term": {
+                  "condition": "minecraft:location_check",
+                  "offsetY": -1,
+                  "predicate": {
+                    "block": {
+                      "blocks": "#minecraft:air"
+                    }
+                  }
+                }
+              },
+              {
+                "condition": "minecraft:inverted",
+                "term": {
+                  "condition": "minecraft:location_check",
+                  "offsetY": -2,
+                  "predicate": {
+                    "block": {
+                      "blocks": "#minecraft:air"
+                    }
+                  }
+                }
+              },
+              {
+                "condition": "minecraft:inverted",
+                "term": {
+                  "condition": "minecraft:location_check",
+                  "offsetY": -3,
+                  "predicate": {
+                    "block": {
+                      "blocks": "#minecraft:air"
+                    }
+                  }
+                }
+              },
+              {
+                "condition": "minecraft:inverted",
+                "term": {
+                  "condition": "minecraft:location_check",
+                  "offsetY": -4,
+                  "predicate": {
+                    "block": {
+                      "blocks": "#minecraft:air"
+                    }
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "movement": {
+                "fall_distance": {
+                  "min": 1.5
+                }
+              }
+            }
+          },
+          {
+            "condition": "minecraft:entity_scores",
+            "entity": "this",
+            "scores": {
+              "astr.fall_prevention_cool_down": {
+                "max": 0
+              }
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "max_level": 1,
+  "max_cost": {
+    "base": 0,
+    "per_level_above_first": 0
+  },
+  "min_cost": {
+    "base": 0,
+    "per_level_above_first": 0
+  },
+  "slots": [
+    "any"
+  ],
+  "supported_items": "air",
+  "weight": 1
+}
