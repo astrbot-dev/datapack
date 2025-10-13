@@ -20,6 +20,16 @@
                     "italic": false,
                     "color": "red",
                     "translate": "item.astrbot.negative_effect_generator.lore"
+                  },
+                  {
+                    "italic": false,
+                    "color": "red",
+                    "translate": "item.astrbot.negative_effect_generator.lore1"
+                  },
+                  {
+                    "italic": false,
+                    "color": "red",
+                    "translate": "item.astrbot.negative_effect_generator.lore2"
                   }
                 ]
               },
