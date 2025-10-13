@@ -25,6 +25,8 @@ mineral_detector 矿物检测模块
 `apshit`：在主动防御功能中用于防止重复击中。  
 `laserlock`：临时标签，用于标记本次击打的目标实体。  
 `negative_effect_generator`：无人机装载负面效果产生模块时，即被赋予该标签。  
+`sonic_boom_transmitter`：无人机装载音波发射模块时，即被赋予该标签。  
+`sonic_boom_transmitter_target`：音波发射模块的目标实体。  
 
 ★翻译标识符（zh_cn）★  
 ```
@@ -34,7 +36,9 @@ mineral_detector 矿物检测模块
   "item.astrbot.module": "无人机模块",
   "item.astrbot.negative_effect_generator": "负面效果产生器",
   "item.astrbot.negative_effect_generator.lore": "对周围20格以内的亡灵生物、节肢生物和",
-  "item.astrbot.negative_effect_generator.lore1": "灾厄村民施加10秒长的缓慢、虚弱效果，",
-  "item.astrbot.negative_effect_generator.lore2": "冷却时间30秒"
+  "item.astrbot.negative_effect_generator.lore1": "袭击参与者施加10秒长的缓慢、虚弱效果，",
+  "item.astrbot.negative_effect_generator.lore2": "冷却时间30秒",
+  "item.astrbot.sonic_boom_transmitter": "音波发射器",
+  "item.astrbot.sonic_boom_transmitter.lore": "让你的无人机像监守者那样发射音波"
 }
 ```

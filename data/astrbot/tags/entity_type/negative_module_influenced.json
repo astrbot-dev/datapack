@@ -1,7 +1,8 @@
 {
   "values": [
     "#minecraft:arthropod",
-    "#minecraft:illager",
-    "#minecraft:undead"
+    "#minecraft:raiders",
+    "#minecraft:undead",
+    "minecraft:vex"
   ]
 }

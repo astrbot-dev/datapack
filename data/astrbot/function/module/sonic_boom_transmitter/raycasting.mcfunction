@@ -1,0 +1,2 @@
+execute if entity @s[distance=..35] unless entity @n[tag=sonic_boom_transmitter_target,distance=..0.5] positioned ^ ^ ^1 run function astrbot:module/sonic_boom_transmitter/raycasting
+particle sonic_boom ~ ~ ~ 0.0 0.0 0.0 5 1 force
