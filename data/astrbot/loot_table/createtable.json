@@ -1,0 +1,33 @@
+{
+    "pools": [
+        {
+            "entries": [
+                {
+                    "name": "minecraft:item_frame",
+                    "type": "minecraft:item",
+                    "functions": [
+                        {
+                            "function": "set_components",
+                            "components": {
+                                "max_stack_size": 1,
+                                "item_name": "装配台",
+                                "entity_data": {
+                                    "id": "item_frame",
+                                    "Tags": ["astrbot.createtable"],
+                                    "Invisible": true
+                                },
+                                "custom_data": {
+                                    "astrbot": {
+                                        "type": "block",
+                                        "name": "createtable"
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                }
+            ],
+            "rolls": 1.0
+        }
+    ]
+}

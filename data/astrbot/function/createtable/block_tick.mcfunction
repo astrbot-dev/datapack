@@ -1,0 +1,1 @@
+execute unless block ~ ~ ~ barrier run function astrbot:createtable/block/distory

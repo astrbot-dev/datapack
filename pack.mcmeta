@@ -5,6 +5,7 @@
       "fallback": "§cResource pack not loaded!",
       "translate": "datapack.description"
     },
-    "min_format": [ 82, 0 ]
+    "min_format": [ 100, 0 ],
+    "max_format" : [ 100, 0 ]
   }
 }
