@@ -1,7 +1,7 @@
 ★模块★  
 - 模块种类  
 =================战斗类模块=================  
-active_defence_system 主动防御模块
+active_defence_system 主动防御模块  
 negative_effect_generator 负面效果产生模块  
 payload_ejector 炸弹投掷模块  
 sonic_boom_transmitter 音波发射模块  
