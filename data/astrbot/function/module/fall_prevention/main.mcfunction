@@ -1,2 +1,3 @@
-#缓降
-item replace entity @s saddle with apple[minecraft:enchantments={"astrbot:module/fall_prevention":1},minecraft:equippable={slot:"saddle"}]
+#鞍槽位
+execute unless items entity @s saddle * run item replace entity @s saddle with recovery_compass[minecraft:equippable={slot:"saddle"}]
+item modify entity @s[gamemode=!creative,gamemode=!spectator] saddle {enchantments:{"astrbot:module/fall_prevention":1},function:"minecraft:set_enchantments"}
