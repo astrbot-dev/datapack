@@ -1,3 +1,4 @@
 #鞍槽位
-execute unless items entity @s saddle * run item replace entity @s saddle with recovery_compass[minecraft:equippable={slot:"saddle"}]
-item modify entity @s[gamemode=!creative,gamemode=!spectator] saddle {enchantments:{"astrbot:module/fall_prevention":1},function:"minecraft:set_enchantments"}
+item modify entity @s saddle {enchantments:{"astrbot:module/fall_prevention":1},function:"minecraft:set_enchantments"}
+#重置冷却
+scoreboard players set @s astr.fall_prevention_cool_down 0
