@@ -2,4 +2,5 @@
 execute \
     as @a \
     at @s \
-    run function astrbot
+    if biome ~ ~ ~ minecraft:rbot_wasteland \
+    run function astrbot:generate_monsters/try_generate
