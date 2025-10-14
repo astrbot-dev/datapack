@@ -1,0 +1,164 @@
+{
+    "name": "minecraft:airship",
+    "fallback": "minecraft:empty",
+    "elements": [
+        {
+            "weight": 1,
+            "element": {
+                "location": "minecraft:airship/airship",
+                "processors": [
+                    {
+                        "processor_type": "rule",
+                        "rules": [
+                            {
+                                "location_predicate": {
+                                    "predicate_type": "always_true"
+                                },
+                                "input_predicate": {
+                                    "predicate_type": "random_block_match",
+                                    "block": "white_concrete",
+                                    "probability": 0.5
+                                },
+                                "output_state": {
+                                    "Name": "light_gray_concrete"
+                                }
+                            },
+                            {
+                                "location_predicate": {
+                                    "predicate_type": "always_true"
+                                },
+                                "input_predicate": {
+                                    "predicate_type": "random_block_match",
+                                    "block": "light_gray_concrete",
+                                    "probability": 0.5
+                                },
+                                "output_state": {
+                                    "Name": "gray_concrete"
+                                }
+                            },
+                            {
+                                "location_predicate": {
+                                    "predicate_type": "always_true"
+                                },
+                                "input_predicate": {
+                                    "predicate_type": "random_block_match",
+                                    "block": "white_concrete",
+                                    "probability": 0.5
+                                },
+                                "output_state": {
+                                    "Name": "air"
+                                }
+                            },
+                            {
+                                "location_predicate": {
+                                    "predicate_type": "always_true"
+                                },
+                                "input_predicate": {
+                                    "predicate_type": "random_block_match",
+                                    "block": "light_blue_concrete",
+                                    "probability": 0.2
+                                },
+                                "output_state": {
+                                    "Name": "air"
+                                }
+                            },
+                            {
+                                "location_predicate": {
+                                    "predicate_type": "always_true"
+                                },
+                                "input_predicate": {
+                                    "predicate_type": "random_block_match",
+                                    "block": "light_blue_concrete",
+                                    "probability": 0.2
+                                },
+                                "output_state": {
+                                    "Name": "cyan_concrete"
+                                }
+                            },
+                            {
+                                "location_predicate": {
+                                    "predicate_type": "always_true"
+                                },
+                                "input_predicate": {
+                                    "predicate_type": "random_block_match",
+                                    "block": "light_blue_concrete",
+                                    "probability": 0.2
+                                },
+                                "output_state": {
+                                    "Name": "blue_concrete"
+                                }
+                            },
+                            {
+                                "location_predicate": {
+                                    "predicate_type": "always_true"
+                                },
+                                "input_predicate": {
+                                    "predicate_type": "random_block_match",
+                                    "block": "iron_block",
+                                    "probability": 0.5
+                                },
+                                "output_state": {
+                                    "Name": "air"
+                                }
+                            },
+                            {
+                                "location_predicate": {
+                                    "predicate_type": "always_true"
+                                },
+                                "input_predicate": {
+                                    "predicate_type": "random_block_match",
+                                    "block": "tinted_glass",
+                                    "probability": 0.2
+                                },
+                                "output_state": {
+                                    "Name": "air"
+                                }
+                            },
+                            {
+                                "location_predicate": {
+                                    "predicate_type": "always_true"
+                                },
+                                "input_predicate": {
+                                    "predicate_type": "random_block_match",
+                                    "block": "smooth_quartz",
+                                    "probability": 0.1
+                                },
+                                "output_state": {
+                                    "Name": "air"
+                                }
+                            },
+                            {
+                                "location_predicate": {
+                                    "predicate_type": "always_true"
+                                },
+                                "input_predicate": {
+                                    "predicate_type": "random_block_match",
+                                    "block": "smooth_quartz_slab",
+                                    "probability": 0.1
+                                },
+                                "output_state": {
+                                    "Name": "air"
+                                }
+                            },
+                            {
+                                "location_predicate": {
+                                    "predicate_type": "always_true"
+                                },
+                                "input_predicate": {
+                                    "predicate_type": "random_block_match",
+                                    "block": "smooth_quartz_stairs",
+                                    "probability": 0.1
+                                },
+                                "output_state": {
+                                    "Name": "air"
+                                }
+                            }
+                        ]
+                    }
+                ],
+                "projection": "rigid",
+                "element_type": "minecraft:single_pool_element"
+            }
+        }
+    ]
+}
