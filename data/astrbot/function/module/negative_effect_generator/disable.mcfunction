@@ -1,0 +1,2 @@
+schedule clear astrbot:module/negative_effect_generator/tick
+tag @s remove negative_effect_generator

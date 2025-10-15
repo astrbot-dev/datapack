@@ -1,0 +1,1 @@
+function astrbot:module/missile_launcher/tick

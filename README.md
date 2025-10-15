@@ -5,7 +5,7 @@
 √ m242_bushmaster 链式机关枪模块  
 √ negative_effect_generator 负面效果产生模块  
 √ sonic_boom_transmitter 音波发射模块  
-missile_launcher 导弹发射模块  
+√ missile_launcher 导弹发射模块  
 =================探索类模块=================  
 automatic_repairment 自我修复模块  
 external_backpack 外置背包模块  

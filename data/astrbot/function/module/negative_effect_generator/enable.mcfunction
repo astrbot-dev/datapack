@@ -1,0 +1,2 @@
+function astrbot:module/negative_effect_generator/tick
+tag @s add negative_effect_generator
