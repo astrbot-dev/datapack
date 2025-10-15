@@ -2,10 +2,10 @@
 - 模块种类  
 =================战斗类模块=================  
 √ active_defence_system 主动防御模块  
-√ m242_bushmaster 导弹投掷模块  
+√ m242_bushmaster 链式机关枪模块  
 √ negative_effect_generator 负面效果产生模块  
 √ sonic_boom_transmitter 音波发射模块  
-target_goal_controller 索敌控制模块  
+missile_launcher 导弹发射模块  
 =================探索类模块=================  
 automatic_repairment 自我修复模块  
 external_backpack 外置背包模块  
@@ -49,6 +49,8 @@ mineral_detector 矿物检测模块
   "item.astrbot.fall_prevention.lore": "禁止高空抛物，冷却时间1分钟",
   "item.astrbot.m242_bushmaster": "M242链式炮",
   "item.astrbot.m242_bushmaster.lore": "这个模块可以发射炮弹！",
+  "item.astrbot.missile_launcher: "导弹发射器",
+  "item.astrbot.missile_launcher.lore": "指哪打哪",
   "item.astrbot.module": "无人机模块",
   "item.astrbot.negative_effect_generator": "负面效果产生器",
   "item.astrbot.negative_effect_generator.lore": "对周围20格以内的亡灵生物、节肢生物和",
