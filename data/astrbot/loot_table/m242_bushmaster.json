@@ -8,7 +8,7 @@
               "components": {
                 "minecraft:item_model": "minecraft:acacia_boat",
                 "minecraft:item_name": {
-                  "translate": "item.astrbot.payload_ejector"
+                  "translate": "item.astrbot.m242_bushmaster"
                 },
                 "minecraft:lore": [
                   {
@@ -19,7 +19,7 @@
                   {
                     "italic": false,
                     "color": "red",
-                    "translate": "item.astrbot.payload_ejector.lore"
+                    "translate": "item.astrbot.m242_bushmaster.lore"
                   }
                 ]
               },
@@ -29,7 +29,7 @@
               "function": "minecraft:set_custom_data",
               "tag": {
                 "astrbot": {
-                  "name": "astrbot:payload_ejector",
+                  "name": "astrbot:m242_bushmaster",
                   "type": "module"
                 }
               }

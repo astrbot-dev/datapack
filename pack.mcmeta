@@ -1,4 +1,13 @@
 {
+  "overlays": {
+    "entries": [
+      {
+        "directory": "bs",
+        "max_format": [ 88, 0 ],
+        "min_format": [ 88, 0 ]
+      }
+    ]
+  },
   "pack": {
     "description": {
       "color": "blue",
