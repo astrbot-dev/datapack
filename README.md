@@ -2,7 +2,7 @@
 - 模块种类  
 =================战斗类模块=================  
 √ active_defence_system 主动防御模块  
-m242_bushmaster 导弹投掷模块  
+√ m242_bushmaster 导弹投掷模块  
 √ negative_effect_generator 负面效果产生模块  
 √ sonic_boom_transmitter 音波发射模块  
 target_goal_controller 索敌控制模块  

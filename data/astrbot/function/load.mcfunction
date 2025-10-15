@@ -4,6 +4,8 @@ scoreboard objectives add astr.y dummy
 scoreboard objectives add astr.z dummy
 #通用变量（用假名区分，仅用于全局性的内部计算）
 scoreboard objectives add astr.var dummy
+#UID
+scoreboard objectives add astr.uid dummy
 # ^^^ 函数内部的临时变量让用这个吗111
 
 scoreboard objectives add astr.func_var dummy

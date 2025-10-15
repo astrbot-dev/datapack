@@ -7,5 +7,5 @@ execute anchored eyes facing entity @n[tag=sonic_boom_transmitter_target] eyes r
 #声音
 playsound entity.warden.sonic_boom neutral @a ~ ~ ~ 15 1
 #打死他
-damage @n[tag=sonic_boom_transmitter_target] 8 minecraft:sonic_boom
+damage @n[tag=sonic_boom_transmitter_target] 12 minecraft:sonic_boom
 tag @e[tag=sonic_boom_transmitter_target] remove sonic_boom_transmitter_target

@@ -1,0 +1,1 @@
+scoreboard objectives add astr.missile_launcher_time dummy
