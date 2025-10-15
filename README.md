@@ -1,4 +1,4 @@
-★模块★  
+## ★模块★  
 - 模块种类  
 =================战斗类模块=================  
 √ active_defence_system 主动防御模块  
@@ -20,7 +20,7 @@ mineral_detector 矿物检测模块
     └（字符串）type: 必为module，表示此物品为一个模块。
 ````
 
-★记分板标签★  
+## ★记分板标签★  
 `active_defence_system`：无人机装载主动防御模块时，即被赋予该标签。  
 `allowtrg`：不知道这个标签是什么意思。  
 `apshit`：在主动防御功能中用于防止重复击中。  
@@ -40,7 +40,7 @@ mineral_detector 矿物检测模块
 `sonic_boom_transmitter_target`：音波发射模块的目标实体。  
 `testing`：不知道这个标签是什么意思。  
 
-★翻译标识符（zh_cn）★  
+## ★翻译标识符（zh_cn）★  
 ```
 {
   "item.astrbot.active_defence_system": "主动防御系统",
