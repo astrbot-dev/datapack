@@ -1,15 +1,15 @@
 ## ★模块★  
 - 模块种类  
 =================战斗类模块=================  
-√ active_defence_system 主动防御模块  
-√ m242_bushmaster 链式机关枪模块  
-√ negative_effect_generator 负面效果产生模块  
-√ sonic_boom_transmitter 音波发射模块  
-√ missile_launcher 导弹发射模块  
+√ `active_defence_system` 主动防御模块  
+√ `m242_bushmaster` 链式机关枪模块  
+√ `negative_effect_generator` 负面效果产生模块  
+√ `sonic_boom_transmitter` 音波发射模块  
+√ `missile_launcher` 导弹发射模块  
 =================探索类模块=================  
 automatic_repairment 自我修复模块  
 external_backpack 外置背包模块  
-√ fall_prevention 摔落保护模块  
+√ `fall_prevention` 摔落保护模块  
 guidance 引路模块  
 mineral_detector 矿物检测模块  
 - 模块自定义数据  
@@ -60,3 +60,14 @@ mineral_detector 矿物检测模块
   "item.astrbot.sonic_boom_transmitter.lore": "让你的无人机像监守者那样发射音波"
 }
 ```
+
+## ★接口★
+### 模块启动方式  
+````
+execute as <无人机> at @s run function astrbot:module/<模块>/enable
+````
+可用模块参数见上文。
+### 模块关闭方式
+````
+execute as <无人机> at @s run function astrbot:module/<模块>/disable
+````
