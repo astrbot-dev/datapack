@@ -1,0 +1,1 @@
+schedule clear astrbot:module/negative_effect_generator/tick

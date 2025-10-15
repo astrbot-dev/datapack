@@ -1,0 +1,1 @@
+schedule clear astrbot:module/missile_launcher/tick

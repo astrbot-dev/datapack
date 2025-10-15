@@ -1,0 +1,12 @@
+execute if entity @e[type=arrow] at @e[tag=apshit] run particle item{item:{id:"minecraft:arrow"}} ^ ^ ^ 0 0 0 0.1 10
+execute if entity @e[type=spectral_arrow] at @e[tag=apshit] run particle item{item:{id:"minecraft:spectral_arrow"}} ^ ^ ^ 0 0 0 0.1 10
+execute if entity @e[type=firework_rocket] at @e[tag=apshit] run particle item{item:{id:"minecraft:firework_rocket"}} ^ ^ ^ 0 0 0 0.1 10
+execute if entity @e[type=snowball] at @e[tag=apshit] run particle item{item:{id:"minecraft:snowball"}} ^ ^ ^ 0 0 0 0.1 10
+execute if entity @e[type=fireball] at @e[tag=apshit] run particle item{item:{id:"minecraft:fire_charge"}} ^ ^ ^ 0 0 0 0.1 10
+execute if entity @e[type=small_fireball] at @e[tag=apshit] run particle item{item:{id:"minecraft:fire_charge"}} ^ ^ ^ 0 0 0 0.1 10
+execute if entity @e[type=egg] at @e[tag=apshit] run particle item{item:{id:"minecraft:egg"}} ^ ^ ^ 0 0 0 0.1 10
+execute if entity @e[type=trident] at @e[tag=apshit] run particle item{item:{id:"minecraft:trident"}} ^ ^ ^ 0 0 0 0.1 10
+execute if entity @e[type=dragon_fireball] at @e[tag=apshit] run particle dragon_breath ^ ^ ^ 0 0 0 0.1 10
+execute if entity @e[type=wither_skull] at @e[tag=apshit] run particle item{item:{id:"minecraft:wither_skeleton_skull"}} ^ ^ ^ 0 0 0 0.1 10
+execute if entity @e[type=wind_charge] at @e[tag=apshit] run particle item{item:{id:"minecraft:wind_charge"}} ^ ^ ^ 0 0 0 0.1 10
+execute if entity @e[type=breeze_wind_charge] at @e[tag=apshit] run particle item{item:{id:"minecraft:wind_charge"}} ^ ^ ^ 0 0 0 0.1 10

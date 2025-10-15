@@ -1,5 +1,13 @@
 {
     "values": [
-        "astrbot:createtable/load"
+        "astrbot:createtable/load",
+        "astrbot:config",
+        "astrbot:consts",
+        "astrbot:load",
+        "astrbot:module/active_defence_system/load",
+        "astrbot:module/fall_prevention/load",
+        "astrbot:module/m242_bushmaster/load",
+        "astrbot:module/missile_launcher/load",
+        "#load:_private/load"
     ]
 }

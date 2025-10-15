@@ -1,0 +1,44 @@
+{
+    "type": "block_column",
+    "config": {
+        "allowed_placement": {
+            "type": "true"
+        },
+        "direction": "up",
+        "layers": [
+            {
+                "height": {
+                    "type": "uniform",
+                    "max_inclusive": 6,
+                    "min_inclusive": 2
+                },
+                "provider": {
+                    "type": "weighted_state_provider",
+                    "entries": [
+                        {
+                            "data": {
+                                "Name": "blackstone"
+                            },
+                            "weight": 1
+                        },
+                        {
+                            "data": {
+                                "Name": "obsidian"
+                            },
+                            "weight":2
+                        },
+                        {
+                            "data": {"Name": "black_concrete_powder"},
+                            "weight":1
+                        },
+                        {
+                            "data": {"Name": "coal_block"},
+                            "weight":1
+                        }
+                    ]
+                }
+            }
+        ],
+        "prioritize_tip": true
+    }
+}
