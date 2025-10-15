@@ -4,6 +4,8 @@
     "astrbot:module/active_defence_system/load",
     "astrbot:module/fall_prevention/load",
     "astrbot:module/m242_bushmaster/load",
-    "#load:_private/load"
+    "#load:_private/load",
+    "astrbot:config",
+    "astrbot:consts"
   ]
 }

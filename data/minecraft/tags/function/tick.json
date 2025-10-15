@@ -1,5 +1,6 @@
 {
   "values": [
-    "astrbot:tick"
+    "astrbot:tick",
+    "astrbot:generate_monsters/tick"
   ]
 }
