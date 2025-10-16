@@ -1,0 +1,1 @@
+scoreboard objectives add astr.fall_prevention_cool_down dummy

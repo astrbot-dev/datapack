@@ -1,0 +1,7 @@
+{
+    "values": [
+        "astrbot:createtable/tick",
+        "astrbot:tick",
+        "astrbot:generate_monsters/tick"
+    ]
+}

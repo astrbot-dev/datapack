@@ -8,18 +8,28 @@
               "components": {
                 "minecraft:item_model": "minecraft:acacia_boat",
                 "minecraft:item_name": {
-                  "translate": "item.astrobot.negative_effect_generator"
+                  "translate": "item.astrbot.negative_effect_generator"
                 },
                 "minecraft:lore": [
                   {
                     "italic": false,
                     "color": "blue",
-                    "translate": "item.astrobot.module"
+                    "translate": "item.astrbot.module"
                   },
                   {
                     "italic": false,
-                    "color": "green",
-                    "translate": "item.astrobot.negative_effect_generator.lore"
+                    "color": "red",
+                    "translate": "item.astrbot.negative_effect_generator.lore"
+                  },
+                  {
+                    "italic": false,
+                    "color": "red",
+                    "translate": "item.astrbot.negative_effect_generator.lore1"
+                  },
+                  {
+                    "italic": false,
+                    "color": "red",
+                    "translate": "item.astrbot.negative_effect_generator.lore2"
                   }
                 ]
               },
@@ -28,8 +38,10 @@
             {
               "function": "minecraft:set_custom_data",
               "tag": {
-                "name": "astrobot:negative_effect_generator",
-                "type": "module"
+                "astrbot": {
+                  "name": "astrbot:negative_effect_generator",
+                  "type": "module"
+                }
               }
             }
           ],

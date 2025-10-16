@@ -1,0 +1,1 @@
+execute as @e[tag=allowtrg,distance=..32] at @s anchored eyes facing entity @e[tag=testing,limit=1] feet run function astrbot:module/m242_bushmaster/test/ray3

@@ -1,0 +1,11 @@
+{
+  "id": "bs.hitbox",
+  "pack": {
+    "pack_format": 81,
+    "description": "Bookshelf module for retrieving and checking the hitboxes of blocks and entities.",
+    "supported_formats": {
+      "min_inclusive": 80,
+      "max_inclusive": 81
+    }
+  }
+}
