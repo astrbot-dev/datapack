@@ -2,9 +2,9 @@ execute at @s positioned ~ ~-0.5 ~ run summon minecraft:item_display ^-0.5 ^ ^ {
 
 execute as @s at @s run tp @e[tag=prefire] @s
 execute as @s at @s run tp @e[tag=prefire] ~ ~ ~
-execute as @s run scoreboard players set @e[tag=prefire] astr.flying_time 20
+execute as @s run scoreboard players set @e[tag=prefire] astrbot.flying_time 20
 
-tag @e[tag=prefire,scores={astr.flying_time=0..}] remove prefire
+tag @e[tag=prefire,scores={astrbot.flying_time=0..}] remove prefire
 
 execute as @s at @s run summon marker ^ ^ ^1.2 {Tags:[marker]}
 
@@ -13,4 +13,4 @@ execute as @s run function astrbot:module/m242_bushmaster/lz2 with storage astrb
 kill @e[tag=marker] 
 
 execute as @s run tag @s remove fire
-execute as @s run scoreboard players remove @s astr.ammo 1
+execute as @s run scoreboard players remove @s astrbot.ammo 1

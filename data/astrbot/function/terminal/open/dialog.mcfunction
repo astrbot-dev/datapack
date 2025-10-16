@@ -1,0 +1,1 @@
+dialog show @s {actions:[{label:{translate:""}}],body:[{contents:[{translate:"dialog.astrbot.terminal.content"},"$(power)"],type:"minecraft:plain_message"}],title:{bold:true,color:"blue",translate:"item.astrbot.terminal"},type:"minecraft:multi_action"}

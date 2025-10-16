@@ -43,6 +43,7 @@ mineral_detector 矿物检测模块
 ## ★翻译标识符（zh_cn）★  
 ```
 {
+  "dialog.astrbot.terminal.content": "玩家电量：",
   "item.astrbot.active_defence_system": "主动防御系统",
   "item.astrbot.active_defence_system.lore": "拦截可能正在朝你飞过来的弹射物！",
   "item.astrbot.fall_prevention": "摔落保护",
@@ -57,7 +58,9 @@ mineral_detector 矿物检测模块
   "item.astrbot.negative_effect_generator.lore1": "袭击参与者施加10秒长的缓慢、虚弱效果，",
   "item.astrbot.negative_effect_generator.lore2": "冷却时间30秒",
   "item.astrbot.sonic_boom_transmitter": "音波发射器",
-  "item.astrbot.sonic_boom_transmitter.lore": "让你的无人机像监守者那样发射音波"
+  "item.astrbot.sonic_boom_transmitter.lore": "让你的无人机像监守者那样发射音波",
+  "item.astrbot.terminal": "终端",
+  "item.astrbot.terminal.lore": "按%s以使用"
 }
 ```
 
@@ -70,4 +73,26 @@ execute as <无人机> at @s run function astrbot:module/<模块>/enable
 ### 模块关闭方式
 ````
 execute as <无人机> at @s run function astrbot:module/<模块>/disable
+````
+
+## ★存储astrbot:player数据格式（用于终端）★
+````
+（复合标签）根标签
+  └（列表）astrbot：机器人数据，最多只能有三个元素。
+    └（复合标签）一个机器人。
+      └（列表）modules：机器人装载的模块信息。
+        └（布尔值）enabled：模块是否启用。
+        └（复合标签）module：模块的信息。和模块物品的custom_data.astrbot信息一致。
+          └（复合标签）astrbot
+            └（字符串）name: 此模块的命名空间ID。
+            └（字符串）type: 必为module，表示此物品为一个模块。
+        └（字节型）slot：槽位编号。从0开始。槽位编号决定了模块显示在机器人的哪个部位。
+      └（字节型）type：该机器人的底盘类型，可用值：0跟随/地面，1跟随/空中，2非跟随/中型，3非跟随/重型。
+      非跟随机器人额外标签：
+      └（整型）power：电量。
+      └（列表）Inventory：物品栏。
+      中型机器人额外标签
+      └（列表）home_pos：机器人活动范围的中心，必须由三个双精度浮点数组成。
+      └（双精度浮点数）home_radius：机器人活动范围的半径。
+  └（整型）power：玩家的电量。
 ````

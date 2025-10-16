@@ -1,3 +1,3 @@
-scoreboard objectives add astr.flying_time dummy
-scoreboard objectives add astr.ammo dummy
-scoreboard objectives add astr.collision dummy
+scoreboard objectives add astrbot.flying_time dummy
+scoreboard objectives add astrbot.ammo dummy
+scoreboard objectives add astrbot.collision dummy
