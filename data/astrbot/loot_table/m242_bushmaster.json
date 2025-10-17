@@ -30,7 +30,8 @@
               "tag": {
                 "astrbot": {
                   "name": "astrbot:m242_bushmaster",
-                  "type": "module"
+                  "type": "module",
+                  "module_id": 4
                 }
               }
             }

@@ -30,7 +30,8 @@
               "tag": {
                 "astrbot": {
                   "name": "astrbot:automatic_repairment",
-                  "type": "module"
+                  "type": "module",
+                  "module_id": 1
                 }
               }
             }

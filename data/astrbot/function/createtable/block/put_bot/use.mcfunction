@@ -10,3 +10,17 @@ execute on vehicle run scoreboard players operation curr_createtable astrbot.tem
 # slot
 execute store result score type astrbot.temp run data get entity @s item.components."minecraft:custom_data".astrbot.type
 function astrbot:createtable/block/put_bot/summon_slot
+
+data modify storage astrbot:temp modules set from entity @s item.components."minecraft:custom_data".astrbot.modules
+
+execute store result score slot astrbot.temp run data get storage astrbot:temp modules[0].slot
+execute as @e[distance=0..1, type=interaction, tag=astrbot.just, limit=4, tag=astrbot.createtable.slot.empty] if score @s astrbot.slot = slot astrbot.temp on passengers run function astrbot:createtable/block/put_bot/set_slot_model
+execute unless data storage astrbot:temp modules[0] run return 0
+execute store result score slot astrbot.temp run data get storage astrbot:temp modules[0].slot
+execute as @e[distance=0..1, type=interaction, tag=astrbot.just, limit=4, tag=astrbot.createtable.slot.empty] if score @s astrbot.slot = slot astrbot.temp on passengers run function astrbot:createtable/block/put_bot/set_slot_model
+execute unless data storage astrbot:temp modules[0] run return 0
+execute store result score slot astrbot.temp run data get storage astrbot:temp modules[0].slot
+execute as @e[distance=0..1, type=interaction, tag=astrbot.just, limit=4, tag=astrbot.createtable.slot.empty] if score @s astrbot.slot = slot astrbot.temp on passengers run function astrbot:createtable/block/put_bot/set_slot_model
+execute unless data storage astrbot:temp modules[0] run return 0
+execute store result score slot astrbot.temp run data get storage astrbot:temp modules[0].slot
+execute as @e[distance=0..1, type=interaction, tag=astrbot.just, limit=4, tag=astrbot.createtable.slot.empty] if score @s astrbot.slot = slot astrbot.temp on passengers run function astrbot:createtable/block/put_bot/set_slot_model
