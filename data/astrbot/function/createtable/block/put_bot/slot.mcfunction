@@ -1,3 +1,5 @@
+scoreboard players operation @s astrbot.createtable_id = curr_createtable astrbot.createtable_id
+
 data merge entity @s {height: 0.34, width: 0.34, response: true, Tags: ["astrbot.just", "astrbot.createtable.slot", "astrbot.createtable.slot.empty"]}
 scoreboard players operation @s astrbot.slot = temp astrbot.slot 
 scoreboard players add temp astrbot.slot 1

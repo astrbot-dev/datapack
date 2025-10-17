@@ -1,0 +1,28 @@
+{
+    "criteria": {
+        "qwq": {
+            "trigger": "player_interacted_with_entity",
+            "conditions": {
+                "entity": {
+                    "type": "interaction",
+                    "nbt": "{Tags:[astrbot.createtable.interaction]}"
+                },
+                "player": {
+                    "equipment": {
+                        "mainhand": {
+                            "predicates": {
+                                "custom_data": {
+                                    "id": "bot"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "requirements": [["qwq"]],
+    "rewards": {
+        "function": "astrbot:createtable/block/put_bot"
+    }
+}

@@ -1,4 +1,7 @@
+# README
+
 ## ★模块★  
+
 - 模块种类  
 =================战斗类模块=================  
 √ `active_defence_system` 主动防御模块  
@@ -13,14 +16,16 @@ external_backpack 外置背包模块
 guidance 引路模块  
 mineral_detector 矿物检测模块  
 - 模块自定义数据  
-````
+
+```txt
 （复合标签）minecraft:custom_data
   └（复合标签）astrbot
     └（字符串）name: 此模块的命名空间ID。
     └（字符串）type: 必为module，表示此物品为一个模块。
-````
+```
 
-## ★记分板标签★  
+## ★记分板标签★
+
 `active_defence_system`：无人机装载主动防御模块时，即被赋予该标签。  
 `allowtrg`：不知道这个标签是什么意思。  
 `apshit`：在主动防御功能中用于防止重复击中。  
@@ -41,7 +46,8 @@ mineral_detector 矿物检测模块
 `testing`：不知道这个标签是什么意思。  
 
 ## ★翻译标识符（zh_cn）★  
-```
+
+```json
 {
   "item.astrbot.active_defence_system": "主动防御系统",
   "item.astrbot.active_defence_system.lore": "拦截可能正在朝你飞过来的弹射物！",
@@ -62,12 +68,17 @@ mineral_detector 矿物检测模块
 ```
 
 ## ★接口★
+
 ### 模块启动方式  
-````
+
+```mcfunction
 execute as <无人机> at @s run function astrbot:module/<模块>/enable
-````
+```
+
 可用模块参数见上文。
+
 ### 模块关闭方式
-````
+
+```mcfunction
 execute as <无人机> at @s run function astrbot:module/<模块>/disable
-````
+```

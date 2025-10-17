@@ -1,0 +1,30 @@
+{
+    "pools": [
+        {
+            "entries": [
+                {
+                    "name": "minecraft:firework_star",
+                    "type": "minecraft:item",
+                    "functions": [
+                        {
+                            "function": "set_components",
+                            "components": {
+                                "max_stack_size": 1,
+                                "item_name": "测试机器人底座（轻型）",
+                                
+                                "custom_data": {
+                                    "id": "bot",
+                                    "astrbot": {
+                                        "type": 0,
+                                        "modules":[]
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                }
+            ],
+            "rolls": 1.0
+        }
+    ]
+}
