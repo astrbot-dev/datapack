@@ -1,0 +1,22 @@
+{
+    "pools": [
+        {
+            "rolls":1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "firework_star",
+                    "functions": [
+                        {
+                            "function": "set_components",
+                            "components": {
+                                "item_model": "acacia_boat",
+                                "custom_data": "{id:\"astrbot:bot\",astrbot:{type:0,modules:[]}}"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

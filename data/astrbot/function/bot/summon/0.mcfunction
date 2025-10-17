@@ -1,0 +1,1 @@
+tag @n[tag=astrbot_root_temp,distance=..5] add astrbot_ground
