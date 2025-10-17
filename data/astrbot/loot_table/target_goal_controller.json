@@ -1,0 +1,43 @@
+{
+  "pools": [
+    {
+      "entries": [
+        {
+          "functions": [
+            {
+              "components": {
+                "minecraft:item_model": "minecraft:acacia_boat",
+                "minecraft:item_name": {
+                  "translate": "item.astrobot.target_goal_controller"
+                },
+                "minecraft:lore": [
+                  {
+                    "italic": false,
+                    "color": "blue",
+                    "translate": "item.astrobot.module"
+                  },
+                  {
+                    "italic": false,
+                    "color": "green",
+                    "translate": "item.astrobot.target_goal_controller.lore"
+                  }
+                ]
+              },
+              "function": "minecraft:set_components"
+            },
+            {
+              "function": "minecraft:set_custom_data",
+              "tag": {
+                "name": "astrobot:target_goal_controller",
+                "type": "module"
+              }
+            }
+          ],
+          "name": "minecraft:recovery_compass",
+          "type": "minecraft:item"
+        }
+      ],
+      "rolls": 1.0
+    }
+  ]
+}

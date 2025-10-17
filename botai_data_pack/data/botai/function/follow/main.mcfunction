@@ -1,0 +1,1 @@
+execute as @e[tag=test] at @s run function botai:follow/main_

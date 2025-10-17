@@ -2,6 +2,8 @@
     "values": [
         "astrbot:createtable/tick",
         "astrbot:tick",
-        "astrbot:generate_monsters/tick"
+        "astrbot:generate_monsters/tick",
+        "astrbot:bot/tick",
+        "botai:__tick__"
     ]
 }

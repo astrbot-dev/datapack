@@ -1,0 +1,1 @@
+execute as @n[tag=botai.follower] run function botai:simple_follow/step

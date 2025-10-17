@@ -1,0 +1,42 @@
+{
+  "pools": [
+    {
+      "entries": [
+        {
+          "functions": [
+            {
+              "components": {
+                "minecraft:item_model": "astrbot:terminal",
+                "minecraft:item_name": {
+                  "translate": "item.astrbot.terminal"
+                },
+                "minecraft:lore": [
+                  {
+                    "italic": false,
+                    "color": "gray",
+                    "translate": "item.astrbot.terminal.lore",
+                    "with": [
+                      {
+                        "keybind": "key.use"
+                      }
+                    ]
+                  }
+                ]
+              },
+              "function": "minecraft:set_components"
+            },
+            {
+              "function": "minecraft:set_custom_data",
+              "tag": {
+                "type": "terminal"
+              }
+            }
+          ],
+          "name": "minecraft:carrot_on_a_stick",
+          "type": "minecraft:item"
+        }
+      ],
+      "rolls": 1.0
+    }  
+  ]
+}
