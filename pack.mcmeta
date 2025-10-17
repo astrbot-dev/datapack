@@ -5,6 +5,11 @@
         "directory": "bs",
         "max_format": [ 88, 0 ],
         "min_format": [ 88, 0 ]
+      },
+      {
+        "directory": "botai_data_pack",
+        "max_format": [ 88, 0 ],
+        "min_format": [ 88, 0 ]
       }
     ]
   },
