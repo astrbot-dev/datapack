@@ -12,7 +12,7 @@
                         "mainhand": {
                             "predicates": {
                                 "custom_data": {
-                                    "id": "bot"
+                                    "id": "astrbot:bot"
                                 }
                             }
                         }

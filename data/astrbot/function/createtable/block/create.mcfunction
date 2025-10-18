@@ -1,5 +1,4 @@
 advancement revoke @s only astrbot:createtable/confirm
-
 data modify storage astrbot:temp player set from entity @s UUID
 tag @s add astrbot.confirming_create
 
