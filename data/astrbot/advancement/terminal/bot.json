@@ -1,0 +1,18 @@
+{
+  "criteria": {
+    "click_on_bot": {
+      "conditions": {
+        "entity": {
+          "passenger": {
+            "nbt": "{item:{components:{'minecraft:custom_data':{id:'astrbot:bot'}}}}"
+          },
+          "type": "minecraft:interaction"
+        }
+      },
+      "trigger": "minecraft:player_interacted_with_entity"
+    }
+  },
+  "rewards": {
+    "function": "astrbot:terminal/follower/main"
+  }
+}

@@ -55,6 +55,8 @@ mineral_detector 矿物检测模块
   "dialog.astrbot.terminal.follower": "已部署 跟随型无人机%s号",
   "dialog.astrbot.terminal.module": "模块",
   "dialog.astrbot.terminal.title": "终端控制面板",
+  "gui.apply": "应用此修改",
+  "gui.unbinding": "解绑该无人机",
   "item.astrbot.active_defence_system": "主动防御系统",
   "item.astrbot.active_defence_system.lore": "拦截可能正在朝你飞过来的弹射物！",
   "item.astrbot.fall_prevention": "摔落保护",

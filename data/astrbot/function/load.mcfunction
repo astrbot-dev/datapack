@@ -16,5 +16,8 @@ scoreboard players enable @a astrbot.module_terminal
 #终端无人机部署触发器
 scoreboard objectives add astrbot.follower_terminal trigger
 scoreboard players enable @a astrbot.follower_terminal
+#终端无人机解绑触发器
+scoreboard objectives add astrbot.unbind trigger
+scoreboard players enable @a astrbot.unbind
 # ^^^ 函数内部的临时变量让用这个吗111
 scoreboard objectives add astr.func_var dummy
