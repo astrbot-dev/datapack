@@ -10,5 +10,11 @@ scoreboard objectives add astrbot.uid dummy
 scoreboard objectives add astrbot.right_click minecraft.used:minecraft.carrot_on_a_stick
 #这是玩家身上的电量：
 scoreboard objectives add astrbot.player_power dummy
+#终端模板触发器
+scoreboard objectives add astrbot.module_terminal trigger
+scoreboard players enable @a astrbot.module_terminal
+#终端无人机部署触发器
+scoreboard objectives add astrbot.follower_terminal trigger
+scoreboard players enable @a astrbot.follower_terminal
 # ^^^ 函数内部的临时变量让用这个吗111
 scoreboard objectives add astr.func_var dummy

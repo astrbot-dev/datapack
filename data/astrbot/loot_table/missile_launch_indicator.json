@@ -6,20 +6,15 @@
           "functions": [
             {
               "components": {
-                "minecraft:item_model": "astrbot:terminal",
+                "minecraft:item_model": "astrbot:missile_launch_indicator",
                 "minecraft:item_name": {
-                  "translate": "item.astrbot.terminal"
+                  "translate": "item.astrbot.missile_launch_indicator"
                 },
                 "minecraft:lore": [
                   {
                     "italic": false,
-                    "color": "gray",
-                    "translate": "item.astrbot.terminal.lore",
-                    "with": [
-                      {
-                        "keybind": "key.use"
-                      }
-                    ]
+                    "color": "green",
+                    "translate": "item.astrbot.missile_launch_indicator.lore"
                   }
                 ]
               },
@@ -28,7 +23,8 @@
             {
               "function": "minecraft:set_custom_data",
               "tag": {
-                "type": "terminal"
+                "id": "astrbot:missile_launch_indicator",
+                "mode": "lock"
               }
             }
           ],
