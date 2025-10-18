@@ -1,0 +1,1 @@
+scoreboard players add #astrbot_uid astrbot.var 1

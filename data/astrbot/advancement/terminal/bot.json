@@ -3,7 +3,7 @@
     "click_on_bot": {
       "conditions": {
         "entity": {
-          "passenger": {
+          "vehicle": {
             "nbt": "{item:{components:{'minecraft:custom_data':{id:'astrbot:bot'}}}}"
           },
           "type": "minecraft:interaction"
