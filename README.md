@@ -24,6 +24,12 @@ mineral_detector 矿物检测模块
     └（字符串）type: 必为module，表示此物品为一个模块。
 ```
 
+## ★底盘★
+底盘分为三种：地面跟随型、空中跟随型、非跟随型。  
+地面跟随型会自动跟随，具有标签：`astrbot_ground`
+空中跟随型具有标签：`astrbot_air`和`astrbot_follow`，当持有`astrbot_follow`标签时会跟随玩家，去除时则不会跟随。  
+非跟随型具有标签：`astrbot_heavy`会自动吸附周围空置的矿车或船，除此之外不会移动，无重力。
+
 ## ★记分板标签★
 
 `active_defence_system`：无人机装载主动防御模块时，即被赋予该标签。  

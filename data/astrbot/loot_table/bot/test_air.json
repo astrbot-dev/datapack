@@ -1,0 +1,24 @@
+{
+    "pools": [
+        {
+            "rolls":1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:firework_star",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_components",
+                            "components": {
+                                "item_name": "测试机器人底座（空中型）",
+                                "item_model": "minecraft:acacia_boat",
+                                "custom_data": "{id:\"astrbot:bot\",astrbot:{type:1,modules:[]}}",
+                                "max_stack_size": 1
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
