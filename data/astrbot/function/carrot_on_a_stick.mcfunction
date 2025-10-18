@@ -1,2 +1,3 @@
 scoreboard players reset @s astrbot.right_click
-execute if items entity @s weapon.mainhand carrot_on_a_stick[custom_data~{type:"terminal"}] run function astrbot:terminal/open/main
+execute if items entity @s weapon.mainhand carrot_on_a_stick[custom_data~{id:"astrbot:terminal",type:"follower"}] run function astrbot:terminal/open/main
+execute if items entity @s weapon.mainhand carrot_on_a_stick[custom_data~{id:"astrbot:missile_launch_indicator"}] run function astrbot:module/missile_launcher/trigger

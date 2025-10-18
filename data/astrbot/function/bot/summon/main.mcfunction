@@ -5,7 +5,7 @@
 data modify storage astrbot:temp summon set from entity @s SelectedItem
 
 #生成实体
-summon wolf ~ ~ ~ {Silent:1b,Tags:["astrbot_root","astrbot_root_temp"],attributes:[{id:"scale",base:0.2}],active_effects:[{id:"invisibility",duration:-1,show_particles:true}],DeathLootTable:"astrbot:empty"}
+summon wolf ~ ~ ~ {Silent:1b,Tags:["astrbot_root","astrbot_root_temp"],attributes:[{id:"scale",base:0.2}],active_effects:[{id:"invisibility",duration:-1,show_particles:false}],DeathLootTable:"astrbot:empty"}
 summon item_display ~ ~ ~ {Tags:["astrbot_display","astrbot_display_temp"]}
 summon minecraft:interaction ~ ~ ~ {Tags:["astrbot_interaction","astrbot_interaction_temp"]}
 

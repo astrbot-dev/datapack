@@ -4,6 +4,7 @@
         "astrbot:tick",
         "astrbot:generate_monsters/tick",
         "astrbot:bot/tick",
+        "astrbot:hud/tick",
         "botai:__tick__"
     ]
 }

@@ -19,7 +19,12 @@
                   {
                     "italic": false,
                     "color": "red",
-                    "translate": "item.astrbot.missile_launcher.lore"
+                    "translate": "item.astrbot.missile_launcher.lore",
+                    "with": [
+                      {
+                        "translate": "item.astrbot.missile_launch_indicator"
+                      }
+                    ]
                   }
                 ]
               },

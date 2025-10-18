@@ -24,6 +24,12 @@ mineral_detector 矿物检测模块
     └（字符串）type: 必为module，表示此物品为一个模块。
 ```
 
+## ★底盘★
+底盘分为三种：地面跟随型、空中跟随型、非跟随型。  
+地面跟随型会自动跟随，具有标签：`astrbot_ground`
+空中跟随型具有标签：`astrbot_air`和`astrbot_follow`，当持有`astrbot_follow`标签时会跟随玩家，去除时则不会跟随。  
+非跟随型具有标签：`astrbot_heavy`会自动吸附周围空置的矿车或船，除此之外不会移动，无重力。
+
 ## ★记分板标签★
 
 `active_defence_system`：无人机装载主动防御模块时，即被赋予该标签。  
@@ -50,14 +56,23 @@ mineral_detector 矿物检测模块
 ```json
 {
   "dialog.astrbot.terminal.content": "玩家电量：",
+  "dialog.astrbot.terminal.disable": "禁用",
+  "dialog.astrbot.terminal.enable": "启用",
+  "dialog.astrbot.terminal.follower": "已部署 跟随型无人机%s号",
+  "dialog.astrbot.terminal.module": "模块",
+  "dialog.astrbot.terminal.title": "终端控制面板",
+  "gui.apply": "应用此修改",
+  "gui.unbinding": "解绑该无人机",
   "item.astrbot.active_defence_system": "主动防御系统",
   "item.astrbot.active_defence_system.lore": "拦截可能正在朝你飞过来的弹射物！",
   "item.astrbot.fall_prevention": "摔落保护",
   "item.astrbot.fall_prevention.lore": "禁止高空抛物，冷却时间1分钟",
   "item.astrbot.m242_bushmaster": "M242链式炮",
   "item.astrbot.m242_bushmaster.lore": "这个模块可以发射炮弹！",
-  "item.astrbot.missile_launcher: "导弹发射器",
-  "item.astrbot.missile_launcher.lore": "指哪打哪",
+  "item.astrbot.missile_launch_indicator": "导弹发射指示器",
+  "item.astrbot.missile_launch_indicator.lore": "指哪打哪",
+  "item.astrbot.missile_launcher": "导弹发射器",
+  "item.astrbot.missile_launcher.lore": "需要配合%s使用",
   "item.astrbot.module": "无人机模块",
   "item.astrbot.negative_effect_generator": "负面效果产生器",
   "item.astrbot.negative_effect_generator.lore": "对周围20格以内的亡灵生物、节肢生物和",
