@@ -6,25 +6,25 @@
           "functions": [
             {
               "components": {
-                "minecraft:item_model": "minecraft:acacia_boat",
+                "minecraft:item_model": "astrbot:terminal",
                 "minecraft:item_name": {
-                  "translate": "item.astrbot.missile_launcher"
+                  "translate": "item.astrbot.terminal"
                 },
                 "minecraft:lore": [
                   {
                     "italic": false,
-                    "color": "blue",
-                    "translate": "item.astrbot.module"
+                    "color": "gray",
+                    "translate": "item.astrbot.terminal.lore",
+                    "with": [
+                      {
+                        "keybind": "key.use"
+                      }
+                    ]
                   },
                   {
                     "italic": false,
-                    "color": "red",
-                    "translate": "item.astrbot.missile_launcher.lore",
-                    "with": [
-                      {
-                        "translate": "item.astrbot.missile_launch_indicator"
-                      }
-                    ]
+                    "color": "green",
+                    "translate": "item.astrbot.terminal.lore.follower"
                   }
                 ]
               },
@@ -33,19 +33,16 @@
             {
               "function": "minecraft:set_custom_data",
               "tag": {
-                "astrbot": {
-                  "name": "astrbot:missile_launcher",
-                  "type": "module",
-                  "module_id": 6
-                }
+                "id": "astrbot:terminal",
+                "type": "follower"
               }
             }
           ],
-          "name": "minecraft:recovery_compass",
+          "name": "minecraft:carrot_on_a_stick",
           "type": "minecraft:item"
         }
       ],
       "rolls": 1.0
-    }
+    }  
   ]
 }
