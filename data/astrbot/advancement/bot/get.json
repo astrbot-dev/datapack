@@ -1,0 +1,21 @@
+{
+  "criteria": {
+    "get_bot": {
+      "conditions": {
+        "items": [
+          {
+            "components": {
+              "minecraft:custom_data": {
+                "id": "astrbot:bot"
+              }
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "rewards": {
+    "function": "astrbot:bot/uid/advancement"
+  }
+}
