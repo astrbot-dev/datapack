@@ -12,6 +12,7 @@ scoreboard objectives add astrbot.right_click minecraft.used:minecraft.carrot_on
 scoreboard objectives add astrbot.player_power dummy
 #终端模板触发器
 scoreboard objectives add astrbot.module_terminal trigger
+scoreboard players set @a astrbot.module_terminal -1
 scoreboard players enable @a astrbot.module_terminal
 #终端无人机部署触发器
 scoreboard objectives add astrbot.follower_terminal trigger

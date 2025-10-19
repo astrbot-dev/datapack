@@ -1,0 +1,1 @@
+$data modify storage astrbot:terminal player."$(UUID)".current_operation set from storage astrbot:terminal temp

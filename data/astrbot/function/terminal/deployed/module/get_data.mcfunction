@@ -1,0 +1,1 @@
+$data modify storage astrbot:terminal player."$(UUID)".operating_module set value 0b$(module)

@@ -13,6 +13,6 @@
     }
   },
   "rewards": {
-    "function": "astrbot:terminal/follower/main"
+    "function": "astrbot:terminal/deployed/main"
   }
 }

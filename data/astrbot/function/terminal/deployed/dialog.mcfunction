@@ -1,0 +1,1 @@
+$dialog show @s $(temp_dialog)
