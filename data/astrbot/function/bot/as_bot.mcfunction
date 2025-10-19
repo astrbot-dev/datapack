@@ -8,8 +8,11 @@ function astrbot:bot/rotate
 execute as @s[tag=astrbot_ground] run function astrbot:bot/model_0
 
 
-#飞行类跟随函数
-execute as @s[tag=astrbot_follow] run function astrbot:bot/follow
+#跟随函数
+execute as @s[tag=astrbot_air,tag=astrbot_follow] run function astrbot:bot/follow_air
+execute as @s[tag=astrbot_ground] run function astrbot:bot/follow_ground
+
+
 #跟随型机器人防止自动吸附上船
 execute as @s[tag=!astrbot_heavy] run ride @s dismount
 execute as @s[tag=astrbot_heavy] run function astrbot:bot/ride

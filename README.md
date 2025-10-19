@@ -26,8 +26,12 @@ mineral_detector 矿物检测模块
 
 ## ★底盘★
 底盘分为三种：地面跟随型、空中跟随型、非跟随型。  
-地面跟随型会自动跟随，具有标签：`astrbot_ground`
-空中跟随型具有标签：`astrbot_air`和`astrbot_follow`，当持有`astrbot_follow`标签时会跟随玩家，去除时则不会跟随。  
+地面跟随型会自动跟随，初始具有标签：`astrbot_ground`和`astrbot_follow`
+空中跟随型初始具有标签：`astrbot_air`和`astrbot_follow`
+
+`astrbot_follow`控制是否跟随。当持有`astrbot_follow`标签时会跟随玩家，去除时则不会跟随。 
+
+
 非跟随型具有标签：`astrbot_heavy`会自动吸附周围空置的矿车或船，除此之外不会移动，无重力。
 
 ## ★记分板标签★
