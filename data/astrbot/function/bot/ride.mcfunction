@@ -1,7 +1,6 @@
-#自动吸附
+#吸附后将非玩家乘客踢下去
 
-execute on vehicle run return fail
 
 tag @s add astrbot_ride_temp
-execute as @e[distance=..1,type=#astrbot:rideable] run function astrbot:bot/ride_
+execute on vehicle on passengers unless entity @s[type=player] unless entity @s[tag=astrbot_ride_temp] run ride @s dismount
 tag @s remove astrbot_ride_temp
