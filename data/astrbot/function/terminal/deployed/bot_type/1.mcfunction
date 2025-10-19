@@ -1,5 +1,5 @@
 #终端面板数据
-data modify storage astrbot:terminal temp_dialog set value {\
+data modify storage astrbot:terminal dialog set value {\
   actions:[\
     {\
       action:{\

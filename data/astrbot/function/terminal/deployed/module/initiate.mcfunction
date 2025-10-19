@@ -1,0 +1,5 @@
+#加上标签，这样后面就不用再遍历了：
+tag @s add astrbot_terminal_operating
+#如果uid匹配了，就对对应的槽位进行启禁用：
+execute store result score #temp2 astrbot.var run data get entity @s item.components."minecraft:custom_data".uid.id
+execute if score #temp1 astrbot.var = #temp2 astrbot.var run function astrbot:terminal/deployed/module/initiate_disable
