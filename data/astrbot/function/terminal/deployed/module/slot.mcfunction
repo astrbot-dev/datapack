@@ -1,0 +1,1 @@
+$execute store result entity @s item.components."minecraft:custom_data".astrbot.modules[{slot:$(slot)b}].enabled byte 1.0 run scoreboard players get #temp astrbot.var

@@ -9,7 +9,12 @@ scoreboard objectives add astrbot.uid dummy
 #胡萝卜钓竿通用变量
 scoreboard objectives add astrbot.right_click minecraft.used:minecraft.carrot_on_a_stick
 #这是玩家身上的电量：
+## 电量
 scoreboard objectives add astrbot.player_power dummy
+## 电量上限
+scoreboard objectives add astrbot.max_player_power dummy
+## 电量恢复速度
+scoreboard objectives add astrbot.player_power_regen dummy
 #终端模板触发器
 scoreboard objectives add astrbot.module_terminal trigger
 scoreboard players set @a astrbot.module_terminal -1
