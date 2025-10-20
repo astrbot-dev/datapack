@@ -1,4 +1,3 @@
-say 1
 #用于记录及计算坐标的一般变量
 scoreboard objectives add astrbot.x dummy
 scoreboard objectives add astrbot.y dummy

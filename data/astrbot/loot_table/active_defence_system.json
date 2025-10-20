@@ -6,7 +6,7 @@
           "functions": [
             {
               "components": {
-                "minecraft:item_model": "astrbot:active_defence_system",
+                "minecraft:item_model": "astrbot:module/active_defence_system",
                 "minecraft:item_name": {
                   "translate": "item.astrbot.active_defence_system"
                 },

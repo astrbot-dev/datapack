@@ -23,6 +23,9 @@ data modify storage astrbot:terminal dialog set value {\
   body:{\
     contents:[\
       "",\
+      {translate:"dialog.astrbot.astrbot_serial_number"},\
+      {color:"yellow",text:"0"},\
+      "\n\n",\
       {bold:true,translate:"dialog.astrbot.terminal.module"},\
       {bold:true,text:" 1  "},\
       {hover_event:{action:"show_item",id:"recovery_compass",components:{"minecraft:item_model":"minecraft:acacia_boat","minecraft:item_name": {"translate":"item.astrbot.active_defence_system"},"minecraft:lore":[{"italic":false,"color":"blue","translate":"item.astrbot.module"},{"italic":false,"color":"green","translate":"item.astrbot.active_defence_system.lore"}]}},object:"atlas",sprite:"item/acacia_boat"},\
