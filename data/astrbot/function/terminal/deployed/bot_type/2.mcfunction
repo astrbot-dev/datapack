@@ -28,19 +28,19 @@ data modify storage astrbot:terminal dialog set value {\
       "\n\n",\
       {bold:true,translate:"dialog.astrbot.terminal.module"},\
       {bold:true,text:" 1  "},\
-      {hover_event:{action:"show_item",id:"recovery_compass",components:{"minecraft:item_model":"minecraft:acacia_boat","minecraft:item_name": {"translate":"item.astrbot.active_defence_system"},"minecraft:lore":[{"italic":false,"color":"blue","translate":"item.astrbot.module"},{"italic":false,"color":"green","translate":"item.astrbot.active_defence_system.lore"}]}},object:"atlas",sprite:"item/acacia_boat"},\
+      {color:"green",hover_event:{action:"show_item",id:"recovery_compass",components:{"minecraft:item_model":"minecraft:acacia_boat","minecraft:item_name":{"translate":"item.astrbot.active_defence_system"},"minecraft:lore":[{"italic":false,"color":"blue","translate":"item.astrbot.module"},{"italic":false,"color":"green","translate":"item.astrbot.active_defence_system.lore"}]}},translate:"dialog.astrbot.see_module_info"},\
       "\n\n",\
       {bold:true,translate:"dialog.astrbot.terminal.module"},\
       {bold:true,text:" 2  "},\
-      {hover_event:{action:"show_item",id:"recovery_compass",components:{"minecraft:item_model":"minecraft:acacia_boat","minecraft:item_name": {"translate":"item.astrbot.active_defence_system"},"minecraft:lore":[{"italic":false,"color":"blue","translate":"item.astrbot.module"},{"italic":false,"color":"green","translate":"item.astrbot.active_defence_system.lore"}]}},object:"atlas",sprite:"item/acacia_boat"},\
+      {color:"green",hover_event:{action:"show_item",id:"recovery_compass",components:{"minecraft:item_model":"minecraft:acacia_boat","minecraft:item_name":{"translate":"item.astrbot.active_defence_system"},"minecraft:lore":[{"italic":false,"color":"blue","translate":"item.astrbot.module"},{"italic":false,"color":"green","translate":"item.astrbot.active_defence_system.lore"}]}},translate:"dialog.astrbot.see_module_info"},\
       "\n\n",\
       {bold:true,translate:"dialog.astrbot.terminal.module"},\
       {bold:true,text:" 3  "},\
-      {hover_event:{action:"show_item",id:"recovery_compass",components:{"minecraft:item_model":"minecraft:acacia_boat","minecraft:item_name": {"translate":"item.astrbot.active_defence_system"},"minecraft:lore":[{"italic":false,"color":"blue","translate":"item.astrbot.module"},{"italic":false,"color":"green","translate":"item.astrbot.active_defence_system.lore"}]}},object:"atlas",sprite:"item/acacia_boat"},\
+      {color:"green",hover_event:{action:"show_item",id:"recovery_compass",components:{"minecraft:item_model":"minecraft:acacia_boat","minecraft:item_name":{"translate":"item.astrbot.active_defence_system"},"minecraft:lore":[{"italic":false,"color":"blue","translate":"item.astrbot.module"},{"italic":false,"color":"green","translate":"item.astrbot.active_defence_system.lore"}]}},translate:"dialog.astrbot.see_module_info"},\
       "\n\n",\
       {bold:true,translate:"dialog.astrbot.terminal.module"},\
       {bold:true,text:" 4  "},\
-      {hover_event:{action:"show_item",id:"recovery_compass",components:{"minecraft:item_model":"minecraft:acacia_boat","minecraft:item_name": {"translate":"item.astrbot.active_defence_system"},"minecraft:lore":[{"italic":false,"color":"blue","translate":"item.astrbot.module"},{"italic":false,"color":"green","translate":"item.astrbot.active_defence_system.lore"}]}},object:"atlas",sprite:"item/acacia_boat"}\
+      {color:"green",hover_event:{action:"show_item",id:"recovery_compass",components:{"minecraft:item_model":"minecraft:acacia_boat","minecraft:item_name":{"translate":"item.astrbot.active_defence_system"},"minecraft:lore":[{"italic":false,"color":"blue","translate":"item.astrbot.module"},{"italic":false,"color":"green","translate":"item.astrbot.active_defence_system.lore"}]}},translate:"dialog.astrbot.see_module_info"},\
     ],\
     type:"plain_message",\
     width:300\
@@ -131,3 +131,8 @@ data modify storage astrbot:terminal dialog set value {\
   title:{translate:"dialog.astrbot.terminal.title"},\
   type:"minecraft:multi_action"\
 }
+#获取模块信息显示在对话框
+execute unless data entity @s item.components."minecraft:custom_data".astrbot.modules[{slot:0b}] run data modify storage astrbot:terminal dialog.body.contents[6].hover_event set value {action:"show_text",value:{color:"red",translate:"item.astrbot.no_module"}}
+execute unless data entity @s item.components."minecraft:custom_data".astrbot.modules[{slot:1b}] run data modify storage astrbot:terminal dialog.body.contents[10].hover_event set value {action:"show_text",value:{color:"red",translate:"item.astrbot.no_module"}}
+execute unless data entity @s item.components."minecraft:custom_data".astrbot.modules[{slot:2b}] run data modify storage astrbot:terminal dialog.body.contents[14].hover_event set value {action:"show_text",value:{color:"red",translate:"item.astrbot.no_module"}}
+execute unless data entity @s item.components."minecraft:custom_data".astrbot.modules[{slot:3b}] run data modify storage astrbot:terminal dialog.body.contents[18].hover_event set value {action:"show_text",value:{color:"red",translate:"item.astrbot.no_module"}}

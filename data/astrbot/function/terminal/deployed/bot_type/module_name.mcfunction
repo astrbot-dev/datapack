@@ -1,0 +1,1 @@
+$data modify storage astrbot:terminal temp2 set value "item.astrbot.$(temp1)"
