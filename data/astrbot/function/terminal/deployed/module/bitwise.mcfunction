@@ -1,3 +1,5 @@
+#执行者：玩家；执行位置：玩家所在位置
+
 #从低位到高位提取
 scoreboard players operation #temp astrbot.var = #bitwise_storage astrbot.var
 scoreboard players operation #temp astrbot.var %= 2 astr.consts

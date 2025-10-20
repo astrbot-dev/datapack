@@ -1,3 +1,5 @@
+#执行者：玩家；执行位置：玩家所在位置
+
 #这是玩家当前正在操作的无人机的uid：
 $data modify storage astrbot:terminal main.uid set from storage astrbot:terminal player."$(UUID)".current_operation
 #这是按位存储的数据，把伪二进制转换为真二进制：
@@ -10,4 +12,4 @@ execute as @e[type=item_display,tag=astrbot_display,distance=0..] run function a
 scoreboard players set #bit astrbot.var 0
 function astrbot:terminal/deployed/module/bitwise
 #把遍历无人机uid用到的标签去掉：
-tag @s remove astrbot_terminal_operating
+tag @e[type=item_display,tag=astrbot_display,tag=astrbot_terminal_operating,distance=0..] remove astrbot_terminal_operating

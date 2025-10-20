@@ -28,11 +28,11 @@ data modify storage astrbot:terminal dialog set value {\
       "\n\n",\
       {bold:true,translate:"dialog.astrbot.terminal.module"},\
       {bold:true,text:" 1  "},\
-      {color:"green",hover_event:{action:"show_item",id:"recovery_compass",components:{"minecraft:item_model":"minecraft:acacia_boat","minecraft:item_name":{"translate":"item.astrbot.active_defence_system"},"minecraft:lore":[{"italic":false,"color":"blue","translate":"item.astrbot.module"},{"italic":false,"color":"green","translate":"item.astrbot.active_defence_system.lore"}]}},translate:"dialog.astrbot.see_module_info"},\
+      {color:"green",hover_event:{action:"show_text",value:{color:"red",translate:"item.astrbot.no_module"}},translate:"dialog.astrbot.see_module_info"},\
       "\n\n",\
       {bold:true,translate:"dialog.astrbot.terminal.module"},\
       {bold:true,text:" 2  "},\
-      {color:"green",hover_event:{action:"show_item",id:"recovery_compass",components:{"minecraft:item_model":"minecraft:acacia_boat","minecraft:item_name":{"translate":"item.astrbot.active_defence_system"},"minecraft:lore":[{"italic":false,"color":"blue","translate":"item.astrbot.module"},{"italic":false,"color":"green","translate":"item.astrbot.active_defence_system.lore"}]}},translate:"dialog.astrbot.see_module_info"},\
+      {color:"green",hover_event:{action:"show_text",value:{color:"red",translate:"item.astrbot.no_module"}},translate:"dialog.astrbot.see_module_info"},\
     ],\
     type:"plain_message",\
     width:300\
@@ -84,3 +84,8 @@ data modify storage astrbot:terminal dialog set value {\
 #获取模块信息显示在对话框
 execute unless data entity @s item.components."minecraft:custom_data".astrbot.modules[{slot:0b}] run data modify storage astrbot:terminal dialog.body.contents[6].hover_event set value {action:"show_text",value:{color:"red",translate:"item.astrbot.no_module"}}
 execute unless data entity @s item.components."minecraft:custom_data".astrbot.modules[{slot:1b}] run data modify storage astrbot:terminal dialog.body.contents[10].hover_event set value {action:"show_text",value:{color:"red",translate:"item.astrbot.no_module"}}
+execute if data entity @s item.components."minecraft:custom_data".astrbot.modules[{slot:0b}].module run function astrbot:terminal/deployed/bot_type/slot/0
+execute if data entity @s item.components."minecraft:custom_data".astrbot.modules[{slot:1b}].module run function astrbot:terminal/deployed/bot_type/slot/1
+#各槽位当前禁用情况
+execute if data entity @s item.components."minecraft:custom_data".astrbot.modules[{slot:0b,enabled:false}] run data remove storage astrbot:terminal dialog.inputs[0].options[1].initial
+execute if data entity @s item.components."minecraft:custom_data".astrbot.modules[{slot:1b,enabled:false}] run data remove storage astrbot:terminal dialog.inputs[1].options[1].initial
