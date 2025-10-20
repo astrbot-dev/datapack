@@ -5,7 +5,7 @@
             "conditions": {
                 "entity": {
                     "type": "interaction",
-                    "nbt": "{Tags:[\"astrbot.createtable.button.interaction\"]}"
+                    "nbt": "{Tags:[\"astrbot.createtable.interaction.has_bot\"]}"
                 }
             }
         }

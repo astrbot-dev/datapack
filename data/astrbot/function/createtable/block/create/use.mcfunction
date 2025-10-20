@@ -15,4 +15,4 @@ scoreboard players operation curr_id astrbot.temp = @s astrbot.createtable_id
 execute as @n[distance=0..2, tag=astrbot.createtable.bot.model] if score @s astrbot.createtable_id = curr_id astrbot.temp run function astrbot:createtable/block/create/create_bot
 
 # enable interaction to put new bot
-execute as @n[tag=astrbot.createtable.interaction, distance=0..1, type=interaction] if score @s astrbot.createtable_id = curr_id astrbot.temp run data merge entity @s {height: 0.41, width: 1.01}
+execute as @n[tag=astrbot.createtable.interaction, distance=0..1, type=interaction] if score @s astrbot.createtable_id = curr_id astrbot.temp run function astrbot:createtable/block/create/enable_interaction
