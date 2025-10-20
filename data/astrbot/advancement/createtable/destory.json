@@ -23,9 +23,24 @@
                     }
                 }
             }
+        },
+        "owo": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "entity": {
+                    "type": "interaction",
+                    "nbt": "{Tags:[\"astrbot.createtable.interaction\"]}"
+                },
+                "player": {
+                    "type_specific": {
+                        "type": "player",
+                        "gamemode": ["creative"]
+                    }
+                }
+            }
         }
     },
-    "requirements": [["qwq"]],
+    "requirements": [["qwq", "owo"]],
     "rewards": {
         "function": "astrbot:createtable/block/destroy"
     }
