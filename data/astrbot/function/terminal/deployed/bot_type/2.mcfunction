@@ -103,12 +103,12 @@ data modify storage astrbot:terminal dialog set value {\
       type:"minecraft:single_option"\
     },\
     {\
-      key:"3",\
+      key:"4",\
       label:[\
         {\
           translate:"dialog.astrbot.terminal.module"\
         },\
-        " 3"\
+        " 4"\
       ],\
       options:[\
         {\

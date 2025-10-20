@@ -4,10 +4,8 @@
       "conditions": {
         "items": [
           {
-            "components": {
-              "minecraft:custom_data": {
-                "id": "astrbot:bot"
-              }
+            "predicates": {
+              "minecraft:custom_data": "{id:'astrbot:bot'}"
             }
           }
         ]
