@@ -1,0 +1,1 @@
+$execute on vehicle at @s run function astrbot:module/$(module)/enable

@@ -1,4 +1,5 @@
 ##这个记分项获取的是模块启禁用数据
+#执行者：玩家；执行位置：玩家所在位置
 
 #原始的“二进制”数据
 execute store result storage astrbot:terminal main.module_bit int 1.0 run scoreboard players get @s astrbot.module_terminal

@@ -55,40 +55,6 @@ mineral_detector 矿物检测模块
 `sonic_boom_transmitter_target`：音波发射模块的目标实体。  
 `testing`：不知道这个标签是什么意思。  
 
-## ★翻译标识符（zh_cn）★  
-
-```json
-{
-  "dialog.astrbot.terminal.content": "玩家电量：",
-  "dialog.astrbot.terminal.disable": "禁用",
-  "dialog.astrbot.terminal.enable": "启用",
-  "dialog.astrbot.terminal.follower": "已部署 跟随型无人机%s号",
-  "dialog.astrbot.terminal.module": "模块",
-  "dialog.astrbot.terminal.title": "终端控制面板",
-  "gui.apply": "应用此修改",
-  "gui.unbinding": "解绑该无人机",
-  "item.astrbot.active_defence_system": "主动防御系统",
-  "item.astrbot.active_defence_system.lore": "拦截可能正在朝你飞过来的弹射物！",
-  "item.astrbot.fall_prevention": "摔落保护",
-  "item.astrbot.fall_prevention.lore": "禁止高空抛物，冷却时间1分钟",
-  "item.astrbot.m242_bushmaster": "M242链式炮",
-  "item.astrbot.m242_bushmaster.lore": "这个模块可以发射炮弹！",
-  "item.astrbot.missile_launch_indicator": "导弹发射指示器",
-  "item.astrbot.missile_launch_indicator.lore": "指哪打哪",
-  "item.astrbot.missile_launcher": "导弹发射器",
-  "item.astrbot.missile_launcher.lore": "需要配合%s使用",
-  "item.astrbot.module": "无人机模块",
-  "item.astrbot.negative_effect_generator": "负面效果产生器",
-  "item.astrbot.negative_effect_generator.lore": "对周围20格以内的亡灵生物、节肢生物和",
-  "item.astrbot.negative_effect_generator.lore1": "袭击参与者施加10秒长的缓慢、虚弱效果，",
-  "item.astrbot.negative_effect_generator.lore2": "冷却时间30秒",
-  "item.astrbot.sonic_boom_transmitter": "音波发射器",
-  "item.astrbot.sonic_boom_transmitter.lore": "让你的无人机像监守者那样发射音波",
-  "item.astrbot.terminal": "终端",
-  "item.astrbot.terminal.lore": "按%s以使用"
-}
-```
-
 ## ★接口★
 
 ### 模块启动方式  
