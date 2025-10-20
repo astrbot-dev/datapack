@@ -1,0 +1,32 @@
+{
+    "criteria": {
+        "qwq": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "entity": {
+                    "type": "interaction",
+                    "nbt": "{Tags:[\"astrbot.createtable.interaction\"]}"
+                },
+                "player": {
+                    "equipment": {
+                        "mainhand": {
+                            "items": [
+                                "wooden_pickaxe",
+                                "stone_pickaxe",
+                                "copper_pickaxe",
+                                "iron_pickaxe",
+                                "golden_pickaxe",
+                                "diamond_pickaxe",
+                                "netherite_pickaxe"
+                            ]
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "requirements": [["qwq"]],
+    "rewards": {
+        "function": "astrbot:createtable/block/destroy"
+    }
+}

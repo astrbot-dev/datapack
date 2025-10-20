@@ -6,11 +6,9 @@ execute if entity @s[x_rotation=135..180] run tp @s ~ ~ ~ -180 ~
 execute if entity @s[x_rotation=-180..-135] run tp @s ~ ~ ~ -180 ~
 execute if entity @s[x_rotation=-135..-45] run tp @s ~ ~ ~ 90 ~
 
-summon interaction ~ ~0.2 ~ {height: 0.41, width: 1.01, Tags: ["astrbot.createtable.interaction", "astrbot.just"]}
+summon interaction ~ ~-0.1875 ~ {height: 0.6975, width: 1.01, Tags: ["astrbot.createtable.interaction", "astrbot.just"], response:true}
 
 execute at @s run function astrbot:createtable/block/put/model
-
-ride @n[tag=astrbot.createtable.bot.model, tag=astrbot.just, distance=0..1] mount @n[tag=astrbot.createtable.interaction, tag=astrbot.just, distance=0..1, type=interaction]
 
 # set id
 scoreboard players add static_id astrbot.createtable_id 1

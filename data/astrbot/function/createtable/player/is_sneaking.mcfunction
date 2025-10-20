@@ -1,0 +1,2 @@
+execute as @e[tag=astrbot.createtable.interaction, type=interaction, distance=0..7, tag=astrbot.createtable.interaction.has_bot] run data merge entity @s {height: 0.6975, width: 1.01}
+tag @s add astrbot.is_sneaking

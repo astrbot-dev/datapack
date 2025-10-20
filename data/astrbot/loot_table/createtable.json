@@ -11,6 +11,7 @@
                             "components": {
                                 "max_stack_size": 1,
                                 "item_name": "装配台",
+                                "item_model": "astrbot:createtable/platform",
                                 "entity_data": {
                                     "id": "item_frame",
                                     "Tags": ["astrbot.createtable"],
