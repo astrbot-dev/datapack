@@ -2,6 +2,7 @@
     "values": [
         "astrbot:createtable/tick",
         "astrbot:tick",
-        "astrbot:bot/tick"
+        "astrbot:bot/tick",
+        "custom_hud:tick"
     ]
 }

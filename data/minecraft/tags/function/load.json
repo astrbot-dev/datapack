@@ -10,6 +10,7 @@
         "astrbot:module/missile_launcher/load",
         "astrbot:bot/load",
         "#load:_private/load",
-        "botai:__load__"
+        "botai:__load__",
+        "custom_hud:load"
     ]
 }
