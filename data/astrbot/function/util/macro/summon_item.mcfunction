@@ -1,1 +1,1 @@
-$summon item ~ ~ ~ {Item:$(item), Motion:[0.0,0.2,0.0]}
+$summon item ~ ~ ~ {Item:$(item), Motion:[0.0,0.18,0.0]}

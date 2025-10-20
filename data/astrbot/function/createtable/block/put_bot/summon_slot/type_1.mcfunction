@@ -1,2 +1,2 @@
 execute positioned ^ ^0.6 ^-0.05 summon interaction run function astrbot:createtable/block/put_bot/slot
-execute positioned ^ ^0.4 ^0.2 summon interaction run function astrbot:createtable/block/put_bot/slot
+execute positioned ^ ^0.4 ^0.3 summon interaction run function astrbot:createtable/block/put_bot/slot
