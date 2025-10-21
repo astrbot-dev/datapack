@@ -6,7 +6,7 @@ execute if entity @s[x_rotation=135..180] run tp @s ~ ~ ~ -180 ~
 execute if entity @s[x_rotation=-180..-135] run tp @s ~ ~ ~ -180 ~
 execute if entity @s[x_rotation=-135..-45] run tp @s ~ ~ ~ 90 ~
 
-summon interaction ~ ~-0.1875 ~ {height: 0.6975, width: 1.01, Tags: ["astrbot.createtable.interaction", "astrbot.just"], response:true}
+summon interaction ~ ~-0.1875 ~ {height: 0.7075, width: 1.05, Tags: ["astrbot.createtable.interaction", "astrbot.just"], response:true}
 
 execute at @s run function astrbot:createtable/block/put/model
 
