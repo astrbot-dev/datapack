@@ -1,5 +1,8 @@
 #context: interaction(astrbot.createtable.slot)
 
+#one bot can only install one attack module. If a slot install an attack module, the another attack module will be disabled
+execute if entity @s[tag=astrbot.createtable.slot.disable] run return 0
+
 execute on passengers run tag @s add astrbot.temp
 tag @s add astrbot.temp
 #if the slot is empty and player's mainhand is empty, take item out

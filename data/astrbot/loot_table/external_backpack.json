@@ -31,7 +31,8 @@
                 "astrbot": {
                   "name": "astrbot:external_backpack",
                   "type": "module",
-                  "module_id": 2
+                  "module_id": 2,
+                  "module_type": 1
                 }
               }
             }

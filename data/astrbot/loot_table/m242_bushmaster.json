@@ -31,7 +31,8 @@
                 "astrbot": {
                   "name": "astrbot:m242_bushmaster",
                   "type": "module",
-                  "module_id": 4
+                  "module_id": 4,
+                  "module_type": 0
                 }
               }
             }

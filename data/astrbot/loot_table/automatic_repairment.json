@@ -31,7 +31,8 @@
                 "astrbot": {
                   "name": "astrbot:automatic_repairment",
                   "type": "module",
-                  "module_id": 1
+                  "module_id": 1,
+                  "module_type": 1
                 }
               }
             }

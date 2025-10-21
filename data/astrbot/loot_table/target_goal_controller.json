@@ -29,7 +29,8 @@
               "function": "minecraft:set_custom_data",
               "tag": {
                 "name": "astrobot:target_goal_controller",
-                "type": "module"
+                "type": "module",
+                "module_type": 0
               }
             }
           ],

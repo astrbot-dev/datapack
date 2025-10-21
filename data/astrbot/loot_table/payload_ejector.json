@@ -30,7 +30,8 @@
               "tag": {
                 "name": "astrobot:payload_ejector",
                 "type": "module",
-                  "module_id": 8
+                "module_id": 8,
+                "module_type": 0
               }
             }
           ],

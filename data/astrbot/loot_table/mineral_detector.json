@@ -31,7 +31,8 @@
                 "astrbot": {
                   "name": "astrbot:mineral_detector",
                   "type": "module",
-                  "module_id": 5
+                  "module_id": 5,
+                  "module_type": 1
                 }
               }
             }

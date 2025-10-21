@@ -1,0 +1,1 @@
+tag @s add astrbot.createtable.slot.explore

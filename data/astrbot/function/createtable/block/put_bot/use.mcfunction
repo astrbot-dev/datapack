@@ -14,6 +14,6 @@ execute store result score type astrbot.temp run data get entity @n[tag=astrbot.
 function astrbot:createtable/block/put_bot/summon_slot
 
 # set slot model
-execute as @e[distance=0..1, type=interaction, tag=astrbot.just, limit=4, tag=astrbot.createtable.slot.empty] run function astrbot:createtable/block/put_bot/summon_slot/set_model
+execute as @e[distance=0..1, type=interaction, tag=astrbot.just, limit=4, tag=astrbot.createtable.slot] run function astrbot:createtable/block/put_bot/summon_slot/set_model
 
 item replace entity @p[tag=astrbot.putting_bot, distance=0..7] weapon.mainhand with air
