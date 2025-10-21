@@ -1,5 +1,4 @@
 
-# placeholder model
-execute positioned ^-0.3 ^0.4 ^0.14 summon interaction run function astrbot:createtable/block/put_bot/slot
-execute positioned ^ ^0.6 ^-0.05 summon interaction run function astrbot:createtable/block/put_bot/slot
-execute positioned ^0.3 ^0.4 ^0.14 summon interaction run function astrbot:createtable/block/put_bot/slot
+execute positioned ^-0.3 ^0.4 ^0.14 summon interaction if function astrbot:createtable/block/put_bot/slot if function astrbot:createtable/block/put_bot/summon_slot/set_as_explore_slot run function astrbot:util/nothing
+execute positioned ^ ^0.6 ^-0.05 summon interaction if function astrbot:createtable/block/put_bot/slot if function astrbot:createtable/block/put_bot/summon_slot/set_as_attack_slot run function astrbot:util/nothing
+execute positioned ^0.3 ^0.4 ^0.14 summon interaction if function astrbot:createtable/block/put_bot/slot if function astrbot:createtable/block/put_bot/summon_slot/set_as_explore_slot run function astrbot:util/nothing

@@ -32,7 +32,8 @@
                 "astrbot": {
                   "name": "astrbot:fall_prevention",
                   "type": "module",
-                  "module_id": 3
+                  "module_id": 3,
+                  "module_type": 1
                 }
               }
             }

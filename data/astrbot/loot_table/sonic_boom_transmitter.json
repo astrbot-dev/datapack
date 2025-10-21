@@ -32,7 +32,8 @@
                 "astrbot": {
                   "name": "astrbot:sonic_boom_transmitter",
                   "type": "module",
-                  "module_id": 9
+                  "module_id": 9,
+                  "module_type": 0
                 }
               }
             }

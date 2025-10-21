@@ -37,7 +37,8 @@
                 "astrbot": {
                   "name": "astrbot:missile_launcher",
                   "type": "module",
-                  "module_id": 6
+                  "module_id": 6,
+                  "module_type": 2
                 }
               }
             }
