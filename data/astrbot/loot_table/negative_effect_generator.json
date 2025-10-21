@@ -31,7 +31,8 @@
                     "color": "green",
                     "translate": "item.astrbot.negative_effect_generator.lore2"
                   }
-                ]
+                ],
+                "minecraft:max_stack_size": 1
               },
               "function": "minecraft:set_components"
             },

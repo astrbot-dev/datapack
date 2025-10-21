@@ -16,6 +16,13 @@ data modify storage astrbot:terminal dialog set value {\
       label:{translate:"gui.unbinding"}\
     },\
     {\
+      action:{\
+        command:"trigger astrbot.follow set 1",\
+        type:"minecraft:run_command"\
+      },\
+      label:{translate:"gui.unfollow"}\
+    },\
+    {\
       label:{translate:"gui.back"}\
     }\
   ],\
@@ -117,3 +124,5 @@ execute if data entity @s item.components."minecraft:custom_data".astrbot.module
 execute if data entity @s item.components."minecraft:custom_data".astrbot.modules[{slot:0b,enabled:false}] run data remove storage astrbot:terminal dialog.inputs[0].options[1].initial
 execute if data entity @s item.components."minecraft:custom_data".astrbot.modules[{slot:1b,enabled:false}] run data remove storage astrbot:terminal dialog.inputs[1].options[1].initial
 execute if data entity @s item.components."minecraft:custom_data".astrbot.modules[{slot:2b,enabled:false}] run data remove storage astrbot:terminal dialog.inputs[2].options[1].initial
+#跟随按钮
+execute on vehicle unless entity @s[tag=astrbot_follow] run data modify storage astrbot:terminal dialog.actions[2].label.translate set value "gui.follow"
