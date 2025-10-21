@@ -4,5 +4,6 @@
 
 data modify entity @s item.components."minecraft:custom_model_data".strings set value ["empty","empty","empty","empty"]
 
-function lay:macro/list/init {func:"astrbot:bot/modules_model/unit",list:"entity @s item.components.\"minecraft:custom_data\".astrbot.modules"}
+function astrbot:bot/update_modules_model/walk_modules
 
+# tellraw @a {nbt:'item.components."minecraft:custom_model_data".strings', entity:"@s"}
