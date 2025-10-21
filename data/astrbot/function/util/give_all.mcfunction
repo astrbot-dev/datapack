@@ -1,0 +1,11 @@
+loot give @s loot astrbot:active_defence_system
+loot give @s loot astrbot:bot/test
+loot give @s loot astrbot:bot/test_air
+loot give @s loot astrbot:bot/test_heavy
+loot give @s loot astrbot:createtable
+loot give @s loot astrbot:fall_prevention
+loot give @s loot astrbot:m242_bushmaster
+loot give @s loot astrbot:mending_servicer
+loot give @s loot astrbot:missile_launcher
+loot give @s loot astrbot:negative_effect_generator
+loot give @s loot astrbot:sonic_boom_transmitter
