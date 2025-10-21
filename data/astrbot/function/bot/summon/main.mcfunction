@@ -29,3 +29,6 @@ tag @e[tag=astrbot_root_temp,distance=..5] remove astrbot_root_temp
 tag @e[tag=astrbot_display_temp,distance=..5] remove astrbot_display_temp
 tag @e[tag=astrbot_interaction_temp,distance=..5] remove astrbot_interaction_temp
 tag @e[tag=astrbot_interaction_2_temp,distance=..5] remove astrbot_interaction_2_temp
+
+#移除玩家手上的物品
+execute unless entity @s[gamemode=creative] run item replace entity @s weapon.mainhand with air

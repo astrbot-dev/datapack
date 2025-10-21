@@ -21,7 +21,8 @@
                     "color": "green",
                     "translate": "item.astrbot.fall_prevention.lore"
                   }
-                ]
+                ],
+                "minecraft:max_stack_size": 1
               },
               "function": "minecraft:set_components"
             },
