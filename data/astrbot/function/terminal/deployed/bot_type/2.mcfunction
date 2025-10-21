@@ -135,19 +135,19 @@ data modify storage astrbot:terminal dialog set value {\
   type:"minecraft:multi_action"\
 }
 #获取模块信息显示在对话框
-execute unless data entity @s item.components."minecraft:custom_data".astrbot.modules[{slot:0b}] run data modify storage astrbot:terminal dialog.body.contents[9].hover_event set value {action:"show_text",value:{color:"red",translate:"dialog.astrbot.no_module"}}
-execute unless data entity @s item.components."minecraft:custom_data".astrbot.modules[{slot:1b}] run data modify storage astrbot:terminal dialog.body.contents[13].hover_event set value {action:"show_text",value:{color:"red",translate:"dialog.astrbot.no_module"}}
-execute unless data entity @s item.components."minecraft:custom_data".astrbot.modules[{slot:2b}] run data modify storage astrbot:terminal dialog.body.contents[17].hover_event set value {action:"show_text",value:{color:"red",translate:"dialog.astrbot.no_module"}}
-execute unless data entity @s item.components."minecraft:custom_data".astrbot.modules[{slot:3b}] run data modify storage astrbot:terminal dialog.body.contents[21].hover_event set value {action:"show_text",value:{color:"red",translate:"dialog.astrbot.no_module"}}
-execute if data entity @s item.components."minecraft:custom_data".astrbot.modules[{slot:0b}].module run function astrbot:terminal/deployed/bot_type/slot/0
-execute if data entity @s item.components."minecraft:custom_data".astrbot.modules[{slot:1b}].module run function astrbot:terminal/deployed/bot_type/slot/1
-execute if data entity @s item.components."minecraft:custom_data".astrbot.modules[{slot:2b}].module run function astrbot:terminal/deployed/bot_type/slot/2
-execute if data entity @s item.components."minecraft:custom_data".astrbot.modules[{slot:3b}].module run function astrbot:terminal/deployed/bot_type/slot/3
+execute unless data entity @s item.components."minecraft:custom_data".astrbot.modules[{slot:0}] run data modify storage astrbot:terminal dialog.body.contents[9].hover_event set value {action:"show_text",value:{color:"red",translate:"dialog.astrbot.no_module"}}
+execute unless data entity @s item.components."minecraft:custom_data".astrbot.modules[{slot:1}] run data modify storage astrbot:terminal dialog.body.contents[13].hover_event set value {action:"show_text",value:{color:"red",translate:"dialog.astrbot.no_module"}}
+execute unless data entity @s item.components."minecraft:custom_data".astrbot.modules[{slot:2}] run data modify storage astrbot:terminal dialog.body.contents[17].hover_event set value {action:"show_text",value:{color:"red",translate:"dialog.astrbot.no_module"}}
+execute unless data entity @s item.components."minecraft:custom_data".astrbot.modules[{slot:3}] run data modify storage astrbot:terminal dialog.body.contents[21].hover_event set value {action:"show_text",value:{color:"red",translate:"dialog.astrbot.no_module"}}
+execute if data entity @s item.components."minecraft:custom_data".astrbot.modules[{slot:0}].module run function astrbot:terminal/deployed/bot_type/slot/0
+execute if data entity @s item.components."minecraft:custom_data".astrbot.modules[{slot:1}].module run function astrbot:terminal/deployed/bot_type/slot/1
+execute if data entity @s item.components."minecraft:custom_data".astrbot.modules[{slot:2}].module run function astrbot:terminal/deployed/bot_type/slot/2
+execute if data entity @s item.components."minecraft:custom_data".astrbot.modules[{slot:3}].module run function astrbot:terminal/deployed/bot_type/slot/3
 #各槽位当前禁用情况
-execute if data entity @s item.components."minecraft:custom_data".astrbot.modules[{slot:0b,enabled:false}] run data remove storage astrbot:terminal dialog.inputs[0].options[1].initial
-execute if data entity @s item.components."minecraft:custom_data".astrbot.modules[{slot:1b,enabled:false}] run data remove storage astrbot:terminal dialog.inputs[1].options[1].initial
-execute if data entity @s item.components."minecraft:custom_data".astrbot.modules[{slot:2b,enabled:false}] run data remove storage astrbot:terminal dialog.inputs[2].options[1].initial
-execute if data entity @s item.components."minecraft:custom_data".astrbot.modules[{slot:3b,enabled:false}] run data remove storage astrbot:terminal dialog.inputs[3].options[1].initial
+execute if data entity @s item.components."minecraft:custom_data".astrbot.modules[{slot:0,enabled:false}] run data remove storage astrbot:terminal dialog.inputs[0].options[1].initial
+execute if data entity @s item.components."minecraft:custom_data".astrbot.modules[{slot:1,enabled:false}] run data remove storage astrbot:terminal dialog.inputs[1].options[1].initial
+execute if data entity @s item.components."minecraft:custom_data".astrbot.modules[{slot:2,enabled:false}] run data remove storage astrbot:terminal dialog.inputs[2].options[1].initial
+execute if data entity @s item.components."minecraft:custom_data".astrbot.modules[{slot:3,enabled:false}] run data remove storage astrbot:terminal dialog.inputs[3].options[1].initial
 #电量
 execute on passengers on target store result storage astrbot:terminal temp3 int 1.0 run scoreboard players get @s astrbot.player_power
 data modify storage astrbot:terminal dialog.body.contents[5].text set string storage astrbot:terminal temp3
