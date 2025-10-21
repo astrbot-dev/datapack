@@ -1,0 +1,1 @@
+tag @s remove astr.module.mending.enable

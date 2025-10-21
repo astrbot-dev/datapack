@@ -6,7 +6,7 @@ data modify storage astrbot:temp summon set from entity @s SelectedItem
 
 #生成实体
 summon wolf ~ ~ ~ {Silent:1b,Tags:["astrbot_root","astrbot_root_temp"],attributes:[{id:"scale",base:0.2}],active_effects:[{id:"invisibility",duration:-1,show_particles:false}],DeathLootTable:"astrbot:empty"}
-summon item_display ~ ~ ~ {Tags:["astrbot_display","astrbot_display_temp"],item_display:"fixed"}
+summon item_display ~ ~ ~ {Tags:["astrbot_display","astrbot_display_temp"],item_display:"fixed",teleport_duration:1}
 summon minecraft:interaction ~ ~ ~ {Tags:["astrbot_interaction","astrbot_interaction_temp"]}
 summon minecraft:interaction ~ ~ ~ {Tags:["astrbot_interaction_2","astrbot_interaction_2_temp"]}
 
@@ -17,6 +17,7 @@ ride @n[tag=astrbot_interaction_2_temp,distance=..5] mount @n[tag=astrbot_displa
 #设置标签
 data modify entity @n[tag=astrbot_display_temp,distance=..5] item set from storage astrbot:temp summon
 data modify entity @n[tag=astrbot_root_temp,distance=..5] Owner set from entity @s UUID
+data modify entity @n[tag=astrbot_display_temp,distance=..5] data.Owner set from entity @s UUID
 
 
 #根据分类修改标签

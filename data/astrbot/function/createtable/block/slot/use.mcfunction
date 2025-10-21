@@ -1,7 +1,7 @@
 #context: interaction(astrbot.createtable.slot)
 
 #one bot can only install one attack module. If a slot install an attack module, the another attack module will be disabled
-execute if entity @s[tag=astrbot.createtable.slot.disable] run return 0
+execute if entity @s[tag=astrbot.createtable.slot.disable] if function astrbot:createtable/player/guide/slot_disable run return 0
 
 scoreboard players operation curr_createtable astrbot.temp = @s astrbot.createtable_id
 

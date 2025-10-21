@@ -1,4 +1,4 @@
 data modify storage astrbot:terminal temp1 set string entity @s item.components."minecraft:custom_data".astrbot.modules[{slot:3}].module.name 8
 function astrbot:terminal/deployed/bot_type/module_name with storage astrbot:terminal
-data modify storage astrbot:terminal dialog.body.contents[18].hover_event.value.color set value "white"
-data modify storage astrbot:terminal dialog.body.contents[18].hover_event.value.translate set from storage astrbot:terminal temp2
+data modify storage astrbot:terminal dialog.body.contents[21].hover_event.value.color set value "white"
+data modify storage astrbot:terminal dialog.body.contents[21].hover_event.value.translate set from storage astrbot:terminal temp2

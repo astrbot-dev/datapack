@@ -6,4 +6,4 @@ data modify entity @s item.components."minecraft:custom_model_data".strings set 
 
 function astrbot:bot/update_modules_model/walk_modules
 
-# tellraw @a {nbt:'item.components."minecraft:custom_model_data".strings', entity:"@s"}
+ tellraw @a {nbt:'item.components."minecraft:custom_model_data".strings', entity:"@s"}

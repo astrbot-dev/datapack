@@ -14,3 +14,5 @@ data modify entity @n[tag=astrbot_root_temp,distance=..5] data.offset set value 
 execute store result entity @n[tag=astrbot_root_temp,distance=..5] data.offset.x float 0.01 run random value -400..400
 execute store result entity @n[tag=astrbot_root_temp,distance=..5] data.offset.z float 0.01 run random value -400..400
 execute store result entity @n[tag=astrbot_root_temp,distance=..5] data.offset.y float 0.01 run random value 250..450
+
+data modify entity @n[tag=astrbot_root_temp,distance=..5] CustomName set value {"translate":"entity.astrbot.bot_air"}

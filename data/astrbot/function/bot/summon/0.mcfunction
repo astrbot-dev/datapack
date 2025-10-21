@@ -8,3 +8,5 @@ data modify entity @n[tag=astrbot_interaction_2_temp] width set value 1.5
 data modify entity @n[tag=astrbot_interaction_2_temp] height set value 1.25
 
 scoreboard players add @s astrbot.bot_count 1
+
+data modify entity @n[tag=astrbot_root_temp,distance=..5] CustomName set value {"translate":"entity.astrbot.bot_ground"}
