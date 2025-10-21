@@ -11,6 +11,7 @@
         "astrbot:bot/load",
         "#load:_private/load",
         "botai:__load__",
-        "custom_hud:load"
+        "custom_hud:load",
+        "lay:macro/load"
     ]
 }

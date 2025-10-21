@@ -2,7 +2,8 @@
 
 execute on owner run tag @s add astrbot_owner_temp
 
+#随机化速度等参数
 execute if entity @n[distance=6..,tag=astrbot_owner_temp] run scoreboard players set @s botai.vel 2800
-execute positioned as @n[tag=astrbot_owner_temp,distance=..6] positioned ~ ~3 ~ run function botai:simple_follow/step
-execute positioned as @n[tag=astrbot_owner_temp,distance=6..] positioned ~ ~2 ~ run function botai:simple_follow/step
+function astrbot:bot/follow_air_ with entity @s data.offset
+
 

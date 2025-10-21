@@ -6,31 +6,39 @@
           "functions": [
             {
               "components": {
-                "minecraft:item_model": "minecraft:acacia_boat",
+                "minecraft:item_model": "astrbot:module/mending_servicer",
                 "minecraft:item_name": {
-                  "translate": "item.astrobot.target_goal_controller"
+                  "translate": "item.astrbot.mending_servicer"
                 },
                 "minecraft:lore": [
                   {
                     "italic": false,
                     "color": "blue",
-                    "translate": "item.astrobot.module"
+                    "translate": "item.astrbot.module"
                   },
                   {
                     "italic": false,
-                    "color": "green",
-                    "translate": "item.astrobot.target_goal_controller.lore"
+                    "color": "red",
+                    "translate": "item.astrbot.mending_servicer.lore",
+                    "with": [
+                      {
+                        "translate": "item.astrbot.missile_launch_indicator"
+                      }
+                    ]
                   }
-                ]
+                ],
+                "minecraft:max_stack_size": 1
               },
               "function": "minecraft:set_components"
             },
             {
               "function": "minecraft:set_custom_data",
               "tag": {
-                "name": "astrobot:target_goal_controller",
-                "type": "module",
-                "module_type": 0
+                "astrbot": {
+                  "name": "astrbot:mending_servicer",
+                  "type": "module",
+                  "module_id": 13
+                }
               }
             }
           ],

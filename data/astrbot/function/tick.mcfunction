@@ -7,6 +7,7 @@
 ##触发器
   #无人机模块启禁用
   execute as @a at @s unless score @s astrbot.module_terminal matches -2147483648..-1 run function astrbot:trigger/module_terminal
-
-  execute as @a at @s if score @s astrbot.follower_terminal matches 1.. run function astrbot:trigger/follower_terminal
+  #解绑
   execute as @a at @s if score @s astrbot.unbind matches 1.. run function astrbot:trigger/unbind
+  #取消跟随
+  execute as @a at @s if score @s astrbot.follow matches 1.. run function astrbot:trigger/follow

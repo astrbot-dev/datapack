@@ -26,21 +26,24 @@ data modify storage astrbot:terminal dialog set value {\
       {translate:"dialog.astrbot.astrbot_serial_number"},\
       {color:"yellow",text:"0"},\
       "\n\n",\
+      {translate:"dialog.astrbot.power"},\
+      {color:"blue",text:"0"},\
+      "\n\n",\
       {bold:true,translate:"dialog.astrbot.terminal.module"},\
       {bold:true,text:" 1  "},\
-      {color:"green",hover_event:{action:"show_text",value:{color:"red",translate:"item.astrbot.no_module"}},translate:"dialog.astrbot.see_module_info"},\
+      {color:"green",hover_event:{action:"show_text",value:{color:"red",translate:"dialog.astrbot.no_module"}},translate:"dialog.astrbot.see_module_info"},\
       "\n\n",\
       {bold:true,translate:"dialog.astrbot.terminal.module"},\
       {bold:true,text:" 2  "},\
-      {color:"green",hover_event:{action:"show_text",value:{color:"red",translate:"item.astrbot.no_module"}},translate:"dialog.astrbot.see_module_info"},\
+      {color:"green",hover_event:{action:"show_text",value:{color:"red",translate:"dialog.astrbot.no_module"}},translate:"dialog.astrbot.see_module_info"},\
       "\n\n",\
       {bold:true,translate:"dialog.astrbot.terminal.module"},\
       {bold:true,text:" 3  "},\
-      {color:"green",hover_event:{action:"show_text",value:{color:"red",translate:"item.astrbot.no_module"}},translate:"dialog.astrbot.see_module_info"},\
+      {color:"green",hover_event:{action:"show_text",value:{color:"red",translate:"dialog.astrbot.no_module"}},translate:"dialog.astrbot.see_module_info"},\
       "\n\n",\
       {bold:true,translate:"dialog.astrbot.terminal.module"},\
       {bold:true,text:" 4  "},\
-      {color:"green",hover_event:{action:"show_text",value:{color:"red",translate:"item.astrbot.no_module"}},translate:"dialog.astrbot.see_module_info"},\
+      {color:"green",hover_event:{action:"show_text",value:{color:"red",translate:"dialog.astrbot.no_module"}},translate:"dialog.astrbot.see_module_info"},\
     ],\
     type:"plain_message",\
     width:300\
@@ -132,10 +135,10 @@ data modify storage astrbot:terminal dialog set value {\
   type:"minecraft:multi_action"\
 }
 #获取模块信息显示在对话框
-execute unless data entity @s item.components."minecraft:custom_data".astrbot.modules[{slot:0b}] run data modify storage astrbot:terminal dialog.body.contents[6].hover_event set value {action:"show_text",value:{color:"red",translate:"item.astrbot.no_module"}}
-execute unless data entity @s item.components."minecraft:custom_data".astrbot.modules[{slot:1b}] run data modify storage astrbot:terminal dialog.body.contents[10].hover_event set value {action:"show_text",value:{color:"red",translate:"item.astrbot.no_module"}}
-execute unless data entity @s item.components."minecraft:custom_data".astrbot.modules[{slot:2b}] run data modify storage astrbot:terminal dialog.body.contents[14].hover_event set value {action:"show_text",value:{color:"red",translate:"item.astrbot.no_module"}}
-execute unless data entity @s item.components."minecraft:custom_data".astrbot.modules[{slot:3b}] run data modify storage astrbot:terminal dialog.body.contents[18].hover_event set value {action:"show_text",value:{color:"red",translate:"item.astrbot.no_module"}}
+execute unless data entity @s item.components."minecraft:custom_data".astrbot.modules[{slot:0b}] run data modify storage astrbot:terminal dialog.body.contents[9].hover_event set value {action:"show_text",value:{color:"red",translate:"dialog.astrbot.no_module"}}
+execute unless data entity @s item.components."minecraft:custom_data".astrbot.modules[{slot:1b}] run data modify storage astrbot:terminal dialog.body.contents[13].hover_event set value {action:"show_text",value:{color:"red",translate:"dialog.astrbot.no_module"}}
+execute unless data entity @s item.components."minecraft:custom_data".astrbot.modules[{slot:2b}] run data modify storage astrbot:terminal dialog.body.contents[17].hover_event set value {action:"show_text",value:{color:"red",translate:"dialog.astrbot.no_module"}}
+execute unless data entity @s item.components."minecraft:custom_data".astrbot.modules[{slot:3b}] run data modify storage astrbot:terminal dialog.body.contents[21].hover_event set value {action:"show_text",value:{color:"red",translate:"dialog.astrbot.no_module"}}
 execute if data entity @s item.components."minecraft:custom_data".astrbot.modules[{slot:0b}].module run function astrbot:terminal/deployed/bot_type/slot/0
 execute if data entity @s item.components."minecraft:custom_data".astrbot.modules[{slot:1b}].module run function astrbot:terminal/deployed/bot_type/slot/1
 execute if data entity @s item.components."minecraft:custom_data".astrbot.modules[{slot:2b}].module run function astrbot:terminal/deployed/bot_type/slot/2
@@ -145,3 +148,6 @@ execute if data entity @s item.components."minecraft:custom_data".astrbot.module
 execute if data entity @s item.components."minecraft:custom_data".astrbot.modules[{slot:1b,enabled:false}] run data remove storage astrbot:terminal dialog.inputs[1].options[1].initial
 execute if data entity @s item.components."minecraft:custom_data".astrbot.modules[{slot:2b,enabled:false}] run data remove storage astrbot:terminal dialog.inputs[2].options[1].initial
 execute if data entity @s item.components."minecraft:custom_data".astrbot.modules[{slot:3b,enabled:false}] run data remove storage astrbot:terminal dialog.inputs[3].options[1].initial
+#电量
+execute on passengers on target store result storage astrbot:terminal temp3 int 1.0 run scoreboard players get @s astrbot.player_power
+data modify storage astrbot:terminal dialog.body.contents[5].text set string storage astrbot:terminal temp3

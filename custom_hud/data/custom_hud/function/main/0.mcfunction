@@ -1,5 +1,7 @@
 # 列表填充
 function #custom_hud:list
+# 原actionbar
+function custom_hud:actionbar/add with entity @s
 # HUD刷新
 function custom_hud:main/refresh with storage custom_hud:io
 # 重置

@@ -15,6 +15,14 @@
                                 "custom_model_data":{
                                     "flags": [false]
                                 },
+                                "consumable":{
+                                    "animation": "crossbow",
+                                    "consume_seconds": 10000,
+                                    "has_consume_particles": false,
+                                    "sound": {
+                                        "sound_id": "none"
+                                    }
+                                },
                                 "custom_data": "{id:\"astrbot:bot\",astrbot:{type:0,modules:[]}}",
                                 "max_stack_size": 1
                             }
