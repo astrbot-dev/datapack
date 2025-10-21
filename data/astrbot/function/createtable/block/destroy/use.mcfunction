@@ -10,7 +10,8 @@ execute as @e[tag=astrbot.createtable.bot.model, distance=0..2] \
     if data entity @s item \
     run function astrbot:createtable/block/destroy/item_out
 
-execute as @e[tag=astrbot.createtable.model, distance=0..2] \
+execute if score is_creative_destroying astrbot.temp matches 0 \
+    as @e[tag=astrbot.createtable.model, distance=0..2] \
     if score @s astrbot.createtable_id = will_distory astrbot.temp \
     if data entity @s item \
     run function astrbot:createtable/block/destroy/item_out
