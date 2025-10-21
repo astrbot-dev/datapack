@@ -9,6 +9,6 @@ execute as @e[tag=astrbot.createtable.bot.model, distance=0..2] \
     run function astrbot:createtable/block/destroy/item_out
 execute as @e[distance=0..2] if score @s astrbot.createtable_id = will_distory astrbot.temp run kill @s
 
-particle item{item: "end_portal_frame"} ~ ~ ~ 0.25 0.25 0.25 0.1 75 normal
+particle item{item: {id: "item_frame", components:{"item_model": "astrbot:createtable/platform"}}} ~ ~ ~ 0.3 0.3 0.3 0.075 75 normal
 
 setblock ~ ~ ~ air
