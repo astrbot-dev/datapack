@@ -6,7 +6,7 @@
           "functions": [
             {
               "components": {
-                "minecraft:item_model": "minecraft:acacia_boat",
+                "minecraft:item_model": "astrbot:module/fall_prevention",
                 "minecraft:item_name": {
                   "translate": "item.astrbot.fall_prevention"
                 },
