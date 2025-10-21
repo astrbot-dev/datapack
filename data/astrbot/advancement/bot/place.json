@@ -1,0 +1,26 @@
+{
+    "criteria": {
+        "1": {
+            "trigger": "using_item",
+            "conditions": {
+                "item": {
+                    "predicates": {
+                        "custom_data": "{id:\"astrbot:bot\"}"
+                    }
+                },
+                "player": {
+                    "equipment": {
+                        "mainhand": {
+                            "predicates": {
+                                "custom_data": "{id:\"astrbot:bot\"}"
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "astrbot:bot/place/using"
+    }
+}

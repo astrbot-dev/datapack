@@ -12,6 +12,14 @@
                             "components": {
                                 "item_name": "测试机器人底座（重型）",
                                 "item_model": "astrbot:bot/heavy",
+                                "consumable":{
+                                    "animation": "crossbow",
+                                    "consume_seconds": 10000,
+                                    "has_consume_particles": false,
+                                    "sound": {
+                                        "sound_id": "none"
+                                    }
+                                },
                                 "custom_data": "{id:\"astrbot:bot\",astrbot:{type:2,modules:[]}}",
                                 "max_stack_size": 1
                             }
