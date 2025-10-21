@@ -1,4 +1,4 @@
-# context: item
+# context: player
 
 # if the slot is not empty
 execute as @n[tag=astrbot.temp, distance=0..1, type=interaction] if entity @s[tag=!astrbot.createtable.slot.empty] run function astrbot:createtable/block/slot/item_out
