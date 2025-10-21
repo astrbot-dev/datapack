@@ -4,7 +4,7 @@
 execute \
     if items entity @s weapon.mainhand *[custom_data~{astrbot:{module_type:2b}}] \
     as @e[tag=astrbot.createtable.bot.model, distance=0..1, type=item_display] if score @s astrbot.createtable_id = curr_createtable astrbot.temp \
-    unless items entity @s contents *[custom_data~{astrbot:{type:2b}}] \
+    unless items entity @s contents *[custom_data~{astrbot:{type:2}}] \
     if function astrbot:createtable/player/guide/heavy_bot_only \
     run return 0
 
