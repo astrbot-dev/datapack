@@ -6,7 +6,7 @@
           "functions": [
             {
               "components": {
-                "minecraft:item_model": "minecraft:acacia_boat",
+                "minecraft:item_model": "astrbot:module/sonic_boom_transmitter",
                 "minecraft:item_name": {
                   "translate": "item.astrbot.sonic_boom_transmitter"
                 },
@@ -18,7 +18,7 @@
                   },
                   {
                     "italic": false,
-                    "color": "red",
+                    "color": "green",
                     "translate": "item.astrbot.sonic_boom_transmitter.lore"
                   }
                 ]
