@@ -1,0 +1,1 @@
+$data modify storage custom_hud:io player."$(UUID)" set from storage custom_hud:io temp
