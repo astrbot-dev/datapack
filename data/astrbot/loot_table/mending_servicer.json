@@ -1,0 +1,52 @@
+{
+  "pools": [
+    {
+      "entries": [
+        {
+          "functions": [
+            {
+              "components": {
+                "minecraft:item_model": "astrbot:module/mending_servicer",
+                "minecraft:item_name": {
+                  "translate": "item.astrbot.mending_servicer"
+                },
+                "minecraft:lore": [
+                  {
+                    "italic": false,
+                    "color": "blue",
+                    "translate": "item.astrbot.module"
+                  },
+                  {
+                    "italic": false,
+                    "color": "red",
+                    "translate": "item.astrbot.mending_servicer.lore",
+                    "with": [
+                      {
+                        "translate": "item.astrbot.missile_launch_indicator"
+                      }
+                    ]
+                  }
+                ],
+                "minecraft:max_stack_size": 1
+              },
+              "function": "minecraft:set_components"
+            },
+            {
+              "function": "minecraft:set_custom_data",
+              "tag": {
+                "astrbot": {
+                  "name": "astrbot:mending_servicer",
+                  "type": "module",
+                  "module_id": 13
+                }
+              }
+            }
+          ],
+          "name": "minecraft:recovery_compass",
+          "type": "minecraft:item"
+        }
+      ],
+      "rolls": 1.0
+    }
+  ]
+}
