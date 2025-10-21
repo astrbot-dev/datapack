@@ -1,6 +1,6 @@
 advancement revoke @s only astrbot:createtable/insert_model
 
-execute unless items entity @s weapon.mainhand *[custom_data~{astrbot:{type:"module"}}] run return 0
+execute if items entity @s weapon.mainhand * unless items entity @s weapon.mainhand *[custom_data~{astrbot:{type:"module"}}] run return 0
 
 data modify storage astrbot:temp player set from entity @s UUID
 tag @s add astrbot.inserting_model

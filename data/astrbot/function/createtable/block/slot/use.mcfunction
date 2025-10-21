@@ -1,3 +1,5 @@
+#context: interaction(astrbot.createtable.slot)
+
 execute on passengers run tag @s add astrbot.temp
 tag @s add astrbot.temp
 #if the slot is empty and player's mainhand is empty, take item out
