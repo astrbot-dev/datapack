@@ -1,1 +1,0 @@
-scoreboard objectives add follow_temp dummy
