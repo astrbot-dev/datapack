@@ -15,6 +15,22 @@
                                     "predicate_type": "always_true"
                                 },
                                 "input_predicate": {
+                                    "predicate_type": "block_match",
+                                    "block": "chest"
+                                },
+                                "output_state": {
+                                    "Name": "chest"
+                                },
+                                "block_entity_modifier": {
+                                    "type": "append_loot",
+                                    "loot_table":"astrbot:chests/airship_loot"
+                                }
+                            },
+                            {
+                                "location_predicate": {
+                                    "predicate_type": "always_true"
+                                },
+                                "input_predicate": {
                                     "predicate_type": "random_block_match",
                                     "block": "white_concrete",
                                     "probability": 0.5

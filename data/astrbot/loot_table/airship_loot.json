@@ -1,0 +1,69 @@
+{
+    "type": "chest",
+    "pools": [
+        {
+            "rolls": {
+              "type": "uniform",
+              "max": 10,
+              "min": 3  
+            },
+            "entries": [
+                {
+                    "type": "loot_table",
+                    "value": "astrbot:bot/test",
+                    "weight": 3
+                },
+                {
+                    "type": "loot_table",
+                    "value": "astrbot:bot/test_air",
+                    "weight": 1
+                },
+                {
+                    "type": "loot_table",
+                    "value": "astrbot:bot/test_heavy",
+                    "weight": 1
+                },
+                {
+                    "type": "loot_table",
+                    "value": "astrbot:active_defence_system",
+                    "weight": 1
+                },
+                {
+                    "type": "loot_table",
+                    "value": "astrbot:createtable",
+                    "weight": 1
+                },
+                {
+                    "type": "loot_table",
+                    "value": "astrbot:fall_prevention",
+                    "weight": 1
+                },
+                {
+                    "type": "loot_table",
+                    "value": "astrbot:m242_bushmaster",
+                    "weight": 1
+                },
+                {
+                    "type": "loot_table",
+                    "value": "astrbot:missile_launch_indicator",
+                    "weight": 1
+                },
+                {
+                    "type": "loot_table",
+                    "value": "astrbot:missile_launcher",
+                    "weight": 1
+                },
+                {
+                    "type": "loot_table",
+                    "value": "astrbot:negative_effect_generator",
+                    "weight": 1
+                },
+                {
+                    "type": "loot_table",
+                    "value": "astrbot:sonic_boom_transmitter",
+                    "weight": 1
+                }
+            ]
+        }
+    ]
+}

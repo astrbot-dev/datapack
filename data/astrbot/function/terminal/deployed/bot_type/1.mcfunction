@@ -92,13 +92,13 @@ data modify storage astrbot:terminal dialog set value {\
   type:"minecraft:multi_action"\
 }
 #获取模块信息显示在对话框
-execute unless data entity @s item.components."minecraft:custom_data".astrbot.modules[{slot:0b}] run data modify storage astrbot:terminal dialog.body.contents[9].hover_event set value {action:"show_text",value:{color:"red",translate:"dialog.astrbot.no_module"}}
-execute unless data entity @s item.components."minecraft:custom_data".astrbot.modules[{slot:1b}] run data modify storage astrbot:terminal dialog.body.contents[13].hover_event set value {action:"show_text",value:{color:"red",translate:"dialog.astrbot.no_module"}}
-execute if data entity @s item.components."minecraft:custom_data".astrbot.modules[{slot:0b}].module run function astrbot:terminal/deployed/bot_type/slot/0
-execute if data entity @s item.components."minecraft:custom_data".astrbot.modules[{slot:1b}].module run function astrbot:terminal/deployed/bot_type/slot/1
+execute unless data entity @s item.components."minecraft:custom_data".astrbot.modules[{slot:0}] run data modify storage astrbot:terminal dialog.body.contents[9].hover_event set value {action:"show_text",value:{color:"red",translate:"dialog.astrbot.no_module"}}
+execute unless data entity @s item.components."minecraft:custom_data".astrbot.modules[{slot:1}] run data modify storage astrbot:terminal dialog.body.contents[13].hover_event set value {action:"show_text",value:{color:"red",translate:"dialog.astrbot.no_module"}}
+execute if data entity @s item.components."minecraft:custom_data".astrbot.modules[{slot:0}].module run function astrbot:terminal/deployed/bot_type/slot/0
+execute if data entity @s item.components."minecraft:custom_data".astrbot.modules[{slot:1}].module run function astrbot:terminal/deployed/bot_type/slot/1
 #各槽位当前禁用情况
-execute if data entity @s item.components."minecraft:custom_data".astrbot.modules[{slot:0b,enabled:false}] run data remove storage astrbot:terminal dialog.inputs[0].options[1].initial
-execute if data entity @s item.components."minecraft:custom_data".astrbot.modules[{slot:1b,enabled:false}] run data remove storage astrbot:terminal dialog.inputs[1].options[1].initial
+execute if data entity @s item.components."minecraft:custom_data".astrbot.modules[{slot:0,enabled:false}] run data remove storage astrbot:terminal dialog.inputs[0].options[1].initial
+execute if data entity @s item.components."minecraft:custom_data".astrbot.modules[{slot:1,enabled:false}] run data remove storage astrbot:terminal dialog.inputs[1].options[1].initial
 #跟随按钮
 execute on vehicle unless entity @s[tag=astrbot_follow] run data modify storage astrbot:terminal dialog.actions[2].label.translate set value "gui.follow"
 #电量
