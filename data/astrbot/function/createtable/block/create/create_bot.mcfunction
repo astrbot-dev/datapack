@@ -1,5 +1,6 @@
 #context item_display(bot.model)
 
+data remove storage astrbot:temp createtable
 data modify storage astrbot:temp createtable.item set from entity @s item
 
 # remove bot model from createtable

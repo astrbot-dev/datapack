@@ -2,7 +2,9 @@
 
 scoreboard players operation @s astrbot.createtable_id = curr_createtable astrbot.temp
 
-data merge entity @s {height: 0.3, width: 0.3, response: true, Tags: ["astrbot.createtable.slot", "astrbot.createtable.slot.empty", "astrbot.just"]}
+data merge entity @s {height: 0.3, width: 0.3, response: true, Tags: ["astrbot.createtable.slot", "astrbot.just"]}
+scoreboard players operation @s astrbot.slot_status = EMPTY astrbot.slot_status
+scoreboard players operation @s astrbot.slot_available_status = AVAILABLE astrbot.slot_available_status
 scoreboard players operation @s astrbot.slot = temp astrbot.slot 
 scoreboard players add temp astrbot.slot 1
 summon item_display ~ ~ ~ {view_range: 0, Tags: ["astrbot.just.model", "astrbot.just"]}

@@ -8,8 +8,22 @@ execute \
     if function astrbot:createtable/player/guide/heavy_bot_only \
     run return 0
 
-# if the slot is not empty
-execute as @n[tag=astrbot.temp, distance=0..1, type=interaction] if entity @s[tag=!astrbot.createtable.slot.empty] run function astrbot:createtable/block/slot/item_out
+execute \
+    unless items entity @s weapon.mainhand *[custom_data~{astrbot:{module_type:1b}}] \
+    as @n[tag=astrbot.temp, distance=0..1, type=interaction] \
+    unless score @s astrbot.slot_available_status = AVAILABLE astrbot.slot_available_status \
+    if function astrbot:createtable/player/guide/slot_disable \
+    run return 0
+
+execute \
+    unless items entity @s weapon.mainhand *[custom_data~{astrbot:{module_type:1b}}] \
+    as @n[tag=astrbot.temp, distance=0..1, type=interaction] \
+    if entity @s[tag=!astrbot.createtable.slot.attack] \
+    if function astrbot:createtable/player/guide/attack_slot_only \
+    run return 0
+
+# if the slot is not empty, take module item out
+execute as @n[tag=astrbot.temp, distance=0..1, type=interaction] unless score @s astrbot.slot_status = EMPTY astrbot.slot_status run function astrbot:createtable/block/slot/item_out
 
 data modify entity @n[tag=astrbot.temp, distance=0..1, type=item_display] item set from entity @s SelectedItem
 item replace entity @s weapon.mainhand with air

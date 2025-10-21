@@ -37,7 +37,8 @@
                 "astrbot": {
                   "name": "astrbot:mending_servicer",
                   "type": "module",
-                  "module_id": 13
+                  "module_id": 13,
+                  "module_type": 1
                 }
               }
             }
