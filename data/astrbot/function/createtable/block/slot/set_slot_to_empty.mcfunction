@@ -8,3 +8,4 @@ execute as @e[tag=astrbot.createtable.bot.model, distance=0..1, type=item_displa
 
 # if this slot is attack slot, enable another attack slot
 execute if entity @s[tag=astrbot.createtable.slot.attack] run function astrbot:createtable/block/slot/update_attack_slot_status
+

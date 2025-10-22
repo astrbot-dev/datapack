@@ -1,4 +1,5 @@
 loot give @s loot astrbot:module/active_defence_system
+loot give @s loot astrbot:module/solar_energy
 loot give @s loot astrbot:bot/test
 loot give @s loot astrbot:bot/test_air
 loot give @s loot astrbot:bot/test_heavy
