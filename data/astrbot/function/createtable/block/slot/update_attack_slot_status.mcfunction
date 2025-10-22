@@ -1,4 +1,6 @@
 execute as @e[tag=astrbot.createtable.slot.attack, distance=0.1..2, type=interaction] if score @s astrbot.createtable_id = curr_createtable astrbot.temp run tag @s add astrbot.createtable.slot.another
+
+execute unless entity @e[tag=astrbot.createtable.slot.another, distance=0..2, type=interaction] run return run scoreboard players operation @s astrbot.slot_available_status = AVAILABLE astrbot.slot_available_status
 # @s -> changed slot
 # @n[tag=astrbot.createtable.slot.another, distance=..2] -> another attack slot 
 
