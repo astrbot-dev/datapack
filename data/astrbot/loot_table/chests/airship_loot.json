@@ -4,63 +4,38 @@
         {
             "rolls": {
               "type": "uniform",
-              "max": 10,
-              "min": 3  
+              "max": 15,
+              "min": 5  
             },
             "entries": [
                 {
                     "type": "loot_table",
-                    "value": "astrbot:bot/test",
-                    "weight": 3
-                },
-                {
-                    "type": "loot_table",
-                    "value": "astrbot:bot/test_air",
-                    "weight": 1
-                },
-                {
-                    "type": "loot_table",
-                    "value": "astrbot:bot/test_heavy",
-                    "weight": 1
-                },
-                {
-                    "type": "loot_table",
-                    "value": "astrbot:module/active_defence_system",
-                    "weight": 1
-                },
-                {
-                    "type": "loot_table",
                     "value": "astrbot:createtable",
-                    "weight": 1
+                    "weight": 2
                 },
                 {
                     "type": "loot_table",
-                    "value": "astrbot:module/fall_prevention",
-                    "weight": 1
+                    "value": "astrbot:module/empty",
+                    "weight": 5
                 },
                 {
                     "type": "loot_table",
-                    "value": "astrbot:module/m242_bushmaster",
-                    "weight": 1
+                    "value": "astrbot:chests/junk",
+                    "weight": 50
                 },
                 {
                     "type": "loot_table",
-                    "value": "astrbot:missile_launch_indicator",
-                    "weight": 1
+                    "value": "astrbot:chests/materials_normal",
+                    "weight": 40
                 },
                 {
                     "type": "loot_table",
-                    "value": "astrbot:module/missile_launcher",
-                    "weight": 1
+                    "value": "astrbot:chests/materials_precious",
+                    "weight": 12
                 },
                 {
                     "type": "loot_table",
-                    "value": "astrbot:module/negative_effect_generator",
-                    "weight": 1
-                },
-                {
-                    "type": "loot_table",
-                    "value": "astrbot:module/sonic_boom_transmitter",
+                    "value": "astrbot:chests/materials_treasure",
                     "weight": 1
                 }
             ]

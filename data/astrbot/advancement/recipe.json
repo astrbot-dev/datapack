@@ -1,0 +1,10 @@
+{
+    "criteria": {
+        "1":{
+            "trigger": "tick"
+        }
+    },
+    "rewards": {
+        "recipes": ["astrbot:bot/air","astrbot:bot/ground","astrbot:bot/heavy","astrbot:createtable","astrbot:missile_launch_indicator","astrbot:module/active_defence_system","astrbot:module/backpack","astrbot:module/fall_prevention","astrbot:module/m242_bushmaster","astrbot:module/mending_servicer","astrbot:module/negative_effect_generator","astrbot:module/solar_energy","astrbot:module/sonic_boom_transmitter","astrbot:module/tensor"]
+    }
+}
