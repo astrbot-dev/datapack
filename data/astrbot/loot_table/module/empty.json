@@ -1,0 +1,72 @@
+{
+  "pools": [
+    {
+      "entries": [
+        {
+          "functions": [
+            {
+              "components": {
+                "minecraft:item_model": "astrbot:module/empty",
+                "minecraft:item_name": {
+                  "translate": "item.astrbot.empty",
+                  "color": "white"
+                },
+                "minecraft:lore": [
+                  {
+                    "italic": false,
+                    "color": "blue",
+                    "translate": "item.astrbot.module"
+                  },
+                  {
+                    "italic": false,
+                    "color": "green",
+                    "translate": "item.astrbot.empty.lore"
+                  }
+                ],
+                "minecraft:max_stack_size": 1,
+                "attribute_modifiers": [
+                    {
+                        "id": "astrbot:empty",
+                        "amount": -10000000,
+                        "display": {
+                            "type": "hidden"
+                        },
+                        "operation": "add_value",
+                        "slot": "mainhand",
+                        "type": "block_interaction_range"
+                    },
+                    {
+                        "id": "astrbot:empty",
+                        "amount": -10000000,
+                        "display": {
+                            "type": "hidden"
+                        },
+                        "operation": "add_value",
+                        "slot": "offhand",
+                        "type": "block_interaction_range"
+                    }
+                ]
+              },
+              "function": "minecraft:set_components"
+            },
+            {
+              "function": "minecraft:set_custom_data",
+              "tag": {
+                "astrbot": {
+                  "name": "astrbot:empty",
+                  "type": "module",
+                  "module_id": -1,
+                  "module_type": -1,
+                  "is_unique": true
+                }
+              }
+            }
+          ],
+          "name": "minecraft:test_block",
+          "type": "minecraft:item"
+        }
+      ],
+      "rolls": 1.0
+    }
+  ]
+}
