@@ -14,7 +14,7 @@
                   {
                     "italic": false,
                     "color": "blue",
-                    "translate": "item.astrbot.module"
+                    "translate": "item.astrbot.module.attack"
                   },
                   {
                     "italic": false,
