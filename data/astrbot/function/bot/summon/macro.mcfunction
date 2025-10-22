@@ -1,1 +1,0 @@
-$function astrbot:module/$(module)/enable

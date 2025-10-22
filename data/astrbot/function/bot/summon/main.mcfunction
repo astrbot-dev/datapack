@@ -25,11 +25,6 @@ execute if data storage astrbot:temp {summon:{components:{"minecraft:custom_data
 execute if data storage astrbot:temp {summon:{components:{"minecraft:custom_data":{astrbot:{type:1}}}}} run function astrbot:bot/summon/1
 execute if data storage astrbot:temp {summon:{components:{"minecraft:custom_data":{astrbot:{type:2}}}}} run function astrbot:bot/summon/2
 
-
-#启用模块
-data modify storage astrbot:temp modules set from storage astrbot:temp summon.components."minecraft:custom_data".astrbot.modules
-execute as @n[tag=astrbot_root_temp,distance=..5] run function astrbot:bot/summon/enable_module
-
 #清除tag
 tag @e[tag=astrbot_root_temp,distance=..5] remove astrbot_root_temp
 tag @e[tag=astrbot_display_temp,distance=..5] remove astrbot_display_temp
