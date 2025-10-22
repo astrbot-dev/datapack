@@ -1,6 +1,13 @@
 # context: player
 
-# heavy attack modules like missile or negative effect generator can only be installed on heavy bot
+# if the slot is disabled
+execute \
+    as @e[tag=astrbot.temp, distance=0..1, type=interaction] \
+    if score @s astrbot.slot_available_status = DISABLE astrbot.slot_available_status \
+    if function astrbot:createtable/player/guide/slot_disable \
+    run return 0
+
+# if try to install a heavy attack module on a non-heavy bot
 execute \
     if items entity @s weapon.mainhand *[custom_data~{astrbot:{module_type:2b}}] \
     as @e[tag=astrbot.createtable.bot.model, distance=0..1, type=item_display] if score @s astrbot.createtable_id = curr_createtable astrbot.temp \
@@ -8,6 +15,7 @@ execute \
     if function astrbot:createtable/player/guide/heavy_bot_only \
     run return 0
 
+# if try to install a attack module on a unavailable slot
 execute \
     unless items entity @s weapon.mainhand *[custom_data~{astrbot:{module_type:1b}}] \
     as @n[tag=astrbot.temp, distance=0..1, type=interaction] \
@@ -15,6 +23,7 @@ execute \
     if function astrbot:createtable/player/guide/slot_disable \
     run return 0
 
+# if try to install an attack module on a non-attack slot
 execute \
     unless items entity @s weapon.mainhand *[custom_data~{astrbot:{module_type:1b}}] \
     as @n[tag=astrbot.temp, distance=0..1, type=interaction] \
