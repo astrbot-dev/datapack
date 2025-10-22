@@ -31,9 +31,22 @@ execute \
     if function astrbot:createtable/player/guide/attack_slot_only \
     run return 0
 
-# if the slot is not empty, take module item out
-execute as @n[tag=astrbot.temp, distance=0..1, type=interaction] unless score @s astrbot.slot_status = EMPTY astrbot.slot_status run function astrbot:createtable/block/slot/item_out
+# if the slot is not empty, will take module item out
+execute as @n[tag=astrbot.temp, distance=0..1, type=interaction] unless score @s astrbot.slot_status = EMPTY astrbot.slot_status run function astrbot:createtable/block/slot/item_out1
 
+# check unique module
+data modify storage astrbot:temp input set string entity @s SelectedItem.components."minecraft:custom_data".astrbot.name 8
+execute store result score is_unique astrbot.temp run data get entity @s SelectedItem.components."minecraft:custom_data".astrbot.is_unique
+execute \
+    if score is_unique astrbot.temp matches 1 \
+    as @e[tag=astrbot.createtable.bot.model, distance=0..1, type=item_display] \
+    if score @s astrbot.createtable_id = curr_createtable astrbot.temp \
+    if function astrbot:bot/has_module \
+    if function astrbot:createtable/player/guide/too_many_module \
+    run return 0
+
+# take module item out
+execute as @n[tag=astrbot.temp, distance=0..1, type=interaction] unless score @s astrbot.slot_status = EMPTY astrbot.slot_status run execute positioned ~ ~0.5 ~ run function astrbot:util/macro/summon_item with storage astrbot:temp arg
 data modify entity @n[tag=astrbot.temp, distance=0..1, type=item_display] item set from entity @s SelectedItem
 item replace entity @s weapon.mainhand with air
 

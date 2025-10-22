@@ -1,0 +1,38 @@
+{
+    "type": "smithing_transform",
+    "template": "test_block",
+    "base": "shield",
+    "addition": "iron_ingot",
+    "result": {
+        "id": "recovery_compass",
+        "count": 1,
+        "components": {
+            "minecraft:item_model": "astrbot:module/active_defence_system",
+            "minecraft:item_name": {
+                "translate": "item.astrbot.active_defence_system"
+            },
+            "minecraft:lore": [
+                {
+                    "italic": false,
+                    "color": "blue",
+                    "translate": "item.astrbot.module.attack"
+                },
+                {
+                    "italic": false,
+                    "color": "green",
+                    "translate": "item.astrbot.active_defence_system.lore"
+                }
+            ],
+            "custom_data": {
+                "astrbot": {
+                    "name": "astrbot:active_defence_system",
+                    "type": "module",
+                    "module_id": 0,
+                    "module_type": 0,
+                    "is_unique": true
+                }
+            },
+            "minecraft:max_stack_size": 1
+        }
+    }
+}

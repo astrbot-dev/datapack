@@ -1,0 +1,1 @@
+data modify storage astrbot:temp arg.item set from entity @n[tag=astrbot.temp, distance=0..1, type=item_display] item

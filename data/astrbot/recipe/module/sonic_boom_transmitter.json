@@ -1,0 +1,38 @@
+{
+    "type": "smithing_transform",
+    "template": "test_block",
+    "base": "echo_shard",
+    "addition": "amethyst_shard",
+    "result": {
+        "id": "recovery_compass",
+        "count": 1,
+        "components": {
+            "minecraft:item_model": "astrbot:module/sonic_boom_transmitter",
+            "minecraft:item_name": {
+                "translate": "item.astrbot.sonic_boom_transmitter"
+            },
+            "minecraft:lore": [
+                {
+                    "italic": false,
+                    "color": "blue",
+                    "translate": "item.astrbot.module.attack"
+                },
+                {
+                    "italic": false,
+                    "color": "green",
+                    "translate": "item.astrbot.sonic_boom_transmitter.lore"
+                }
+            ],
+            "custom_data": {
+                "astrbot": {
+                  "name": "astrbot:sonic_boom_transmitter",
+                  "type": "module",
+                  "module_id": 9,
+                  "module_type": 0,
+                  "is_unique": true
+                }
+            },
+            "minecraft:max_stack_size": 1
+        }
+    }
+}

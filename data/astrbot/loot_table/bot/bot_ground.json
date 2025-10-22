@@ -10,8 +10,11 @@
                         {
                             "function": "minecraft:set_components",
                             "components": {
-                                "item_name": "测试机器人底座（重型）",
-                                "item_model": "astrbot:bot/heavy",
+                                "item_name": {"translate": "item.astrbot.bot_ground"},
+                                "item_model": "astrbot:bot/ground",
+                                "custom_model_data":{
+                                    "flags": [false]
+                                },
                                 "consumable":{
                                     "animation": "crossbow",
                                     "consume_seconds": 10000,
@@ -20,7 +23,7 @@
                                         "sound_id": "none"
                                     }
                                 },
-                                "custom_data": "{id:\"astrbot:bot\",astrbot:{type:2,modules:[]}}",
+                                "custom_data": "{id:\"astrbot:bot\",astrbot:{type:0,modules:[]}}",
                                 "max_stack_size": 1
                             }
                         }

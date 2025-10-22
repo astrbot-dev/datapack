@@ -6,9 +6,9 @@
           "functions": [
             {
               "components": {
-                "minecraft:item_model": "astrbot:module/fall_prevention",
+                "minecraft:item_model": "astrbot:module/backpack",
                 "minecraft:item_name": {
-                  "translate": "item.astrbot.fall_prevention"
+                  "translate": "item.astrbot.backpack"
                 },
                 "minecraft:lore": [
                   {
@@ -19,7 +19,7 @@
                   {
                     "italic": false,
                     "color": "green",
-                    "translate": "item.astrbot.fall_prevention.lore"
+                    "translate": "item.astrbot.backpack.lore"
                   }
                 ],
                 "minecraft:max_stack_size": 1
@@ -30,10 +30,11 @@
               "function": "minecraft:set_custom_data",
               "tag": {
                 "astrbot": {
-                  "name": "astrbot:fall_prevention",
+                  "name": "astrbot:backpack",
                   "type": "module",
-                  "module_id": 3,
+                  "module_id": 10,
                   "module_type": 1,
+                  "items":[],
                   "is_unique": true
                 }
               }

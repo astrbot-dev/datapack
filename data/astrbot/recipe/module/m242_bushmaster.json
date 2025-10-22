@@ -1,0 +1,38 @@
+{
+    "type": "smithing_transform",
+    "template": "test_block",
+    "base": "crossbow",
+    "addition": "diamond",
+    "result": {
+        "id": "recovery_compass",
+        "count": 1,
+        "components": {
+            "minecraft:item_model": "astrbot:module/m242_bushmaster",
+            "minecraft:item_name": {
+                "translate": "item.astrbot.m242_bushmaster"
+            },
+            "minecraft:lore": [
+                {
+                    "italic": false,
+                    "color": "blue",
+                    "translate": "item.astrbot.module.attack"
+                },
+                {
+                    "italic": false,
+                    "color": "green",
+                    "translate": "item.astrbot.m242_bushmaster.lore"
+                }
+            ],
+            "custom_data": {
+                "astrbot": {
+                  "name": "astrbot:m242_bushmaster",
+                  "type": "module",
+                  "module_id": 4,
+                  "module_type": 0,
+                  "is_unique": true
+                }
+            },
+            "minecraft:max_stack_size": 1
+        }
+    }
+}

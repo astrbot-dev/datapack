@@ -10,7 +10,7 @@
                         {
                             "function": "minecraft:set_components",
                             "components": {
-                                "item_name": "测试机器人底座（空中型）",
+                                "item_name": {"translate": "item.astrbot.bot_air"},
                                 "item_model": "astrbot:bot/air",
                                 "consumable":{
                                     "animation": "crossbow",
