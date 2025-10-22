@@ -1,7 +1,7 @@
 execute unless entity @s[gamemode=!creative,gamemode=!spectator] run return 0
 
 # 状态栏恢复
-execute if predicate {condition:"entity_properties",entity:"this",predicate:{periodic_tick:10}} \
+execute if predicate {condition:"entity_properties",entity:"this",predicate:{periodic_tick:120}} \
     if score @s astrbot.player_power < @s astrbot.max_player_power \
     run scoreboard players operation @s astrbot.player_power += @s astrbot.player_power_regen
 execute if score @s astrbot.player_power > @s astrbot.max_player_power run scoreboard players operation @s astrbot.player_power = @s astrbot.max_player_power
