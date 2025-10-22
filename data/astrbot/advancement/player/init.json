@@ -4,5 +4,5 @@
             "trigger": "minecraft:tick"
         }
     },
-    "rewards": {"function": "astrbot:data/hud/betterybar/score_init"}
+    "rewards": {"function": "astrbot:player/init"}
 }
