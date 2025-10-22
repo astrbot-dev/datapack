@@ -1,4 +1,8 @@
 # 配置 (玩家相关的初始化配置项请访问 --> 📄player/init.mcfunction)
+    # 游戏规则
+    ## 发送命令反馈	
+    gamerule sendCommandFeedback false
+
     ###⚠️ 该配置项或许已被弃用 ⚠️###
     # 群系刷怪
     scoreboard objectives add astr.config dummy
