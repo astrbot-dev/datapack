@@ -1,5 +1,5 @@
 #生成机器人并初始化
-#as:player,at:plater
+#as:player,at:player
 
 #获取玩家主手物品
 data modify storage astrbot:temp summon set from entity @s SelectedItem
@@ -41,3 +41,7 @@ execute unless entity @s[gamemode=creative] run item replace entity @s weapon.ma
 
 #音效
 playsound minecraft:block.vault.open_shutter player @a
+
+#初始化模块
+scoreboard players set @s astrbot.module_terminal 11
+function astrbot:trigger/module_terminal

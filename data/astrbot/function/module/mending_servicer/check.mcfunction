@@ -1,3 +1,4 @@
+execute on owner unless score @s astrbot.player_power matches 1.. run return fail
 execute if predicate { condition:"random_chance" ,chance:0.5} run return 0
 execute on owner unless items entity @s armor.* *[damage~{damage:{min:1}}] unless items entity @s weapon.* *[damage~{damage:{min:1}}] run return 0
 execute on owner run function astrbot:module/mending_servicer/mending
