@@ -18,15 +18,15 @@
 
 =================探索类模块=================  
 
-automatic_repairment 自我修复模块  
+√ `mending_servicer` 自我修复模块  
 
-external_backpack 外置背包模块  
+√ `backpack` 外置背包模块  
 
 √ `fall_prevention` 摔落保护模块  
 
 guidance 引路模块  
 
-mineral_detector 矿物检测模块  
+√ `tensor` 矿物检测模块  
 
 - 模块自定义数据  
 
