@@ -1,0 +1,62 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "iron_ingot"
+                },
+                {
+                    "type": "item",
+                    "name": "copper_ingot"
+                },
+                {
+                    "type": "item",
+                    "name": "quartz"
+                },
+                {
+                    "type": "item",
+                    "name": "lapis_lazuli"
+                },
+                {
+                    "type": "item",
+                    "name": "gold_ingot"
+                },
+                {
+                    "type": "item",
+                    "name": "raw_iron"
+                },
+                {
+                    "type": "item",
+                    "name": "raw_copper"
+                },
+                {
+                    "type": "item",
+                    "name": "raw_gold"
+                },
+                {
+                    "type": "item",
+                    "name": "resin_clump"
+                },
+                {
+                    "type": "item",
+                    "name": "ender_pearl"
+                },
+                {
+                    "type": "loot_table",
+                    "value": "astrbot:module/empty"
+                }
+            ],
+            "functions": [
+                {
+                    "function": "set_count",
+                    "count": {
+                        "min": 1,
+                        "max": 3
+                    }
+                }
+            ]
+        }
+    ]
+}

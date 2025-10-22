@@ -1,0 +1,1 @@
+execute if predicate {condition:"random_chance",chance:0.005} run playsound minecraft:entity.breeze.idle_ground player @a

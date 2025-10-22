@@ -1,0 +1,29 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "loot_table",
+                    "value": "astrbot:chests/bot",
+                    "weight": 25
+                },
+                {
+                    "type": "item",
+                    "name": "netherite_ingot",
+                    "weight": 20
+                },
+                {
+                    "type": "item",
+                    "name": "heavy_core",
+                    "weight": 4
+                },
+                {
+                    "type": "item",
+                    "name": "nether_star",
+                    "weight": 1
+                }
+            ]
+        }
+    ]
+}

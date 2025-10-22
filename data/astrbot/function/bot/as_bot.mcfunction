@@ -20,3 +20,7 @@ execute as @s[tag=astrbot_heavy] run function astrbot:bot/ride
 
 #尝试消除仇恨
 function astrbot:bot/anger
+
+#音效
+execute as @s[tag=astrbot_air] run function astrbot:bot/sound/air
+execute as @s[tag=astrbot_ground] if predicate {condition:"random_chance",chance:0.01} if predicate astrbot:bot/moving_ground run function astrbot:bot/sound/ground

@@ -1,0 +1,36 @@
+{
+    "type": "crafting_shaped",
+    "category": "equipment",
+    "pattern": [
+        "*#*",
+        "^&^",
+        "^$^"
+    ],
+    "key": {
+        "*": "redstone_torch",
+        "#": "observer",
+        "^": "redstone",
+        "$": "crafting_table",
+        "&": "anvil"
+    },
+    "result": {
+        "id": "firework_star",
+        "count": 1,
+        "components": {
+            "item_name": {
+                "translate": "item.astrbot.bot_air"
+            },
+            "item_model": "astrbot:bot/air",
+            "consumable": {
+                "animation": "crossbow",
+                "consume_seconds": 10000,
+                "has_consume_particles": false,
+                "sound": {
+                    "sound_id": "none"
+                }
+            },
+            "custom_data": "{id:\"astrbot:bot\",astrbot:{type:1,modules:[]}}",
+            "max_stack_size": 1
+        }
+    }
+}
