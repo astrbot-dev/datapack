@@ -10,3 +10,6 @@ execute unless entity @e[tag=uid] run tellraw @s "\u00a74无目标"
 tag @s remove launch
 tag @s remove lock
 tag @e remove uid
+
+#耗电
+execute on owner if score @s astrbot.player_power matches 1.. run scoreboard players remove @s astrbot.player_power 10
