@@ -1,8 +1,8 @@
 loot give @s loot astrbot:module/active_defence_system
 loot give @s loot astrbot:module/solar_energy
-loot give @s loot astrbot:bot/test
-loot give @s loot astrbot:bot/test_air
-loot give @s loot astrbot:bot/test_heavy
+loot give @s loot astrbot:bot/bot_ground
+loot give @s loot astrbot:bot/bot_air
+loot give @s loot astrbot:bot/bot_heavy
 loot give @s loot astrbot:createtable
 loot give @s loot astrbot:module/fall_prevention
 loot give @s loot astrbot:module/m242_bushmaster
@@ -10,3 +10,5 @@ loot give @s loot astrbot:module/mending_servicer
 loot give @s loot astrbot:module/missile_launcher
 loot give @s loot astrbot:module/negative_effect_generator
 loot give @s loot astrbot:module/sonic_boom_transmitter
+loot give @s loot astrbot:module/backpack
+loot give @s loot astrbot:module/tensor

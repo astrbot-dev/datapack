@@ -7,6 +7,7 @@ execute if score id astrbot.temp matches 7 run return run loot replace entity @s
 execute if score id astrbot.temp matches 9 run return run loot replace entity @s contents loot astrbot:module/sonic_boom_transmitter
 execute if score id astrbot.temp matches 10 run return run loot replace entity @s contents loot astrbot:module/backpack
 execute if score id astrbot.temp matches 13 run return run loot replace entity @s contents loot astrbot:module/mending_servicer
+execute if score id astrbot.temp matches 14 run return run loot replace entity @s contents loot astrbot:module/tensor
 
 #debug
 tellraw @a[tag=astrbot.debug] [{"text":"[ASTRBOT]Unknown Module ID: ", color:red},{color:red, "score": {name: "id", objective: "astrbot.temp"}}]

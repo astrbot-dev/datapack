@@ -7,3 +7,4 @@ execute if score module_id astrbot.temp matches 7 run return run data modify sto
 execute if score module_id astrbot.temp matches 9 run return run data modify storage astrbot:temp createtable.lore[-1] append value {"translate": "item.astrbot.sonic_boom_transmitter"}
 execute if score module_id astrbot.temp matches 10 run return run data modify storage astrbot:temp createtable.lore[-1] append value {"translate": "item.astrbot.backpack"}
 execute if score module_id astrbot.temp matches 13 run return run data modify storage astrbot:temp createtable.lore[-1] append value {"translate": "item.astrbot.mending_servicer"}
+execute if score module_id astrbot.temp matches 13 run return run data modify storage astrbot:temp createtable.lore[-1] append value {"translate": "item.astrbot.tensor"}
