@@ -1,0 +1,38 @@
+{
+    "type": "smithing_transform",
+    "template": "test_block",
+    "base": "daylight_detector",
+    "addition": "redstone_block",
+    "result": {
+        "id": "recovery_compass",
+        "count": 1,
+        "components": {
+            "minecraft:item_model": "astrbot:module/solar_energy",
+            "minecraft:item_name": {
+                "translate": "item.astrbot.solar_energy"
+            },
+            "minecraft:lore": [
+                {
+                    "italic": false,
+                    "color": "blue",
+                    "translate": "item.astrbot.module.explore"
+                },
+                {
+                    "italic": false,
+                    "color": "green",
+                    "translate": "item.astrbot.solar_energy.lore"
+                }
+            ],
+            "custom_data": {
+                "astrbot": {
+                  "name": "astrbot:solar_energy",
+                  "type": "module",
+                  "module_id": 1,
+                  "module_type": 1,
+                  "is_unique": true
+                }
+            },
+            "minecraft:max_stack_size": 1
+        }
+    }
+}
