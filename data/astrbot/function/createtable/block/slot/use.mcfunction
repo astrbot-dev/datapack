@@ -1,5 +1,8 @@
 #context: interaction(astrbot.createtable.slot)
 
+#empty module cannot be installed
+execute on target if items entity @s weapon.mainhand *[custom_data~{astrbot:{module_id:-1b}}] run return 0
+
 #one bot can only install one attack module. If a slot install an attack module, the another attack module will be disabled
 
 scoreboard players operation curr_createtable astrbot.temp = @s astrbot.createtable_id
