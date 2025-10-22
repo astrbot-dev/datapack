@@ -1,7 +1,9 @@
 execute if score module_id astrbot.temp matches 0 run return run data modify storage astrbot:temp createtable.lore[-1] append value {"translate": "item.astrbot.active_defence_system"}
+execute if score module_id astrbot.temp matches 1 run return run data modify storage astrbot:temp createtable.lore[-1] append value {"translate": "item.astrbot.solar_energy"}
 execute if score module_id astrbot.temp matches 3 run return run data modify storage astrbot:temp createtable.lore[-1] append value {"translate": "item.astrbot.fall_prevention"}
 execute if score module_id astrbot.temp matches 4 run return run data modify storage astrbot:temp createtable.lore[-1] append value {"translate": "item.astrbot.m242_bushmaster"}
-execute if score module_id astrbot.temp matches 13 run return run data modify storage astrbot:temp createtable.lore[-1] append value {"translate": "item.astrbot.mending_servicer"}
 execute if score module_id astrbot.temp matches 6 run return run data modify storage astrbot:temp createtable.lore[-1] append value {"translate": "item.astrbot.missile_launcher"}
 execute if score module_id astrbot.temp matches 7 run return run data modify storage astrbot:temp createtable.lore[-1] append value {"translate": "item.astrbot.negative_effect_generator"}
 execute if score module_id astrbot.temp matches 9 run return run data modify storage astrbot:temp createtable.lore[-1] append value {"translate": "item.astrbot.sonic_boom_transmitter"}
+execute if score module_id astrbot.temp matches 10 run return run data modify storage astrbot:temp createtable.lore[-1] append value {"translate": "item.astrbot.backpack"}
+execute if score module_id astrbot.temp matches 13 run return run data modify storage astrbot:temp createtable.lore[-1] append value {"translate": "item.astrbot.mending_servicer"}

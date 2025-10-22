@@ -33,7 +33,8 @@
                   "name": "astrbot:solar_energy",
                   "type": "module",
                   "module_id": 1,
-                  "module_type": 0
+                  "module_type": 1,
+                  "is_unique": true
                 }
               }
             }

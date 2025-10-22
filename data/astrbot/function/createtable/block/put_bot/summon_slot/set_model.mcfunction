@@ -1,6 +1,6 @@
+
 #context: interaction
 data modify storage astrbot:temp modules set from storage astrbot:temp modules_b 
-
 
 scoreboard players reset slot astrbot.temp
 execute unless data storage astrbot:temp modules[0] run return 0

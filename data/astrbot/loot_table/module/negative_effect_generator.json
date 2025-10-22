@@ -43,7 +43,8 @@
                   "name": "astrbot:negative_effect_generator",
                   "type": "module",
                   "module_id": 7,
-                  "module_type": 2
+                  "module_type": 2,
+                  "is_unique": true
                 }
               }
             }
