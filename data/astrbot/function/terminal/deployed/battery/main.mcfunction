@@ -1,0 +1,1 @@
+$execute as @e[type=wolf,distance=0..,tag=astrbot_root] on passengers if data entity @s[type=item_display] item.components."minecraft:custom_data".uid{id:$(uid)} on vehicle run function astrbot:terminal/deployed/battery/charge

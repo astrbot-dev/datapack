@@ -10,4 +10,5 @@ tag @s add fall_prevention_cool_down
 scoreboard players set @s astr.fall_prevention_cool_down 60
 function astrbot:module/fall_prevention/cool_down/count
 #耗电
-execute if score @s astrbot.player_power matches 1.. run scoreboard players remove @s astrbot.player_power 10
+execute on passengers unless data entity @s item.components."minecraft:custom_data".astrbot{type:2} on vehicle if score @s astrbot.player_power matches 10.. run scoreboard players remove @s astrbot.player_power 10
+execute if score @s astrbot.player_power matches 10.. run return run scoreboard players remove @s astrbot.player_power 10

@@ -3,4 +3,4 @@ execute if entity @s[type=!#minecraft:impact_projectiles,type=!item,tag=!astrbot
 execute if entity @s[type=#minecraft:impact_projectiles,type=!player] run summon minecraft:text_display ~ ~ ~ {text:"\u00a72⛶",brightness:{block:15,sky:15}, transformation:{right_rotation:[0f,0f,0f,1f],translation:[0f,-0.35f,0f],left_rotation:[0f,0f,0f,1f],scale:[3f,3f,3f]}, background:0, billboard:"center", alignment:"left", width:1f, height:1f, view_range:0.5f,Tags:["locksym"]}
 execute if entity @s[tag=astrbot_root,type=!player] run summon minecraft:text_display ~ ~ ~ {text:"\u00a7e⬜",brightness:{block:15,sky:15}, transformation:{right_rotation:[0f,0f,0f,1f],translation:[0f,-0.35f,0f],left_rotation:[0f,0f,0f,1f],scale:[10f,10f,10f]}, background:0, billboard:"center", alignment:"left", width:1f, height:1f, view_range:0.5f,Tags:["locksym"]}
 
-execute if entity @e[tag=launch,tag=astrbot_missile_launch] as @e[tag=launch,tag=astrbot_missile_launch] run function astrbot:module/missile_launcher/launch
+execute if entity @e[tag=launch] as @e[tag=launch] run function astrbot:module/missile_launcher/launch

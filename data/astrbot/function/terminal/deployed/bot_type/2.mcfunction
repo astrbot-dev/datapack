@@ -16,6 +16,13 @@ data modify storage astrbot:terminal dialog set value {\
       label:{translate:"gui.unbinding"}\
     },\
     {\
+      action:{\
+        command:"trigger astrbot.battery set 1",\
+        type:"minecraft:run_command"\
+      },\
+      label:{translate:"gui.battery"}\
+    },\
+    {\
       label:{translate:"gui.back"}\
     }\
   ],\
@@ -149,5 +156,5 @@ execute if data entity @s item.components."minecraft:custom_data".astrbot.module
 execute if data entity @s item.components."minecraft:custom_data".astrbot.modules[{slot:2,enabled:false}] run data remove storage astrbot:terminal dialog.inputs[2].options[1].initial
 execute if data entity @s item.components."minecraft:custom_data".astrbot.modules[{slot:3,enabled:false}] run data remove storage astrbot:terminal dialog.inputs[3].options[1].initial
 #电量
-execute on passengers on target store result storage astrbot:terminal temp3 int 1.0 run scoreboard players get @s astrbot.player_power
+execute on vehicle store result storage astrbot:terminal temp3 int 1.0 run scoreboard players get @s astrbot.player_power
 data modify storage astrbot:terminal dialog.body.contents[5].text set string storage astrbot:terminal temp3
