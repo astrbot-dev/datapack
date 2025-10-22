@@ -1,0 +1,41 @@
+{
+    "type": "crafting_shaped",
+    "category":"equipment",
+    "pattern": [
+        "*#*",
+        "$&$",
+        "^$^"
+    ],
+    "key": {
+        "*": "redstone_torch",
+        "#": "observer",
+        "$": "resin_clump",
+        "&": "minecart",
+        "^": "redstone"
+    },
+    "result": {
+        "id": "firework_star",
+        "count": 1,
+        "components": {
+            "item_name": {
+                "translate": "item.astrbot.bot_ground"
+            },
+            "item_model": "astrbot:bot/ground",
+            "custom_model_data": {
+                "flags": [
+                    false
+                ]
+            },
+            "consumable": {
+                "animation": "crossbow",
+                "consume_seconds": 10000,
+                "has_consume_particles": false,
+                "sound": {
+                    "sound_id": "none"
+                }
+            },
+            "custom_data": "{id:\"astrbot:bot\",astrbot:{type:0,modules:[]}}",
+            "max_stack_size": 1
+        }
+    }
+}
