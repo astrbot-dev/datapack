@@ -81,7 +81,7 @@
             "predicate": {
               "movement": {
                 "fall_distance": {
-                  "min": 1.5
+                  "min": 4
                 }
               }
             }
