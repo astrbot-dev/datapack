@@ -1,0 +1,32 @@
+{
+  "category": "redstone",
+  "key": {
+    "b": "#minecraft:buttons",
+    "e": "minecraft:echo_shard",
+    "i": "minecraft:iron_block",
+    "r": "minecraft:redstone_block"
+  },
+  "pattern": [
+    " e ",
+    "iri",
+    "ibi"
+  ],
+  "result": {
+    "components": {
+      "minecraft:item_model": "astrbot:missile_launch_indicator",
+      "minecraft:item_name": {
+      "translate": "item.astrbot.missile_launch_indicator"
+      },
+      "minecraft:lore": [
+        {
+          "italic": false,
+          "color": "green",
+          "translate": "item.astrbot.missile_launch_indicator.lore"
+        }
+      ]
+    },
+    "count": 1,
+    "id": "minecraft:recovery_compass"
+  },
+  "type": "minecraft:crafting_shaped"
+}

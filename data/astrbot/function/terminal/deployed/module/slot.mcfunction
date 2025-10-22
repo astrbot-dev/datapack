@@ -6,3 +6,4 @@ $execute store result entity @s item.components."minecraft:custom_data".astrbot.
 $data modify storage astrbot:terminal module set string entity @s item.components."minecraft:custom_data".astrbot.modules[{slot:$(slot)}].module.name 8
 execute if score #temp astrbot.var matches 1 run function astrbot:terminal/deployed/module/enable with storage astrbot:terminal
 execute if score #temp astrbot.var matches 0 run function astrbot:terminal/deployed/module/disable with storage astrbot:terminal
+data remove storage astrbot:terminal module
