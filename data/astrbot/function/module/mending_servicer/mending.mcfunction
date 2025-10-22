@@ -1,5 +1,7 @@
 ##
 function astrbot:module/mending_servicer/particle
+#耗电
+execute if score @s astrbot.player_power matches 1.. run scoreboard players remove @s astrbot.player_power 10
 ##
 execute if items entity @s weapon.mainhand *[damage~{damage:{min:1}}] run return run item modify entity @s weapon.mainhand astrbot:module/mending
 execute if items entity @s weapon.offhand *[damage~{damage:{min:1}}] run return run item modify entity @s weapon.offhand astrbot:module/mending

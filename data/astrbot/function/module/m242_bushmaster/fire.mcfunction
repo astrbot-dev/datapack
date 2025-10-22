@@ -14,3 +14,4 @@ kill @e[tag=marker]
 
 execute as @s run tag @s remove fire
 execute as @s run scoreboard players remove @s astrbot.ammo 1
+scoreboard players operation @s astrbot.player_power = @s astrbot.ammo
