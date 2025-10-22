@@ -25,5 +25,8 @@ scoreboard players enable @a astrbot.unbind
 #终端无人机跟随触发器
 scoreboard objectives add astrbot.follow trigger
 scoreboard players enable @a astrbot.follow
+#终端无人机充电触发器
+scoreboard objectives add astrbot.battery trigger
+scoreboard players enable @a astrbot.battery
 # ^^^ 函数内部的临时变量让用这个吗111
 scoreboard objectives add astr.func_var dummy

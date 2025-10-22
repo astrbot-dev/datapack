@@ -11,6 +11,8 @@
   execute as @a at @s if score @s astrbot.unbind matches 1.. run function astrbot:trigger/unbind
   #取消跟随
   execute as @a at @s if score @s astrbot.follow matches 1.. run function astrbot:trigger/follow
+  #充电
+  execute as @a at @s if score @s astrbot.battery matches 1.. run function astrbot:trigger/battery
 
 ## 模块循环
 function astrbot:module/mending_servicer/main

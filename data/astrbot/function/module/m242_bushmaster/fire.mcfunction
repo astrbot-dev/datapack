@@ -13,5 +13,7 @@ execute as @s run function astrbot:module/m242_bushmaster/lz2 with storage astrb
 kill @e[tag=marker] 
 
 execute as @s run tag @s remove fire
-execute as @s run scoreboard players remove @s astrbot.ammo 1
-scoreboard players operation @s astrbot.player_power = @s astrbot.ammo
+execute on passengers unless data entity @s item.components."minecraft:custom_data".astrbot{type:2} on vehicle run return run function astrbot:module/m242_bushmaster/consume
+execute if score @s astrbot.player_power matches ..0 run return fail
+scoreboard players remove @s astrbot.player_power 1
+scoreboard players remove @s astrbot.ammo 1
