@@ -17,20 +17,20 @@
         "id": "firework_star",
         "count": 1,
         "components": {
-            "item_name": {
-                "translate": "item.astrbot.bot_air"
+            "max_stack_size": 1,
+            "item_name": {"translate": "item.astrbot.createtable"},
+            "item_model": "astrbot:createtable/platform",
+            "entity_data": {
+                "id": "item_frame",
+                "Tags": ["astrbot.createtable"],
+                "Invisible": true
             },
-            "item_model": "astrbot:bot/air",
-            "consumable": {
-                "animation": "crossbow",
-                "consume_seconds": 10000,
-                "has_consume_particles": false,
-                "sound": {
-                    "sound_id": "none"
+            "custom_data": {
+                "astrbot": {
+                    "type": "block",
+                    "name": "createtable"
                 }
-            },
-            "custom_data": "{id:\"astrbot:bot\",astrbot:{type:1,modules:[]}}",
-            "max_stack_size": 1
+            }
         }
     }
 }
