@@ -1,2 +1,1 @@
-$execute as @e[type=wolf,distance=0..,tag=astrbot_root] on passengers if data entity @s[type=item_display] item.components."minecraft:custom_data".uid{id:$(uid)} on vehicle run function astrbot:bot/clear/main
-$execute as @e[type=wolf,distance=0..,tag=astrbot_root] on passengers if data entity @s[type=item_display] item.components."minecraft:custom_data".uid{id:$(uid)} on vehicle on owner run scoreboard players add @s astrbot.bot_count 1
+$execute as @e[type=wolf,distance=0..,tag=astrbot_root] on passengers if data entity @s[type=item_display] item.components."minecraft:custom_data".uid{id:$(uid)} run function astrbot:terminal/deployed/unbind/bot_count
