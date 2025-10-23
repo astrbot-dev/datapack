@@ -1,3 +1,5 @@
+execute unless entity @s[gamemode=!creative,gamemode=!spectator] run return 0
+
 # 背板
 ## 基础
 execute if score @s astrbot.player_power matches 11.. run function astrbot:data/hud/betterybar/acc/-1/none

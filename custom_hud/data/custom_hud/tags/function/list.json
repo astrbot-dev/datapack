@@ -1,6 +1,6 @@
 {
     "replace": false,
     "values": [
-        "astrbot:data/hud/betterybar/tick"
+        "astrbot:data/hud/betterybar/_"
     ]
 }

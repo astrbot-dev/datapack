@@ -1,3 +1,7 @@
+# Player(仅更改执行对象, 保留执行位置为000)
+execute as @a run function astrbot:player/tick/_
+
+
 # Scoreboard trigger
     # 模块启禁用
     execute as @a at @s unless score @s astrbot.module_terminal matches -2147483648..-1 run function astrbot:trigger/module_terminal
@@ -15,7 +19,3 @@
     ## 模块循环
     function astrbot:module/mending_servicer/main
     # Second
-    ## 魔咒监听器
-    execute as @a if predicate {"condition":"minecraft:entity_properties","entity":"this","predicate":{"periodic_tick":20}} \
-        unless items entity @s saddle recovery_compass[custom_data~{saddle_item:true}] \
-        run item replace entity @s saddle with recovery_compass[minecraft:custom_data={saddle_item:true},minecraft:enchantments={vanishing_curse:1},minecraft:equippable={slot:"saddle"}]
