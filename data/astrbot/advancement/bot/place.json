@@ -21,6 +21,6 @@
         }
     },
     "rewards": {
-        "function": "astrbot:bot/place/using"
+        "function": "astrbot:data/bot/place/using"
     }
 }

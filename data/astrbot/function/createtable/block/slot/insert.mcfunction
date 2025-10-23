@@ -41,7 +41,7 @@ execute \
     if score is_unique astrbot.temp matches 1 \
     as @e[tag=astrbot.createtable.bot.model, distance=0..1, type=item_display] \
     if score @s astrbot.createtable_id = curr_createtable astrbot.temp \
-    if function astrbot:bot/has_module \
+    if function astrbot:data/module/has_module \
     if function astrbot:createtable/player/guide/too_many_module \
     run return 0
 
