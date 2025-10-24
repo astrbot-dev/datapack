@@ -27,9 +27,9 @@
     scoreboard objectives add astrbot.var dummy
     # 通用常量
     scoreboard objectives add astr.consts dummy
-    scoreboard players set 1 astr.consts 1
-    scoreboard players set 2 astr.consts 2
-    scoreboard players set 10 astr.consts 10
+        scoreboard players set 1 astr.consts 1
+        scoreboard players set 2 astr.consts 2
+        scoreboard players set 10 astr.consts 10
     # 坐标运算
     scoreboard objectives add astrbot.x dummy
     scoreboard objectives add astrbot.y dummy
@@ -37,6 +37,11 @@
 # 逻辑依赖
     # 序列化uid
     scoreboard objectives add astrbot.uid dummy
+    # 机器人部署相关
+    scoreboard objectives add astrbot.using dummy
+    scoreboard objectives add astrbot.using_hold dummy
+    # 机器人部署计数
+    scoreboard objectives add astrbot.bot_count dummy
 # Scoreboard trigger
     # 终端模块
     scoreboard objectives add astrbot.module_terminal trigger

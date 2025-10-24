@@ -3,7 +3,7 @@ advancement revoke @s only astrbot:terminal/bot
 tag @s add astrbot_terminal_requester
 
 #是潜行使用机器人
-execute if predicate astrbot:player/is_sneaking as @e[type=interaction,distance=0..10] if data entity @s interaction if function astrbot:terminal/deployed/check_use run return run function astrbot:bot/shift_use
+execute if predicate astrbot:player/is_sneaking as @e[type=interaction,distance=0..10] if data entity @s interaction if function astrbot:terminal/deployed/check_use run return run function astrbot:terminal/deployed/shift_use
 #否则获取机器人信息
 execute as @e[type=interaction,distance=0..10] if data entity @s interaction if function astrbot:terminal/deployed/check_use run function astrbot:terminal/deployed/get_uid
 tag @s remove astrbot_terminal_requester

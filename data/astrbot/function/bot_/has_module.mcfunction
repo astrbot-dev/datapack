@@ -1,3 +1,6 @@
+#> astrbot:bot/shift_use
+#> astrbot:createtable/block/slot/insert
+
 #context item_display(bot)
 
 #input storage

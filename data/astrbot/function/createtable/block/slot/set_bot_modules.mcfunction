@@ -8,4 +8,4 @@ execute if score @s astrbot.slot matches 2 as @n[tag=astrbot.createtable.bot.mod
 execute if score @s astrbot.slot matches 3 as @n[tag=astrbot.createtable.bot.model, distance=0..2] run function astrbot:createtable/block/slot/set_bot_modules/3
 
 #update bot model
-execute as @n[tag=astrbot.createtable.bot.model, distance=0..2, type=item_display] if score @s astrbot.createtable_id = curr_createtable astrbot.temp run function astrbot:bot/update_modules_model
+execute as @n[tag=astrbot.createtable.bot.model, distance=0..2, type=item_display] if score @s astrbot.createtable_id = curr_createtable astrbot.temp run function astrbot:data/bot/update_modules_model/0

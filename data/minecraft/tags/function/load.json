@@ -6,7 +6,6 @@
         "astrbot:module/fall_prevention/load",
         "astrbot:module/m242_bushmaster/load",
         "astrbot:module/missile_launcher/load",
-        "astrbot:bot/load",
         "#load:_private/load",
         "botai:__load__",
         "custom_hud:load",

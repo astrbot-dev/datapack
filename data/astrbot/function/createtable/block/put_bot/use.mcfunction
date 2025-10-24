@@ -27,7 +27,7 @@ item replace entity @p[tag=astrbot.putting_bot, distance=0..7] weapon.mainhand w
 
 execute as @e[tag=astrbot.createtable.bot.model, distance=0..2, type=item_display] \
     if score @s astrbot.createtable_id = curr_createtable astrbot.temp \
-    run function astrbot:bot/update_modules_model
+    run function astrbot:data/bot/update_modules_model/0
 
 tag @e[tag=astrbot.just] remove astrbot.just
 tag @e[tag=astrbot.just.model] remove astrbot.just.model

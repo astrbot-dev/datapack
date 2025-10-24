@@ -1,5 +1,7 @@
 # Player(仅更改执行对象, 保留执行位置为000)
 execute as @a run function astrbot:player/tick/_
+# Bot
+function astrbot:data/bot/tick/_
 
 
 # Scoreboard trigger

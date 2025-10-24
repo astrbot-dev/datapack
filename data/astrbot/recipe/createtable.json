@@ -14,7 +14,7 @@
         "&": "anvil"
     },
     "result": {
-        "id": "item_frame",
+        "id": "minecraft:item_frame",
         "count": 1,
         "components": {
             "max_stack_size": 1,

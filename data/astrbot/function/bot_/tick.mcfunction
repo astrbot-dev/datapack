@@ -6,4 +6,4 @@ execute as @e[type=wolf,tag=astrbot_root] at @s run function astrbot:bot/as_bot
 execute as @e[tag=astrbot_display] at @s run function astrbot:bot/clear/check_
 
 #玩家执行放置相关函数
-execute as @a at @s run function astrbot:bot/place/tick
+# execute as @a at @s run function astrbot:bot/place/tick
