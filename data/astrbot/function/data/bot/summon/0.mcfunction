@@ -11,3 +11,6 @@ data modify entity @n[tag=astrbot_interaction_2_temp] height set value 1.25
 scoreboard players add @s astrbot.bot_count 1
 # 命名
 data modify entity @n[tag=astrbot_root_temp,distance=..5] CustomName set value {"translate":"entity.astrbot.bot_ground"}
+#初始化模块
+scoreboard players set @s astrbot.module_terminal 111
+function astrbot:trigger/module_terminal

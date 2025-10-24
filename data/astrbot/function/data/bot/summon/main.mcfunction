@@ -32,9 +32,9 @@ tag @e[tag=astrbot_interaction_2_temp,distance=..5] remove astrbot_interaction_2
 # execute unless entity @s[gamemode=creative] run item replace entity @s weapon.mainhand with air
 item replace entity @s weapon.mainhand with minecraft:air
 
-#音效
+# 音效
 playsound minecraft:block.vault.open_shutter player @a
 
-#初始化模块
-scoreboard players set @s astrbot.module_terminal 11
-function astrbot:trigger/module_terminal
+# 初始化模块
+# scoreboard players set @s astrbot.module_terminal 111
+# function astrbot:trigger/module_terminal

@@ -17,3 +17,6 @@ execute store result entity @n[tag=astrbot_root_temp,distance=..5] data.offset.z
 execute store result entity @n[tag=astrbot_root_temp,distance=..5] data.offset.y float 0.01 run random value 250..450
 # 命名
 data modify entity @n[tag=astrbot_root_temp,distance=..5] CustomName set value {"translate":"entity.astrbot.bot_air"}
+#初始化模块
+scoreboard players set @s astrbot.module_terminal 11
+function astrbot:trigger/module_terminal

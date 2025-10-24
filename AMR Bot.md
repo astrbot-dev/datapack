@@ -41,6 +41,7 @@ A["astrbot_root"] -->B["astrbot_display"]
 ## Storage
 
 ```NBTTree
+# bot|createtable
 (复合标签)astrbot:temp
 ├─ (复合标签)createtable
 │	├─ (复合标签)item
@@ -50,6 +51,13 @@ A["astrbot_root"] -->B["astrbot_display"]
 └─ (复合标签)summon
 	└─ (机器人物品数据)
 ```
+
+```NBTTree
+# terminal
+(复合标签)astrbot:terminal
+```
+
+
 
 ## Item data
 
