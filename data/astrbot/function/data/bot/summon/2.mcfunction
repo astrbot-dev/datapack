@@ -11,5 +11,5 @@ data modify entity @n[tag=astrbot_interaction_2_temp] height set value 2
 # 命名
 data modify entity @n[tag=astrbot_root_temp,distance=..5] CustomName set value {"translate":"entity.astrbot.bot_heavy"}
 #初始化模块
-scoreboard players set @s astrbot.module_terminal 1111
+data modify storage astrbot:terminal main.module set value 0b1111
 function astrbot:trigger/module_terminal
