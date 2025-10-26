@@ -70,3 +70,5 @@ A["astrbot_root"] -->B["astrbot_display"]
     └─ (字符串)type: 必为module，表示此物品为一个模块。
 ```
 
+## Module
+

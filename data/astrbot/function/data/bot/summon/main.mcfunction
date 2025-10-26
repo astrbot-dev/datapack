@@ -34,7 +34,3 @@ item replace entity @s weapon.mainhand with minecraft:air
 
 # 音效
 playsound minecraft:block.vault.open_shutter player @a
-
-# 初始化模块
-# scoreboard players set @s astrbot.module_terminal 111
-# function astrbot:trigger/module_terminal

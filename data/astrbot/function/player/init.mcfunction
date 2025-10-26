@@ -19,3 +19,7 @@
     scoreboard players enable @s astrbot.follow
     ## 充电
     scoreboard players enable @s astrbot.battery
+
+
+# UID 序列
+execute store result score @s astrbot.player_uid run scoreboard players add #player astrbot.player_uid 1

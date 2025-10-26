@@ -14,12 +14,14 @@
 
 # Player
     # 电量控制
-    ## 电量
-    scoreboard objectives add astrbot.player_power dummy
-    ## 电量上限
-    scoreboard objectives add astrbot.max_player_power dummy
-    ## 电量恢复速度
-    scoreboard objectives add astrbot.player_power_regen dummy
+        # 电量
+        scoreboard objectives add astrbot.player_power dummy
+        # 电量上限
+        scoreboard objectives add astrbot.max_player_power dummy
+        # 电量恢复速度
+        scoreboard objectives add astrbot.player_power_regen dummy
+    # 序列化uid(#player-玩家序列)
+    scoreboard objectives add astrbot.player_uid dummy
 
 
 # 运算依赖
@@ -35,7 +37,7 @@
     scoreboard objectives add astrbot.y dummy
     scoreboard objectives add astrbot.z dummy
 # 逻辑依赖
-    # 序列化uid
+    # 序列化uid(#bot-机器人序列)
     scoreboard objectives add astrbot.uid dummy
     # 机器人部署相关
     scoreboard objectives add astrbot.using dummy
