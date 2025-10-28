@@ -1,2 +1,3 @@
 execute store result score @s astrbot.collision run function #bs.hitbox:is_in_block_collision
+execute if entity @e[tag=testing,dx=0,dy=0,dz=0] run scoreboard players set @s astrbot.collision 0
 execute unless entity @e[tag=testing,dx=0,dy=0,dz=0] if entity @e[tag=testing,distance=..40] unless score @s astrbot.collision matches 1 positioned ^ ^ ^0.2 run function astrbot:module/m242_bushmaster/test/ray3
