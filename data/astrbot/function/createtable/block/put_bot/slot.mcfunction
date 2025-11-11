@@ -8,7 +8,7 @@ scoreboard players operation @s astrbot.slot_available_status = AVAILABLE astrbo
 scoreboard players operation @s astrbot.slot = temp astrbot.slot 
 scoreboard players add temp astrbot.slot 1
 summon item_display ~ ~ ~ {view_range: 0, Tags: ["astrbot.just.model", "astrbot.just"]}
-ride @n[tag=astrbot.just.model, distance=0..1, type=item_display] mount @s
+ride @n[tag=astrbot.just.model, distance=0..0.9, type=item_display] mount @s
 execute on passengers run tag @s remove astrbot.just.model
 
 return 1

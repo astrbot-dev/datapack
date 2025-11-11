@@ -1,2 +1,2 @@
-data modify storage astrbot:temp arg.item set from entity @n[tag=astrbot.temp, distance=0..1, type=item_display] item
+data modify storage astrbot:temp arg.item set from entity @n[tag=astrbot.temp, distance=0..0.9, type=item_display] item
 execute positioned ~ ~0.5 ~ run function astrbot:util/macro/summon_item with storage astrbot:temp arg

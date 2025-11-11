@@ -12,4 +12,4 @@ execute at @s run function astrbot:createtable/block/put/model
 
 # set id
 scoreboard players add static_id astrbot.createtable_id 1
-execute as @e[tag=astrbot.just,distance=0..1] run function astrbot:createtable/block/put/set_id
+execute as @e[tag=astrbot.just,distance=0..0.9] run function astrbot:createtable/block/put/set_id
