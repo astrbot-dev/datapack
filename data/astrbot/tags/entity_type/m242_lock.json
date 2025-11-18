@@ -1,0 +1,15 @@
+{
+    "values": [
+        "creeper",
+        "#zombies",
+        "#skeletons",
+        "#illager",
+        "vex",
+        "shulker",
+        "piglin",
+        "piglin_brute",
+        "hoglin",
+        "spider",
+        "cave_spider"
+    ]
+}
