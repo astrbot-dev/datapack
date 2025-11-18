@@ -3,7 +3,7 @@ function astrbot:module/missile_launcher/damage
 execute as @e[tag=agm] run function astrbot:module/missile_launcher/target
 execute as @e[tag=agm] run function astrbot:module/missile_launcher/target
 execute as @e[tag=agm] run function astrbot:module/missile_launcher/target
-scoreboard players remove @e[scores={astrbot.missile_launcher_time=1..}] astrbot.missile_launcher_time 1
+scoreboard players remove @e[scores={astrbot.missile_launcher_time=1..},type=minecraft:text_display,tag=locksym] astrbot.missile_launcher_time 1
 execute as @e[type=minecraft:text_display,tag=locksym,scores={astrbot.missile_launcher_time=0}] on passengers run kill @s
 kill @e[type=minecraft:text_display,tag=locksym,scores={astrbot.missile_launcher_time=0}]
 
