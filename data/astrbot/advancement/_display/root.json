@@ -1,0 +1,23 @@
+{
+    "display": {
+        "title": {
+            "translate": "advancements.astrbot.root.title"
+        },
+        "description": {
+            "translate": "advancements.astrbot.root.description"
+        },
+        "background": "astrbot:bg",
+        "icon": {
+            "id": "firework_star",
+            "components": {
+                "item_model": "astrbot:bot/ground"
+            }
+        },
+        "frame": "goal"
+    },
+    "criteria": {
+        "1":{
+            "trigger": "tick"
+        }
+    }
+}

@@ -3,4 +3,4 @@ execute at @s unless entity @e[tag=astrbot_heavy,tag=astrbot_missile_launcher,sc
 
 
 execute if entity @s[tag=lock] run return run tag @s add launch
-tag @s remove lock
+tag @s add lock

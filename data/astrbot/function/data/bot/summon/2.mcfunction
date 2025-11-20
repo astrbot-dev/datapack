@@ -10,6 +10,10 @@ data modify entity @n[tag=astrbot_interaction_2_temp] width set value 1.8
 data modify entity @n[tag=astrbot_interaction_2_temp] height set value 2
 # 命名
 data modify entity @n[tag=astrbot_root_temp,distance=..5] CustomName set value {"translate":"entity.astrbot.bot_heavy"}
+execute if data entity @n[tag=astrbot_display_temp] item.components."minecraft:custom_name" run data modify entity @n[tag=astrbot_root_temp,distance=..5] CustomName set from entity @n[tag=astrbot_display_temp] item.components."minecraft:custom_name"
+#血量
+attribute @n[tag=astrbot_root_temp,distance=..5] max_health base set 100
+data modify entity @n[tag=astrbot_root_temp,distance=..5] Health set value 100f
 #初始化模块
 data modify storage astrbot:terminal main.module set value 0b1111
 function astrbot:data/bot/summon/init
