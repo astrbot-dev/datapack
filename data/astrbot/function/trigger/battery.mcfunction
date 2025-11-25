@@ -5,3 +5,7 @@ data modify storage astrbot:terminal main.UUID set from entity @s UUID
 function astrbot:terminal/deployed/battery/get_data with storage astrbot:terminal main
 scoreboard players reset @s astrbot.battery
 scoreboard players enable @s astrbot.battery
+
+playsound minecraft:block.vault.eject_item neutral @a ~ ~ ~
+# 进度
+advancement grant @s only astrbot:_display/charge

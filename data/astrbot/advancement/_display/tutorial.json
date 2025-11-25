@@ -1,0 +1,33 @@
+{
+    "parent": "astrbot:_display/airship",
+    "display": {
+        "title": {
+            "translate": "advancements.astrbot.tutorial.title"
+        },
+        "description": {
+            "translate": "advancements.astrbot.tutorial.description"
+        },
+        "icon": {
+            "id": "book"
+        },
+        "frame": "task"
+    },
+    "criteria": {
+        "1": {
+            "trigger": "inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "predicates": {
+                            "custom_data": {
+                                "astrbot": {
+                                    "name": "astrbot:empty"
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}

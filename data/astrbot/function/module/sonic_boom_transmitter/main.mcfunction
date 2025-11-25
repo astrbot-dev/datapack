@@ -9,6 +9,8 @@ playsound entity.warden.sonic_boom neutral @a ~ ~ ~ 15 1
 #打死他
 damage @n[tag=sonic_boom_transmitter_target] 12 minecraft:sonic_boom
 tag @e[tag=sonic_boom_transmitter_target] remove sonic_boom_transmitter_target
+#进度
+execute on owner run advancement grant @s only astrbot:_display/supersonic
 #耗电
 execute on passengers unless data entity @s item.components."minecraft:custom_data".astrbot{type:2} on vehicle on owner if score @s astrbot.player_power matches 5.. run return run scoreboard players remove @s astrbot.player_power 5
 execute if score @s astrbot.player_power matches 5.. run return run scoreboard players remove @s astrbot.player_power 5

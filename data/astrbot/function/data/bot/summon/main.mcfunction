@@ -32,5 +32,8 @@ tag @e[tag=astrbot_interaction_2_temp,distance=..5] remove astrbot_interaction_2
 # execute unless entity @s[gamemode=creative] run item replace entity @s weapon.mainhand with air
 item replace entity @s weapon.mainhand with minecraft:air
 
+#进度
+advancement grant @s only astrbot:_display/summon
+
 # 音效
 playsound minecraft:block.vault.open_shutter player @a

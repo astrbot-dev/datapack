@@ -1,0 +1,38 @@
+{
+    "parent":"astrbot:_display/wasteland",
+    "display": {
+        "title": {
+            "translate": "advancements.astrbot.airship.title"
+        },
+        "description": {
+            "translate": "advancements.astrbot.airship.description"
+        },
+        "icon": {
+            "id": "firework_star",
+            "components": {
+                "item_model": "astrbot:bot/air"
+            }
+        },
+        "frame": "task"
+    },
+    "criteria": {
+        "1":{
+            "trigger": "location",
+            "conditions": {
+                "player": {
+                    "location": {
+                        "structures": ["airship"]
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "recipes": [
+            "astrbot:bot/air",
+            "astrbot:bot/ground",
+            "astrbot:bot/heavy",
+            "astrbot:createtable"
+        ]
+    }
+}

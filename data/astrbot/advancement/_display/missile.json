@@ -1,0 +1,23 @@
+{
+    "parent":"astrbot:_display/supersonic",
+    "display": {
+        "title": {
+            "translate": "advancements.astrbot.missile.title"
+        },
+        "description": {
+            "translate": "advancements.astrbot.missile.description"
+        },
+        "icon": {
+            "id": "firework_star",
+            "components": {
+                "item_model": "astrbot:missile"
+            }
+        },
+        "frame": "task"
+    },
+    "criteria": {
+        "1":{
+            "trigger": "impossible"
+        }
+    }
+}

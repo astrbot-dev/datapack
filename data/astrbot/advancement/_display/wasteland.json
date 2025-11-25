@@ -1,0 +1,27 @@
+{
+    "parent":"astrbot:_display/root",
+    "display": {
+        "title": {
+            "translate": "advancements.astrbot.wasteland.title"
+        },
+        "description": {
+            "translate": "advancements.astrbot.wasteland.description"
+        },
+        "icon": {
+            "id": "blackstone"
+        },
+        "frame": "task"
+    },
+    "criteria": {
+        "1":{
+            "trigger": "location",
+            "conditions": {
+                "player": {
+                    "location": {
+                        "biomes": ["minecraft:rbot_wasteland"]
+                    }
+                }
+            }
+        }
+    }
+}

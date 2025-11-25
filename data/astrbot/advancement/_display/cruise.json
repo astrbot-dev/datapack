@@ -1,0 +1,20 @@
+{
+    "parent":"astrbot:_display/charge",
+    "display": {
+        "title": {
+            "translate": "advancements.astrbot.cruise.title"
+        },
+        "description": {
+            "translate": "advancements.astrbot.cruise.description"
+        },
+        "icon": {
+            "id": "blue_harness"
+        },
+        "frame": "task"
+    },
+    "criteria": {
+        "1":{
+            "trigger": "impossible"
+        }
+    }
+}

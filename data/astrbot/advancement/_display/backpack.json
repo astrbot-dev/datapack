@@ -1,0 +1,20 @@
+{
+    "parent":"astrbot:_display/fall_protect",
+    "display": {
+        "title": {
+            "translate": "advancements.astrbot.backpack.title"
+        },
+        "description": {
+            "translate": "advancements.astrbot.backpack.description"
+        },
+        "icon": {
+            "id": "bundle"
+        },
+        "frame": "task"
+    },
+    "criteria": {
+        "1":{
+            "trigger": "impossible"
+        }
+    }
+}
