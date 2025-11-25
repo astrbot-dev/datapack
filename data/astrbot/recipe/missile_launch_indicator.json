@@ -15,7 +15,7 @@
     "components": {
       "minecraft:item_model": "astrbot:missile_launch_indicator",
       "minecraft:item_name": {
-      "translate": "item.astrbot.missile_launch_indicator"
+        "translate": "item.astrbot.missile_launch_indicator"
       },
       "minecraft:lore": [
         {
@@ -23,10 +23,14 @@
           "color": "green",
           "translate": "item.astrbot.missile_launch_indicator.lore"
         }
-      ]
+      ],
+      "custom_data": {
+        "id": "astrbot:missile_launch_indicator",
+        "mode": "lock"
+      }
     },
     "count": 1,
-    "id": "minecraft:recovery_compass"
+    "id": "minecraft:carrot_on_a_stick"
   },
   "type": "minecraft:crafting_shaped"
 }

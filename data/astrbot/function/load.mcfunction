@@ -61,3 +61,4 @@
 # 杂七杂八
     # ^^^ 函数内部的临时变量让用这个吗111
     scoreboard objectives add astr.func_var dummy
+    scoreboard objectives add astrbot.player_rotation dummy

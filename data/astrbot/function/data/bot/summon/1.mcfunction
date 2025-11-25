@@ -17,6 +17,10 @@ execute store result entity @n[tag=astrbot_root_temp,distance=..5] data.offset.z
 execute store result entity @n[tag=astrbot_root_temp,distance=..5] data.offset.y float 0.01 run random value 250..450
 # 命名
 data modify entity @n[tag=astrbot_root_temp,distance=..5] CustomName set value {"translate":"entity.astrbot.bot_air"}
+execute if data entity @n[tag=astrbot_display_temp] item.components."minecraft:custom_name" run data modify entity @n[tag=astrbot_root_temp,distance=..5] CustomName set from entity @n[tag=astrbot_display_temp] item.components."minecraft:custom_name"
+#血量
+attribute @n[tag=astrbot_root_temp,distance=..5] max_health base set 20
+data modify entity @n[tag=astrbot_root_temp,distance=..5] Health set value 20f
 #初始化模块
 data modify storage astrbot:terminal main.module set value 0b11
 function astrbot:data/bot/summon/init
