@@ -8,7 +8,10 @@
             "translate": "advancements.astrbot.cruise.description"
         },
         "icon": {
-            "id": "blue_harness"
+            "id": "blue_harness",
+            "components": {
+                "item_model": "astrbot:_adv/ghast"
+            }
         },
         "frame": "task"
     },

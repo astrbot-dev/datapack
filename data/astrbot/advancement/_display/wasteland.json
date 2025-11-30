@@ -8,7 +8,10 @@
             "translate": "advancements.astrbot.wasteland.description"
         },
         "icon": {
-            "id": "blackstone"
+            "id": "blackstone",
+            "components": {
+                "item_model": "astrbot:_adv/biome"
+            }
         },
         "frame": "task"
     },

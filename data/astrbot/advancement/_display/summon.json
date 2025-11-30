@@ -10,7 +10,7 @@
         "icon": {
             "id": "firework_star",
             "components": {
-                "item_model": "astrbot:bot/ground"
+                "item_model": "astrbot:_adv/summon"
             }
         },
         "frame": "task"

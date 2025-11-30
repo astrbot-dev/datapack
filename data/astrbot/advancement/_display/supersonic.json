@@ -8,7 +8,10 @@
             "translate": "advancements.astrbot.supersonic.description"
         },
         "icon": {
-            "id": "sculk_shrieker"
+            "id": "sculk_shrieker",
+            "components": {
+                "item_model": "astrbot:_adv/sonic"
+            }
         },
         "frame": "task"
     },

@@ -10,7 +10,7 @@
         "icon": {
             "id": "firework_star",
             "components": {
-                "item_model": "astrbot:missile"
+                "item_model": "astrbot:_adv/missile"
             }
         },
         "frame": "task"
