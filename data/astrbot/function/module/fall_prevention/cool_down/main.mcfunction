@@ -1,6 +1,10 @@
+#判断距离
+execute as @e[type=wolf,tag=astrbot_root,tag=fall_prevention,distance=0..] at @s on owner unless entity @s[distance=..50] run return fail
+#药水效果
+effect give @s slow_falling 1 0 true
 #效果触发
 playsound block.beacon.activate player @s ~ ~ ~
-title @a times 0 60 0
+title @s times 0 60 0
 title @s title {atlas:"minecraft:gui",object:"atlas",sprite:"minecraft:mob_effect/absorption"}
 particle dolphin ~ ~-1 ~ 1 1 1 1 1000 force
 particle nautilus ~ ~-2 ~ 1 1 1 1 1000 force

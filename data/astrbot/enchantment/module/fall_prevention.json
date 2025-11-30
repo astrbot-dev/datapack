@@ -7,14 +7,6 @@
         "effect": {
           "effects": [
             {
-              "max_amplifier": 0,
-              "max_duration": 0.5,
-              "min_amplifier": 0,
-              "min_duration": 0.5,
-              "to_apply": "minecraft:slow_falling",
-              "type": "minecraft:apply_mob_effect"
-            },
-            {
               "function": "astrbot:module/fall_prevention/cool_down/main",
               "type": "minecraft:run_function"
             }
