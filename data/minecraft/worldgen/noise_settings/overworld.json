@@ -396,7 +396,7 @@
                           "then_run": {
                             "type": "block",
                             "result_state": {
-                              "Name": "minecraft:grass_block"
+                              "Name": "minecraft:blackstone"
                             }
                           }
                         },
@@ -426,7 +426,7 @@
                           "then_run": {
                             "type": "block",
                             "result_state": {
-                              "Name": "minecraft:magma_block"
+                              "Name": "minecraft:blackstone"
                             }
                           }
                         }
@@ -584,7 +584,7 @@
                           "type": "condition",
                           "if_true": {
                             "type": "noise_threshold",
-                            "min_threshold": -0.7,
+                            "min_threshold": -1.0,
                             "max_threshold": -0.6,
                             "noise": "minecraft:rbot_surface"
                           },
@@ -592,21 +592,6 @@
                             "type": "block",
                             "result_state": {
                               "Name": "minecraft:blackstone"
-                            }
-                          }
-                        },
-                        {
-                          "type": "condition",
-                          "if_true": {
-                            "type": "noise_threshold",
-                            "min_threshold": -1.0,
-                            "max_threshold": -0.7,
-                            "noise": "minecraft:rbot_surface"
-                          },
-                          "then_run": {
-                            "type": "block",
-                            "result_state": {
-                              "Name": "minecraft:magma_block"
                             }
                           }
                         }
@@ -619,7 +604,7 @@
                       "type": "stone_depth",
                       "add_surface_depth": true,
                       "offset": 0,
-                      "secondary_depth_range": 3.25,
+                      "secondary_depth_range": 3,
                       "surface_type": "floor"
                     },
                     "then_run": {

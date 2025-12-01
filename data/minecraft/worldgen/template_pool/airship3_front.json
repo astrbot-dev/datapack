@@ -1,0 +1,15 @@
+{
+    "name": "minecraft:airship3_front",
+    "fallback": "minecraft:empty",
+    "elements": [
+        {
+            "weight": 1,
+            "element": {
+                "location": "minecraft:airship/airship3_front",
+                "processors": [],
+                "projection": "rigid",
+                "element_type": "minecraft:single_pool_element"
+            }
+        }
+    ]
+}
