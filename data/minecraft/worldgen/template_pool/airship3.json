@@ -1,11 +1,11 @@
 {
-    "name": "minecraft:airship4_front",
+    "name": "minecraft:airship",
     "fallback": "minecraft:empty",
     "elements": [
         {
             "weight": 1,
             "element": {
-                "location": "minecraft:airship/airship4_front",
+                "location": "minecraft:airship/airship3",
                 "processors": [{
                         "processor_type": "block_rot",
                         "integrity": 0.8,

@@ -7,7 +7,23 @@
   },
   "structures": [
     {
-      "structure": "minecraft:airship",
+      "structure": "minecraft:airship1",
+      "weight": 1
+    },
+    {
+      "structure": "minecraft:airship2",
+      "weight": 1
+    },
+    {
+      "structure": "minecraft:airship3",
+      "weight": 1
+    },
+    {
+      "structure": "minecraft:airship4",
+      "weight": 1
+    },
+    {
+      "structure": "minecraft:airship5",
       "weight": 1
     }
   ]
