@@ -14,6 +14,8 @@
                                 "item_name": {"translate": "item.astrbot.recipe_poster"},
                                 "lore": [
                                     {"translate": "item.astrbot.recipe_poster.lore","italic": false,"color": "gray"},
+                                    {"translate": "item.astrbot.recipe_poster.lore2","italic": false,"color": "gray"},
+                                    {"text":""},
                                     {"translate": "item.astrbot.recipe_poster.fall.lore","italic": false,"color": "gray"}
                                 ],
                                 "custom_data": {
