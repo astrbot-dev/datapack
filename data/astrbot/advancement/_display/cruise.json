@@ -1,0 +1,23 @@
+{
+    "parent":"astrbot:_display/charge",
+    "display": {
+        "title": {
+            "translate": "advancements.astrbot.cruise.title"
+        },
+        "description": {
+            "translate": "advancements.astrbot.cruise.description"
+        },
+        "icon": {
+            "id": "blue_harness",
+            "components": {
+                "item_model": "astrbot:_adv/ghast"
+            }
+        },
+        "frame": "task"
+    },
+    "criteria": {
+        "1":{
+            "trigger": "impossible"
+        }
+    }
+}

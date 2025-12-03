@@ -1,0 +1,37 @@
+{
+    "parent": "astrbot:_display/tutorial/sonic",
+    "display": {
+        "title": {
+            "translate": "advancements.astrbot.m242.title"
+        },
+        "description": {
+            "translate": "advancements.astrbot.m242.description"
+        },
+        "icon": {
+            "id": "firework_star",
+            "components": {
+                "item_model": "astrbot:module/m242_bushmaster"
+            }
+        },
+        "frame": "task",
+        "hidden": true
+    },
+    "criteria": {
+        "1": {
+            "trigger": "inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "predicates": {
+                            "custom_data": {
+                                "astrbot": {
+                                    "name": "astrbot:m242_bushmaster"
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}

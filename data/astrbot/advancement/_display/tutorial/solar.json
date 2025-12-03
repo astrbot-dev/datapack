@@ -1,0 +1,37 @@
+{
+    "parent": "astrbot:_display/tutorial/backpack",
+    "display": {
+        "title": {
+            "translate": "advancements.astrbot.solar.title"
+        },
+        "description": {
+            "translate": "advancements.astrbot.solar.description"
+        },
+        "icon": {
+            "id": "firework_star",
+            "components": {
+                "item_model": "astrbot:module/solar_energy"
+            }
+        },
+        "frame": "task",
+        "hidden": true
+    },
+    "criteria": {
+        "1": {
+            "trigger": "inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "predicates": {
+                            "custom_data": {
+                                "astrbot": {
+                                    "name": "astrbot:solar_energy"
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}

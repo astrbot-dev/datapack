@@ -2,3 +2,6 @@
 tag @s add astrbot_ride_temp
 execute on vehicle on passengers unless entity @s[type=player] unless entity @s[tag=astrbot_ride_temp] run ride @s dismount
 tag @s remove astrbot_ride_temp
+
+#用于进度判定
+execute on vehicle on leasher if entity @s[type=happy_ghast] on passengers if entity @s[type=player,predicate=astrbot:player/moving] run advancement grant @s only astrbot:_display/cruise

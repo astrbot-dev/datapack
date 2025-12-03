@@ -1,0 +1,34 @@
+{
+    "parent": "astrbot:_display/airship",
+    "display": {
+        "title": {
+            "translate": "advancements.astrbot.tutorial.title"
+        },
+        "description": {
+            "translate": "advancements.astrbot.tutorial.description"
+        },
+        "icon": {
+            "id": "book",
+            "components": {
+                "item_model": "astrbot:_adv/recipe"
+            }
+        },
+        "frame": "task"
+    },
+    "criteria": {
+        "1": {
+            "trigger": "inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "predicates": {
+                            "custom_data": {
+                                "id":"recipe_poster"
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}

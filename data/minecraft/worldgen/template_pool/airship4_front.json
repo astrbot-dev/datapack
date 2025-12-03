@@ -1,0 +1,26 @@
+{
+    "name": "minecraft:airship4_front",
+    "fallback": "minecraft:empty",
+    "elements": [
+        {
+            "weight": 1,
+            "element": {
+                "location": "minecraft:airship/airship4_front",
+                "processors": [{
+                        "processor_type": "block_rot",
+                        "integrity": 0.8,
+                        "rottable_blocks": [
+                            "snow_block",
+                            "quartz_block",
+                            "quartz_slab",
+                            "quartz_stairs",
+                            "cyan_terracotta",
+                            "black_stained_glass"
+                        ]
+                    }],
+                "projection": "rigid",
+                "element_type": "minecraft:single_pool_element"
+            }
+        }
+    ]
+}

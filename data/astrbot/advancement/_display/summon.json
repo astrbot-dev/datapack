@@ -1,0 +1,23 @@
+{
+    "parent":"astrbot:_display/airship",
+    "display": {
+        "title": {
+            "translate": "advancements.astrbot.summon.title"
+        },
+        "description": {
+            "translate": "advancements.astrbot.summon.description"
+        },
+        "icon": {
+            "id": "firework_star",
+            "components": {
+                "item_model": "astrbot:_adv/summon"
+            }
+        },
+        "frame": "task"
+    },
+    "criteria": {
+        "1":{
+            "trigger": "impossible"
+        }
+    }
+}

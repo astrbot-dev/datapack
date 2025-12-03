@@ -1,0 +1,23 @@
+{
+    "parent":"astrbot:_display/summon",
+    "display": {
+        "title": {
+            "translate": "advancements.astrbot.charge.title"
+        },
+        "description": {
+            "translate": "advancements.astrbot.charge.description"
+        },
+        "icon": {
+            "id": "firework_star",
+            "components": {
+                "item_model": "astrbot:_adv/charge"
+            }
+        },
+        "frame": "task"
+    },
+    "criteria": {
+        "1":{
+            "trigger": "impossible"
+        }
+    }
+}

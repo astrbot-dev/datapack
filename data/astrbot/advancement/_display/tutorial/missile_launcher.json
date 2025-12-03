@@ -1,0 +1,40 @@
+{
+    "parent": "astrbot:_display/tutorial/m242",
+    "display": {
+        "title": {
+            "translate": "advancements.astrbot.missile_launcher.title"
+        },
+        "description": {
+            "translate": "advancements.astrbot.missile_launcher.description"
+        },
+        "icon": {
+            "id": "firework_star",
+            "components": {
+                "item_model": "astrbot:module/missile_launcher"
+            }
+        },
+        "frame": "task",
+        "hidden": true
+    },
+    "criteria": {
+        "1": {
+            "trigger": "inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "predicates": {
+                            "custom_data": {
+                                "astrbot": {
+                                    "name": "astrbot:missile_launcher"
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "rewards": {
+        "recipes": ["astrbot:missile_launch_indicator"]
+    }
+}

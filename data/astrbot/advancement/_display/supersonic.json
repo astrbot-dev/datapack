@@ -1,0 +1,23 @@
+{
+    "parent":"astrbot:_display/backpack",
+    "display": {
+        "title": {
+            "translate": "advancements.astrbot.supersonic.title"
+        },
+        "description": {
+            "translate": "advancements.astrbot.supersonic.description"
+        },
+        "icon": {
+            "id": "sculk_shrieker",
+            "components": {
+                "item_model": "astrbot:_adv/sonic"
+            }
+        },
+        "frame": "task"
+    },
+    "criteria": {
+        "1":{
+            "trigger": "impossible"
+        }
+    }
+}

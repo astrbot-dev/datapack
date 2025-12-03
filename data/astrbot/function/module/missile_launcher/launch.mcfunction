@@ -9,6 +9,9 @@ execute unless entity @e[tag=uid] run tellraw @s "\u00a74无目标"
 
 execute if entity @e[tag=uid] run scoreboard players remove @n[tag=astrbot_heavy,tag=astrbot_missile_launcher,scores={astrbot.player_power=10..}] astrbot.player_power 10
 
+execute if entity @e[tag=uid] run advancement grant @s only astrbot:_display/missile
+
+
 tag @s remove launch
 tag @s remove lock
 tag @e remove uid

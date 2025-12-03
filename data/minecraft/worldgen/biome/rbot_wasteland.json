@@ -17,7 +17,7 @@
         },
         "particle": {
             "options": {
-                "type": "minecraft:white_ash"
+                "type": "minecraft:firefly"
             },
             "probability": 0.09875
         },

@@ -1,0 +1,37 @@
+{
+    "parent": "astrbot:_display/tutorial/ads",
+    "display": {
+        "title": {
+            "translate": "advancements.astrbot.sonic.title"
+        },
+        "description": {
+            "translate": "advancements.astrbot.sonic.description"
+        },
+        "icon": {
+            "id": "firework_star",
+            "components": {
+                "item_model": "astrbot:module/sonic_boom_transmitter"
+            }
+        },
+        "frame": "task",
+        "hidden": true
+    },
+    "criteria": {
+        "1": {
+            "trigger": "inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "predicates": {
+                            "custom_data": {
+                                "astrbot": {
+                                    "name": "astrbot:sonic_boom_transmitter"
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}

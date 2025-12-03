@@ -1,0 +1,23 @@
+{
+    "parent":"astrbot:_display/summon",
+    "display": {
+        "title": {
+            "translate": "advancements.astrbot.fall.title"
+        },
+        "description": {
+            "translate": "advancements.astrbot.fall.description"
+        },
+        "icon": {
+            "id": "firework_star",
+            "components": {
+                "item_model": "astrbot:_adv/absorption"
+            }
+        },
+        "frame": "task"
+    },
+    "criteria": {
+        "1":{
+            "trigger": "impossible"
+        }
+    }
+}

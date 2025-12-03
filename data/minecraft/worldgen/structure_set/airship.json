@@ -2,12 +2,28 @@
   "placement": {
     "type": "minecraft:random_spread",
     "salt": 20073331,
-    "separation": 18,
-    "spacing": 25
+    "separation": 10,
+    "spacing": 15
   },
   "structures": [
     {
-      "structure": "minecraft:airship",
+      "structure": "minecraft:airship1",
+      "weight": 1
+    },
+    {
+      "structure": "minecraft:airship2",
+      "weight": 1
+    },
+    {
+      "structure": "minecraft:airship3",
+      "weight": 1
+    },
+    {
+      "structure": "minecraft:airship4",
+      "weight": 1
+    },
+    {
+      "structure": "minecraft:airship5",
       "weight": 1
     }
   ]

@@ -29,7 +29,7 @@ data modify storage astrbot:terminal dialog set value {\
   after_action:"close",\
   body:{\
     contents:[\
-      "",\
+      {translate:"dialog.astrbot.name_default",extra:[{text:"\n\n"}]},\
       {translate:"dialog.astrbot.astrbot_serial_number"},\
       {color:"yellow",text:"0"},\
       "\n\n",\
