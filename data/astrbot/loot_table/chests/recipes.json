@@ -1,0 +1,54 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "loot_table",
+                    "value": "astrbot:recipes/ads",
+                    "weight": 5
+                },
+                {
+                    "type": "loot_table",
+                    "value": "astrbot:recipes/backpack",
+                    "weight": 5
+                },
+                {
+                    "type": "loot_table",
+                    "value": "astrbot:recipes/fall",
+                    "weight": 5
+                },
+                {
+                    "type": "loot_table",
+                    "value": "astrbot:recipes/gun",
+                    "weight": 5
+                },
+                {
+                    "type": "loot_table",
+                    "value": "astrbot:recipes/mending",
+                    "weight": 5
+                },
+                {
+                    "type": "loot_table",
+                    "value": "astrbot:recipes/neg",
+                    "weight": 5
+                },
+                {
+                    "type": "loot_table",
+                    "value": "astrbot:recipes/solar",
+                    "weight": 5
+                },
+                {
+                    "type": "loot_table",
+                    "value": "astrbot:recipes/sonic",
+                    "weight": 5
+                },
+                {
+                    "type": "loot_table",
+                    "value": "astrbot:recipes/tensor",
+                    "weight": 5
+                }
+            ]
+        }
+    ]
+}

@@ -41,6 +41,16 @@
                     "type": "loot_table",
                     "value": "astrbot:chests/modules",
                     "weight": 1
+                },
+                {
+                    "type": "loot_table",
+                    "value": "astrbot:chests/recipes",
+                    "weight": 2
+                },
+                {
+                    "type": "loot_table",
+                    "value": "astrbot:chests/equipment",
+                    "weight": 1
                 }
             ]
         }

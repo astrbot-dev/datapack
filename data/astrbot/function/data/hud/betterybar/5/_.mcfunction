@@ -3,7 +3,7 @@ execute if score @s astrbot.player_power matches 021..040 run function astrbot:d
 execute if score @s astrbot.player_power matches 041..060 run function astrbot:data/hud/betterybar/5/60
 execute if score @s astrbot.player_power matches 061..080 run function astrbot:data/hud/betterybar/5/80
 execute if score @s astrbot.player_power matches 081..100 run function astrbot:data/hud/betterybar/5/100
-# execute if score @s astrbot.player_power matches 101..120 run function astrbot:data/hud/betterybar/5/120
+execute if score @s astrbot.player_power matches 101..120 run function astrbot:data/hud/betterybar/5/120
 # execute if score @s astrbot.player_power matches 121..140 run function astrbot:data/hud/betterybar/5/140
 # execute if score @s astrbot.player_power matches 141..160 run function astrbot:data/hud/betterybar/5/160
 # execute if score @s astrbot.player_power matches 161..180 run function astrbot:data/hud/betterybar/5/180

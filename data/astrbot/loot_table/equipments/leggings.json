@@ -1,0 +1,59 @@
+{
+    "pools": [
+        {
+            "rolls":1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:firework_star",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_components",
+                            "components": {
+                                "item_name": {"translate": "item.astrbot.bot_leggings"},
+                                "item_model": "astrbot:leggings",
+                                "custom_data": "{id:\"astrbot:leggings\",player_power_regen:{legs:{type:0b,amount:2}}}",
+                                "max_stack_size": 1,
+                                "equippable": {
+                                    "slot": "legs",
+                                    "damage_on_hurt": true,
+                                    "equip_sound": {"sound_id":"block.vault.eject_item"},
+                                    "asset_id": "astrbot:bot"
+                                },
+                                "attribute_modifiers":[
+                                    {
+                                        "type": "armor",
+                                        "amount": 5,
+                                        "id": "minecraft:armor.leggings",
+                                        "operation": "add_value",
+                                        "slot": "legs"
+                                    },
+                                    {
+                                        "type": "armor_toughness",
+                                        "amount": 1,
+                                        "id": "minecraft:armor_toughness.leggings",
+                                        "operation": "add_value",
+                                        "slot": "legs"
+                                    },
+                                    {
+                                        "type": "luck",
+                                        "amount": 0,
+                                        "id": "astrbot:max_player_power",
+                                        "operation": "add_value",
+                                        "slot": "legs",
+                                        "display": {
+                                            "type": "override",
+                                            "value": {"translate": "attribute.modifier.plus.0","with": [{"text": "2"},{"translate": "attribute.name.astrbot.player_power_regen"}],"color": "blue"}
+                                        }
+                                    }
+                                ],
+                                "max_damage": 300,
+                                "damage": 0
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,50 @@
+{
+    "pools": [
+        {
+            "rolls":1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:firework_star",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_components",
+                            "components": {
+                                "item_name": {"translate": "item.astrbot.baton"},
+                                "item_model": "astrbot:botweapon",
+                                "custom_data": "{id:\"astrbot:baton\"}",
+                                "max_stack_size": 1,
+                                "weapon": {
+                                    "item_damage_per_attack": 2
+                                },
+                                "max_damage": 512,
+                                "damage": 0,
+                                "attribute_modifiers": [
+                                    {
+                                        "id": "minecraft:base_attack_damage",
+                                        "type": "attack_damage",
+                                        "amount": 5,
+                                        "operation": "add_value",
+                                        "slot": "mainhand"
+                                    },
+                                    {
+                                        "id": "minecraft:base_attack_speed",
+                                        "type": "attack_speed",
+                                        "amount": -3,
+                                        "operation": "add_value",
+                                        "slot": "mainhand"
+                                    }
+                                ],
+                                "enchantments": {
+                                    "astrbot:baton": 1
+                                },
+                                "enchantment_glint_override": false,
+                                "repair_cost": 65
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
