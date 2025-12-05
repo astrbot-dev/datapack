@@ -1,1 +1,1 @@
-execute unless block ~ ~ ~ barrier run function astrbot:createtable/block/destroy/use
+execute unless block ~ ~ ~ barrier run function astrbot:createtable/block/destroy/block_destroyed

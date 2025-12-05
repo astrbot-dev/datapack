@@ -1,0 +1,2 @@
+scoreboard players operation temp_id astrbot.temp = @s astrbot.createtable_id
+execute as @e[distance=..3, tag=astrbot.createtable.interaction] if score @s astrbot.createtable_id = temp_id astrbot.temp at @s run function astrbot:createtable/block/destroy/use
