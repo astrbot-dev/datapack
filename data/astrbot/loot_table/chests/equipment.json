@@ -28,6 +28,21 @@
                     "value": "astrbot:equipments/boots",
                     "weight": 5
                 }
+            ],
+            "functions": [
+                {
+                    "function": "enchant_with_levels",
+                    "levels": {
+                        "min": 5,
+                        "max": 22
+                    },
+                    "conditions": [
+                        {
+                            "condition": "random_chance",
+                            "chance": 0.3
+                        }
+                    ]
+                }
             ]
         }
     ]

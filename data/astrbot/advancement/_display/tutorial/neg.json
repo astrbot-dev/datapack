@@ -1,16 +1,16 @@
 {
-    "parent": "astrbot:_display/tutorial/neg",
+    "parent": "astrbot:_display/tutorial/sonic",
     "display": {
         "title": {
-            "translate": "advancements.astrbot.m242.title"
+            "translate": "advancements.astrbot.neg.title"
         },
         "description": {
-            "translate": "advancements.astrbot.m242.description"
+            "translate": "advancements.astrbot.neg.description"
         },
         "icon": {
             "id": "firework_star",
             "components": {
-                "item_model": "astrbot:module/m242_bushmaster"
+                "item_model": "astrbot:module/neg"
             }
         },
         "frame": "task",
@@ -25,7 +25,7 @@
                         "predicates": {
                             "custom_data": {
                                 "astrbot": {
-                                    "name": "astrbot:m242_bushmaster"
+                                    "name": "astrbot:negative_effect_generator"
                                 }
                             }
                         }
