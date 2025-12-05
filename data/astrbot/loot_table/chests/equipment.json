@@ -1,0 +1,49 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "loot_table",
+                    "value": "astrbot:equipments/baton",
+                    "weight": 5
+                },
+                {
+                    "type": "loot_table",
+                    "value": "astrbot:equipments/helmet",
+                    "weight": 5
+                },
+                {
+                    "type": "loot_table",
+                    "value": "astrbot:equipments/chestplate",
+                    "weight": 5
+                },
+                {
+                    "type": "loot_table",
+                    "value": "astrbot:equipments/leggings",
+                    "weight": 5
+                },
+                {
+                    "type": "loot_table",
+                    "value": "astrbot:equipments/boots",
+                    "weight": 5
+                }
+            ],
+            "functions": [
+                {
+                    "function": "enchant_with_levels",
+                    "levels": {
+                        "min": 5,
+                        "max": 22
+                    },
+                    "conditions": [
+                        {
+                            "condition": "random_chance",
+                            "chance": 0.3
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

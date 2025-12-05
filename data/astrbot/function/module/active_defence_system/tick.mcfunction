@@ -1,5 +1,5 @@
-
-execute as @e[tag=active_defence_system] at @s if entity @e[type=#minecraft:impact_projectiles,tag=!apshit,limit=1,sort=nearest,distance=..20] if function astrbot:module/active_defence_system/consume run function astrbot:module/active_defence_system/main
+execute as @e[tag=active_defence_system] at @s if entity @e[type=#minecraft:impact_projectiles,tag=!apshit,limit=1,sort=nearest,distance=..20,nbt={inGround:0b}] if function astrbot:module/active_defence_system/self if function astrbot:module/active_defence_system/consume run function astrbot:module/active_defence_system/main
 scoreboard players remove @e[scores={astr.hit=0..}] astr.hit 1
+tag @e remove astrbot_owner
 kill @e[scores={astr.hit=..0},type=!player]
 schedule function astrbot:module/active_defence_system/tick 5t

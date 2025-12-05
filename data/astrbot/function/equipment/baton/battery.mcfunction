@@ -1,0 +1,1 @@
+scoreboard players remove @s astrbot.player_power 3

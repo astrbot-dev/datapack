@@ -1,0 +1,59 @@
+{
+    "pools": [
+        {
+            "rolls":1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:iron_chestplate",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_components",
+                            "components": {
+                                "item_name": {"translate": "item.astrbot.bot_chestplate"},
+                                "item_model": "astrbot:chestplate",
+                                "custom_data": "{id:\"astrbot:chestplate\",player_power_regen:{chest:{type:0b,amount:3}}}",
+                                "max_stack_size": 1,
+                                "equippable": {
+                                    "slot": "chest",
+                                    "damage_on_hurt": true,
+                                    "equip_sound": {"sound_id":"block.vault.eject_item"},
+                                    "asset_id": "astrbot:bot"
+                                },
+                                "attribute_modifiers":[
+                                    {
+                                        "type": "armor",
+                                        "amount": 6,
+                                        "id": "minecraft:armor.chest",
+                                        "operation": "add_value",
+                                        "slot": "chest"
+                                    },
+                                    {
+                                        "type": "armor_toughness",
+                                        "amount": 2,
+                                        "id": "minecraft:armor_toughness.chest",
+                                        "operation": "add_value",
+                                        "slot": "chest"
+                                    },
+                                    {
+                                        "type": "luck",
+                                        "amount": 0,
+                                        "id": "astrbot:max_player_power",
+                                        "operation": "add_value",
+                                        "slot": "chest",
+                                        "display": {
+                                            "type": "override",
+                                            "value": {"translate": "attribute.modifier.plus.0","with": [{"text": "3"},{"translate": "attribute.name.astrbot.player_power_regen"}],"color": "blue"}
+                                        }
+                                    }
+                                ],
+                                "max_damage": 320,
+                                "damage": 0
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

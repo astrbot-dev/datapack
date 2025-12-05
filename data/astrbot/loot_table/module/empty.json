@@ -23,7 +23,7 @@
                     "translate": "item.astrbot.empty.lore"
                   }
                 ],
-                "minecraft:max_stack_size": 1,
+                "minecraft:max_stack_size": 64,
                 "attribute_modifiers": [
                     {
                         "id": "astrbot:empty",

@@ -26,4 +26,11 @@ execute if score @s astrbot.player_power matches 81..100 run \
         {"text":"\ue025","font":"astrbot:betterybar","shadow_color":[0,0,0,0]},\
         {"translate":"space.-102","font":"default"},\
     ]
+    execute if score @s astrbot.player_power matches 101..120 run \
+    data modify storage custom_hud:io temp set value \
+    [\
+        {"translate":"space.92","font":"default"},\
+        {"text":"\ue035","font":"astrbot:betterybar","shadow_color":[0,0,0,0]},\
+        {"translate":"space.-102","font":"default"},\
+    ]
 data modify storage custom_hud:io list append from storage custom_hud:io temp[]

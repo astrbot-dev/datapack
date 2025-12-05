@@ -1,0 +1,58 @@
+{
+    "pools": [
+        {
+            "rolls":1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:iron_helmet",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_components",
+                            "components": {
+                                "item_name": {"translate": "item.astrbot.bot_helmet"},
+                                "item_model": "astrbot:helmet",
+                                "custom_data": "{id:\"astrbot:helmet\",max_player_power:{head:{type:0b,amount:20}}}",
+                                "max_stack_size": 1,
+                                "equippable": {
+                                    "slot": "head",
+                                    "damage_on_hurt": true,
+                                    "equip_sound": {"sound_id":"block.vault.eject_item"}
+                                },
+                                "attribute_modifiers":[
+                                    {
+                                        "type": "armor",
+                                        "amount": 2,
+                                        "id": "minecraft:armor.helmet",
+                                        "operation": "add_value",
+                                        "slot": "head"
+                                    },
+                                    {
+                                        "type": "armor_toughness",
+                                        "amount": 1,
+                                        "id": "minecraft:armor_toughness.helmet",
+                                        "operation": "add_value",
+                                        "slot": "head"
+                                    },
+                                    {
+                                        "type": "luck",
+                                        "amount": 0,
+                                        "id": "astrbot:max_player_power",
+                                        "operation": "add_value",
+                                        "slot": "head",
+                                        "display": {
+                                            "type": "override",
+                                            "value": {"translate": "attribute.modifier.plus.0","with": [{"text": "20"},{"translate": "attribute.name.astrbot.max_player_power"}],"color": "blue"}
+                                        }
+                                    }
+                                ],
+                                "max_damage": 256,
+                                "damage": 0
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

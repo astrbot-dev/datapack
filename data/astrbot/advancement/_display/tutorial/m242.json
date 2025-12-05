@@ -1,5 +1,5 @@
 {
-    "parent": "astrbot:_display/tutorial/sonic",
+    "parent": "astrbot:_display/tutorial/neg",
     "display": {
         "title": {
             "translate": "advancements.astrbot.m242.title"

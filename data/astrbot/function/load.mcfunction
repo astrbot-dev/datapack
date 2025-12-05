@@ -18,8 +18,19 @@
         scoreboard objectives add astrbot.player_power dummy
         # 电量上限
         scoreboard objectives add astrbot.max_player_power dummy
+        scoreboard objectives add astrbot.max_player_power_base dummy
         # 电量恢复速度
         scoreboard objectives add astrbot.player_power_regen dummy
+        scoreboard objectives add astrbot.player_power_regen_base dummy
+    # 电量属性处理
+        scoreboard objectives add astrbot.player_attribute_base dummy
+        scoreboard objectives add astrbot.player_attribute_add dummy
+        scoreboard objectives add astrbot.player_attribute_mul dummy
+        scoreboard objectives add astrbot.player_attribute_mul_total dummy
+        scoreboard players set #100 astrbot.player_attribute_base 100
+
+        schedule clear astrbot:player/tick/bettery_attribute/tick_1s
+        function astrbot:player/tick/bettery_attribute/tick_1s
     # 序列化uid(#player-玩家序列)
     scoreboard objectives add astrbot.player_uid dummy
 

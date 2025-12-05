@@ -1,0 +1,37 @@
+{
+    "parent": "astrbot:_display/tutorial/sonic",
+    "display": {
+        "title": {
+            "translate": "advancements.astrbot.neg.title"
+        },
+        "description": {
+            "translate": "advancements.astrbot.neg.description"
+        },
+        "icon": {
+            "id": "firework_star",
+            "components": {
+                "item_model": "astrbot:module/neg"
+            }
+        },
+        "frame": "task",
+        "hidden": true
+    },
+    "criteria": {
+        "1": {
+            "trigger": "inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "predicates": {
+                            "custom_data": {
+                                "astrbot": {
+                                    "name": "astrbot:negative_effect_generator"
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}

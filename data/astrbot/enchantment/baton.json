@@ -1,0 +1,98 @@
+{
+  "anvil_cost": 1,
+  "description": {"translate":"enchant.astrbot.baton"},
+  "effects": {
+    "minecraft:post_attack":[
+        {
+          "enchanted": "attacker",
+          "affected": "victim",
+          "effect": {
+            "type": "apply_mob_effect",
+            "min_duration": 30,
+            "max_duration": 30,
+            "max_amplifier": 0,
+            "min_amplifier": 0,
+            "to_apply": "slowness"
+          },
+          "requirements": {
+            "condition": "entity_scores",
+            "entity": "attacker",
+            "scores": {
+              "astrbot.player_power": {
+                "min": 3
+              }
+            }
+          }
+        },
+        {
+          "enchanted": "attacker",
+          "affected": "victim",
+          "effect": {
+            "type": "apply_mob_effect",
+            "min_duration": 30,
+            "max_duration": 30,
+            "max_amplifier": 0,
+            "min_amplifier": 0,
+            "to_apply": "weakness"
+          },
+          "requirements": {
+            "condition": "entity_scores",
+            "entity": "attacker",
+            "scores": {
+              "astrbot.player_power": {
+                "min": 3
+              }
+            }
+          }
+        },
+        {
+          "enchanted": "attacker",
+          "affected": "victim",
+          "effect": {
+            "type": "run_function",
+            "function": "astrbot:equipment/baton/particle"
+          },
+          "requirements": {
+            "condition": "entity_scores",
+            "entity": "attacker",
+            "scores": {
+              "astrbot.player_power": {
+                "min": 3
+              }
+            }
+          }
+        },
+        {
+          "enchanted": "attacker",
+          "affected": "attacker",
+          "effect": {
+            "type": "run_function",
+            "function": "astrbot:equipment/baton/battery"
+          },
+          "requirements": {
+            "condition": "entity_scores",
+            "entity": "attacker",
+            "scores": {
+              "astrbot.player_power": {
+                "min": 3
+              }
+            }
+          }
+        }
+    ]
+  },
+  "max_level": 1,
+  "max_cost": {
+    "base": 0,
+    "per_level_above_first": 0
+  },
+  "min_cost": {
+    "base": 0,
+    "per_level_above_first": 0
+  },
+  "slots": [
+    "any"
+  ],
+  "supported_items": "air",
+  "weight": 1
+}

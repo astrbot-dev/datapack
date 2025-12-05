@@ -1,0 +1,62 @@
+{
+    "pools": [
+        {
+            "rolls":1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:iron_boots",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_components",
+                            "components": {
+                                "item_name": {"translate": "item.astrbot.bot_boots"},
+                                "item_model": "astrbot:boots",
+                                "custom_data": "{id:\"astrbot:boots\",player_power_regen:{feet:{type:0b,amount:1}}}",
+                                "max_stack_size": 1,
+                                "equippable": {
+                                    "slot": "feet",
+                                    "damage_on_hurt": true,
+                                    "equip_sound": {"sound_id":"block.vault.eject_item"},
+                                    "asset_id": "astrbot:bot"
+                                },
+                                "attribute_modifiers":[
+                                    {
+                                        "type": "armor",
+                                        "amount": 2,
+                                        "id": "minecraft:armor.feet",
+                                        "operation": "add_value",
+                                        "slot": "feet"
+                                    },
+                                    {
+                                        "type": "armor_toughness",
+                                        "amount": 1,
+                                        "id": "minecraft:armor_toughness.feet",
+                                        "operation": "add_value",
+                                        "slot": "feet"
+                                    },
+                                    {
+                                        "type": "luck",
+                                        "amount": 0,
+                                        "id": "astrbot:max_player_power",
+                                        "operation": "add_value",
+                                        "slot": "feet",
+                                        "display": {
+                                            "type": "override",
+                                            "value": {"translate": "attribute.modifier.plus.0","with": [{"text": "1"},{"translate": "attribute.name.astrbot.player_power_regen"}],"color": "blue"}
+                                        }
+                                    }
+                                ],
+                                "repairable":{
+                                    "items": ["test_block"]
+                                },
+                                "max_damage": 288,
+                                "damage": 0
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
