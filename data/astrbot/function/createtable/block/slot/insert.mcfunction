@@ -35,7 +35,7 @@ execute \
 execute \
     if function astrbot:createtable/block/slot/insert/is_illegal_module \
     as @e[tag=astrbot.createtable.bot.model, distance=0..0.9, type=item_display] if score @s astrbot.createtable_id = curr_createtable astrbot.temp \
-    unless items entity @s contents *[custom_data~{astrbot:{type:1}}] \
+    if items entity @s contents *[custom_data~{astrbot:{type:1}}] \
     if function astrbot:createtable/player/guide/illegal_model \
     run return 0
 

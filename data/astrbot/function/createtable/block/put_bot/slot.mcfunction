@@ -10,5 +10,6 @@ scoreboard players add temp astrbot.slot 1
 summon item_display ~ ~ ~ {view_range: 0, Tags: ["astrbot.just.model", "astrbot.just"]}
 ride @n[tag=astrbot.just.model, distance=0..0.9, type=item_display] mount @s
 execute on passengers run tag @s remove astrbot.just.model
+execute on passengers run scoreboard players operation @s astrbot.createtable_id = curr_createtable astrbot.temp
 
 return 1
