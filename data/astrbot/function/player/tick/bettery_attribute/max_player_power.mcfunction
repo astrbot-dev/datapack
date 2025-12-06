@@ -16,7 +16,7 @@ scoreboard players set @s astrbot.player_attribute_mul 100
 scoreboard players set @s astrbot.player_attribute_mul_total 100
 
 
-#equipment
+# equipment
 data modify storage astrbot:temp attribute set value {type:0b,amount:0}
 data modify storage astrbot:temp attribute set from entity @s equipment.head.components."minecraft:custom_data".max_player_power.head
 function astrbot:player/tick/bettery_attribute/attribute_process
@@ -41,7 +41,7 @@ data modify storage astrbot:temp attribute set value {type:0b,amount:0}
 data modify storage astrbot:temp attribute set from entity @s equipment.offhand.components."minecraft:custom_data".max_player_power.offhand
 function astrbot:player/tick/bettery_attribute/attribute_process
 
-#calculate
+# calculate
 
 scoreboard players operation @s astrbot.player_attribute_base += @s astrbot.player_attribute_add
 scoreboard players operation @s astrbot.player_attribute_base *= @s astrbot.player_attribute_mul
