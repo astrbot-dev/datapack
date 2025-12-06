@@ -20,4 +20,6 @@ function astrbot:data/bot/tick/_
     # Tick
     ## 模块循环
     function astrbot:module/mending_servicer/main
+    ## 敌人
+    execute as @e[type=stray,tag=astrbot_guard] at @s run function astrbot:equipment/mob/tick
     # Second

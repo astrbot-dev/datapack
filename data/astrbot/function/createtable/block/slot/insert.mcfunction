@@ -32,12 +32,12 @@ execute \
     run return 0
 
 # if try to install illegal module on attack slot of a flying bot
-execute \
-    if function astrbot:createtable/block/slot/insert/is_illegal_module \
-    as @e[tag=astrbot.createtable.bot.model, distance=0..0.9, type=item_display] if score @s astrbot.createtable_id = curr_createtable astrbot.temp \
-    if items entity @s contents *[custom_data~{astrbot:{type:1}}] \
-    if function astrbot:createtable/player/guide/illegal_model \
-    run return 0
+#execute \
+#    if function astrbot:createtable/block/slot/insert/is_illegal_module \
+#    as @e[tag=astrbot.createtable.bot.model, distance=0..0.9, type=item_display] if score @s astrbot.createtable_id = curr_createtable astrbot.temp \
+#    if items entity @s contents *[custom_data~{astrbot:{type:1}}] \
+#    if function astrbot:createtable/player/guide/illegal_model \
+#    run return 0
 
 # if the slot is not empty, will take module item out
 execute as @n[tag=astrbot.temp, distance=0..0.9, type=interaction] unless score @s astrbot.slot_status = EMPTY astrbot.slot_status run function astrbot:createtable/block/slot/item_out1
