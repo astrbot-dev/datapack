@@ -1,6 +1,6 @@
 #生成一只怪
 
-summon stray ~ ~ ~ {Tags:["astrbot_guard_temp"],DeathLootTable:"astrbot:chests/guard_death_loot"}
+summon stray ~ ~ ~ {Tags:["astrbot_guard_temp","astrbot_guard"],DeathLootTable:"astrbot:chests/guard_death_loot"}
 
 loot replace entity @n[tag=astrbot_guard_temp] armor.head loot astrbot:equipments/helmet
 loot replace entity @n[tag=astrbot_guard_temp] armor.chest loot astrbot:equipments/chestplate

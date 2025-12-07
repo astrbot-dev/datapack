@@ -1,3 +1,5 @@
+execute if entity @s[tag=astrbot_guard_temp] run function astrbot:equipment/mob/equip
+
 execute as @a[distance=..8] run effect give @s slowness 2 0
 
 execute as @a[distance=..8] at @s run particle electric_spark ~ ~1 ~ 0.5 0.5 0.5 0 3

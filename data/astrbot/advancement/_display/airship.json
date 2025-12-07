@@ -21,7 +21,7 @@
             "conditions": {
                 "player": {
                     "location": {
-                        "structures": ["airship"]
+                        "structures": ["airship","airship1","airship2","airship3","airship4","airship5"]
                     }
                 }
             }
