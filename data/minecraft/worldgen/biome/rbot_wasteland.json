@@ -6,7 +6,8 @@
     "creature_spawn_probability": 0.0,
     "downfall": 0.0,
     "effects": {
-        "fog_color": 3095866,
+        "sky_color": 16777215,
+        "fog_color": 8819874,
         "foliage_color": 3155736,
         "grass_color": 6163725,
         "mood_sound": {
@@ -19,7 +20,7 @@
             "options": {
                 "type": "minecraft:firefly"
             },
-            "probability": 0.09875
+            "probability": 0.0075
         },
         "music": [
             {
@@ -33,7 +34,6 @@
             }
         ],
         "music_volume": 1.0,
-        "sky_color": 5395026,
         "water_color": 2640732,
         "water_fog_color": 329011
     },
