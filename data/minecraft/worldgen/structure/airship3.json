@@ -8,10 +8,10 @@
   "start_height": {
     "type": "minecraft:uniform",
     "max_inclusive": {
-      "absolute": -9
+      "absolute": -7
     },
     "min_inclusive": {
-      "absolute": -11
+      "absolute": -9
     }
   },
   "start_pool": "minecraft:airship3",
