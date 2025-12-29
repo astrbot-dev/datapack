@@ -4,8 +4,9 @@ execute as @e[type=wolf,tag=astrbot_root,tag=fall_prevention,distance=0..] at @s
 effect give @s slow_falling 1 0 true
 #效果触发
 playsound block.beacon.activate player @s ~ ~ ~
+playsound astrbot:qiangjiu player @s ~ ~ ~
 title @s times 0 60 0
-title @s title {atlas:"minecraft:gui",object:"atlas",sprite:"minecraft:mob_effect/absorption"}
+title @s title {"text":"\u0001","font":"astrbot:absorption"}
 particle dolphin ~ ~-1 ~ 1 1 1 1 1000 force
 particle nautilus ~ ~-2 ~ 1 1 1 1 1000 force
 particle totem_of_undying ~ ~ ~ 0.2 0.2 0.2 1 50 force
